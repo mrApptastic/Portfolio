@@ -32,10 +32,10 @@ jobs:
           dotnet-version: '10.0.x'
 
       - name: Restore
-        run: dotnet restore
+        run: dotnet restore Portfolio.App/Portfolio.App.csproj
 
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build Portfolio.App/Portfolio.App.csproj --configuration Release --no-restore
 
       - name: Publish
         run: dotnet publish Portfolio.App/Portfolio.App.csproj --configuration Release -o publish
