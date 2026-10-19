@@ -41,8 +41,8 @@
         </div>
     </div>
     <div class="hero-cta">
-        <a href="/projects" class="cta-btn primary">@Loc["Home_ExploreWork"]</a>
-        <a href="/contact" class="cta-btn secondary">@Loc["Home_GetInTouch"]</a>
+        <a href="projects" class="cta-btn primary">@Loc["Home_ExploreWork"]</a>
+        <a href="contact" class="cta-btn secondary">@Loc["Home_GetInTouch"]</a>
     </div>
     <div class="hero-scroll">
         <span>@Loc["Home_ScrollDown"]</span>
@@ -83,7 +83,7 @@
                 }
             </div>
             <div class="featured-more">
-                <a href="/projects" class="cta-btn secondary">@Loc["Home_ViewAllProjects"] →</a>
+                <a href="projects" class="cta-btn secondary">@Loc["Home_ViewAllProjects"] →</a>
             </div>
         </div>
     </section>
@@ -142,13 +142,13 @@
                 terminalHistory.Clear();
                 break;
             case "home":
-                NavigateTo("/");
+                NavigateTo("");
                 break;
             case "cv":
-                NavigateTo("/cv");
+                NavigateTo("cv");
                 break;
             case "projects":
-                NavigateTo("/projects");
+                NavigateTo("projects");
                 break;
             default:
                 if (normalized.StartsWith("go ", StringComparison.Ordinal))
@@ -168,19 +168,19 @@
         switch (destination)
         {
             case "home":
-                NavigateTo("/");
+                NavigateTo("");
                 break;
             case "about":
-                NavigateTo("/about");
+                NavigateTo("about");
                 break;
             case "cv":
-                NavigateTo("/cv");
+                NavigateTo("cv");
                 break;
             case "projects":
-                NavigateTo("/projects");
+                NavigateTo("projects");
                 break;
             case "contact":
-                NavigateTo("/contact");
+                NavigateTo("contact");
                 break;
             default:
                 AddTerminalOutput(Loc["Home_Cmd_UnknownRoute", destination], isError: true);

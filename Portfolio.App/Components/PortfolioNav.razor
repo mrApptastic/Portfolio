@@ -4,17 +4,17 @@
 
 <nav class="portfolio-nav @(isScrolled ? "scrolled" : "")">
     <div class="nav-brand">
-        <a href="/" class="brand-link">mrApptastic</a>
+        <a href="" class="brand-link">mrApptastic</a>
     </div>
     <button class="nav-toggle @(menuOpen ? "open" : "")" @onclick="ToggleMenu" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
     </button>
     <div class="nav-links @(menuOpen ? "open" : "")">
-        <NavLink href="/" Match="NavLinkMatch.All" @onclick="CloseMenu">@Loc["Nav_Home"]</NavLink>
-        <NavLink href="/about" @onclick="CloseMenu">@Loc["Nav_About"]</NavLink>
-        <NavLink href="/cv" @onclick="CloseMenu">@Loc["Nav_CV"]</NavLink>
-        <NavLink href="/projects" @onclick="CloseMenu">@Loc["Nav_Projects"]</NavLink>
-        <NavLink href="/contact" @onclick="CloseMenu">@Loc["Nav_Contact"]</NavLink>
+        <NavLink href="" Match="NavLinkMatch.All" @onclick="CloseMenu">@Loc["Nav_Home"]</NavLink>
+        <NavLink href="about" @onclick="CloseMenu">@Loc["Nav_About"]</NavLink>
+        <NavLink href="cv" @onclick="CloseMenu">@Loc["Nav_CV"]</NavLink>
+        <NavLink href="projects" @onclick="CloseMenu">@Loc["Nav_Projects"]</NavLink>
+        <NavLink href="contact" @onclick="CloseMenu">@Loc["Nav_Contact"]</NavLink>
         <div class="lang-selector">
             <button class="lang-btn @(currentLang == "da" ? "active" : "")" @onclick='() => SetLanguage("da")' title="Dansk">🇩🇰</button>
             <button class="lang-btn @(currentLang == "en" ? "active" : "")" @onclick='() => SetLanguage("en")' title="English">🇬🇧</button>
