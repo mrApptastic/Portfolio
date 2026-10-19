@@ -1,0 +1,218 @@
+@page "/"
+@inject IStringLocalizer<AppStrings> Loc
+@inject IPortfolioService PortfolioSvc
+@inject NavigationManager Nav
+
+<PageTitle>mrApptastic — @Loc["Home_Title"]</PageTitle>
+
+<section class="hero-section">
+    <div class="hero-terminal">
+        <div class="terminal-header">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="terminal-title">@Loc["Home_TerminalTitle"]</span>
+        </div>
+        <div class="terminal-body">
+            @foreach (var entry in terminalHistory)
+            {
+                if (entry.IsCommand)
+                {
+                    <div class="terminal-line">
+                        <span class="prompt">$</span>
+                        <span class="command">@entry.Text</span>
+                    </div>
+                }
+                else
+                {
+                    <div class="terminal-output @(entry.IsError ? "terminal-error" : null)">@entry.Text</div>
+                }
+            }
+
+            <form class="terminal-line terminal-input-line" @onsubmit="HandleCommandSubmit" @onsubmit:preventDefault="true">
+                <span class="prompt">$</span>
+                <input class="terminal-input"
+                       @bind="terminalInput"
+                       @bind:event="oninput"
+                       placeholder="@Loc["Home_CommandPlaceholder"]"
+                       autocomplete="off"
+                       spellcheck="false" />
+            </form>
+        </div>
+    </div>
+    <div class="hero-cta">
+        <a href="/projects" class="cta-btn primary">@Loc["Home_ExploreWork"]</a>
+        <a href="/contact" class="cta-btn secondary">@Loc["Home_GetInTouch"]</a>
+    </div>
+    <div class="hero-scroll">
+        <span>@Loc["Home_ScrollDown"]</span>
+        <div class="scroll-arrow"></div>
+    </div>
+</section>
+
+@if (featured != null && featured.Count > 0)
+{
+    <section class="featured-section">
+        <div class="section-container">
+            <h2 class="section-title">@Loc["Home_FeaturedWork"]</h2>
+            <div class="featured-grid">
+                @foreach (var project in featured)
+                {
+                    <div class="featured-card">
+                        @if (!string.IsNullOrWhiteSpace(project.ImageUrl))
+                        {
+                            <div class="card-image">
+                                <img src="@project.ImageUrl" alt="@project.Name" loading="lazy" />
+                            </div>
+                        }
+                        <div class="card-content">
+                            <h3>@project.Name</h3>
+                            <p class="card-place">@project.Place</p>
+                            <p class="card-date">@FormatDate(project.From, project.To)</p>
+                            <div class="card-desc">@((MarkupString)project.Description)</div>
+                            @if (!string.IsNullOrWhiteSpace(project.DemoUrl))
+                            {
+                                <a href="@project.DemoUrl" target="_blank" rel="noopener" class="card-link">@Loc["Projects_LinkDemo"] →</a>
+                            }
+                            else if (!string.IsNullOrWhiteSpace(project.SourceUrl))
+                            {
+                                <a href="@project.SourceUrl" target="_blank" rel="noopener" class="card-link">@Loc["Projects_LinkSource"] →</a>
+                            }
+                        </div>
+                    </div>
+                }
+            </div>
+            <div class="featured-more">
+                <a href="/projects" class="cta-btn secondary">@Loc["Home_ViewAllProjects"] →</a>
+            </div>
+        </div>
+    </section>
+}
+
+@code {
+    private List<Project>? featured;
+    private readonly List<TerminalEntry> terminalHistory = [];
+    private string terminalInput = "";
+
+    protected override async Task OnInitializedAsync()
+    {
+        AddTerminalOutput(Loc["Home_Welcome"]);
+        AddTerminalOutput(Loc["Home_Cmd_HelpHint"]);
+
+        var lang = System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName;
+        var data = await PortfolioSvc.GetPortfolioAsync(lang);
+        featured = data?.Projects?.Take(3).ToList();
+    }
+
+    private Task HandleCommandSubmit()
+    {
+        var command = terminalInput.Trim();
+        if (string.IsNullOrWhiteSpace(command))
+        {
+            return Task.CompletedTask;
+        }
+
+        terminalHistory.Add(new(command, true));
+        terminalInput = "";
+        return ExecuteCommand(command);
+    }
+
+    private Task ExecuteCommand(string command)
+    {
+        var normalized = command.Trim().ToLowerInvariant();
+
+        switch (normalized)
+        {
+            case "help":
+                AddTerminalOutput(Loc["Home_Cmd_HelpOutput"]);
+                break;
+            case "whoami":
+                AddTerminalOutput(Loc["Home_Cmd_WhoAmIOutput"]);
+                break;
+            case "about":
+                AddTerminalOutput(Loc["Home_Cmd_AboutOutput"]);
+                break;
+            case "skills":
+                AddTerminalOutput(Loc["Home_Cmd_SkillsOutput"]);
+                break;
+            case "contact":
+                AddTerminalOutput(Loc["Home_Cmd_ContactOutput"]);
+                break;
+            case "clear":
+                terminalHistory.Clear();
+                break;
+            case "home":
+                NavigateTo("/");
+                break;
+            case "cv":
+                NavigateTo("/cv");
+                break;
+            case "projects":
+                NavigateTo("/projects");
+                break;
+            default:
+                if (normalized.StartsWith("go ", StringComparison.Ordinal))
+                {
+                    return HandleGoCommand(normalized[3..].Trim());
+                }
+
+                AddTerminalOutput(Loc["Home_Cmd_Unknown", command], isError: true);
+                break;
+        }
+
+        return Task.CompletedTask;
+    }
+
+    private Task HandleGoCommand(string destination)
+    {
+        switch (destination)
+        {
+            case "home":
+                NavigateTo("/");
+                break;
+            case "about":
+                NavigateTo("/about");
+                break;
+            case "cv":
+                NavigateTo("/cv");
+                break;
+            case "projects":
+                NavigateTo("/projects");
+                break;
+            case "contact":
+                NavigateTo("/contact");
+                break;
+            default:
+                AddTerminalOutput(Loc["Home_Cmd_UnknownRoute", destination], isError: true);
+                break;
+        }
+
+        return Task.CompletedTask;
+    }
+
+    private void NavigateTo(string route)
+    {
+        AddTerminalOutput(Loc["Home_Cmd_Navigating", route]);
+        Nav.NavigateTo(route);
+    }
+
+    private void AddTerminalOutput(string output, bool isError = false)
+    {
+        terminalHistory.Add(new(output, false, isError));
+    }
+
+    private string FormatDate(string from, string to)
+    {
+        if (DateTime.TryParse(from, out var f))
+        {
+            var fromStr = f.Year.ToString();
+            if (string.IsNullOrWhiteSpace(to) || to == "0001-01-01T00:00:00")
+                return $"{fromStr} — {Loc["General_Present"]}";
+            if (DateTime.TryParse(to, out var t))
+                return f.Year == t.Year ? fromStr : $"{fromStr} — {t.Year}";
+        }
+        return from;
+    }
+
+    private sealed record TerminalEntry(string Text, bool IsCommand, bool IsError = false);
+}

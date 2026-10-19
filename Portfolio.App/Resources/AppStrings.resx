@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <!-- Navigation -->
+  <data name="Nav_Home" xml:space="preserve">
+    <value>Forside</value>
+  </data>
+  <data name="Nav_About" xml:space="preserve">
+    <value>Om mig</value>
+  </data>
+  <data name="Nav_Projects" xml:space="preserve">
+    <value>Projekter</value>
+  </data>
+  <data name="Nav_Contact" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="Nav_CV" xml:space="preserve">
+    <value>CV</value>
+  </data>
+  <!-- Home page -->
+  <data name="Home_Greeting" xml:space="preserve">
+    <value>Hej med jer!</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>Henriks Portfolio</value>
+  </data>
+  <data name="Home_Tagline" xml:space="preserve">
+    <value>Jeg er nemlig ikke ligesom de andre udviklere.</value>
+  </data>
+  <data name="Home_LookAround" xml:space="preserve">
+    <value>Tag et kig eller to og se jer lidt omkring.</value>
+  </data>
+  <data name="Home_Welcome" xml:space="preserve">
+    <value>Velkommen til mit portfolio.</value>
+  </data>
+  <data name="Home_ExploreWork" xml:space="preserve">
+    <value>Udforsk mit arbejde</value>
+  </data>
+  <data name="Home_ScrollDown" xml:space="preserve">
+    <value>Scroll ned</value>
+  </data>
+  <data name="Home_FeaturedWork" xml:space="preserve">
+    <value>Udvalgt Arbejde</value>
+  </data>
+  <data name="Home_ViewAllProjects" xml:space="preserve">
+    <value>Se alle projekter</value>
+  </data>
+  <data name="Home_GetInTouch" xml:space="preserve">
+    <value>Tag fat i mig</value>
+  </data>
+  <data name="Home_TerminalTitle" xml:space="preserve">
+    <value>mrApptastic ~ portfolio</value>
+  </data>
+  <data name="Home_CommandPlaceholder" xml:space="preserve">
+    <value>Skriv en kommando (help)</value>
+  </data>
+  <data name="Home_Cmd_HelpHint" xml:space="preserve">
+    <value>Skriv "help" for at se kommandoer.</value>
+  </data>
+  <data name="Home_Cmd_HelpOutput" xml:space="preserve">
+    <value>Kommandoer: help, whoami, about, skills, contact, clear, go [home|about|cv|projects|contact]</value>
+  </data>
+  <data name="Home_Cmd_WhoAmIOutput" xml:space="preserve">
+    <value>Henrik Beske (mrApptastic) — softwareudvikler med fokus på web og mobile løsninger.</value>
+  </data>
+  <data name="Home_Cmd_AboutOutput" xml:space="preserve">
+    <value>Jeg bygger moderne apps med .NET, C#, Blazor, Angular og cloud-teknologier.</value>
+  </data>
+  <data name="Home_Cmd_SkillsOutput" xml:space="preserve">
+    <value>Kompetencer: C#, .NET, Blazor, Angular, TypeScript, REST API'er, SQL, Azure.</value>
+  </data>
+  <data name="Home_Cmd_ContactOutput" xml:space="preserve">
+    <value>Kontakt: henrikbeske@gmail.com | (+45) 24 49 75 55</value>
+  </data>
+  <data name="Home_Cmd_Unknown" xml:space="preserve">
+    <value>Ukendt kommando: {0}. Skriv "help".</value>
+  </data>
+  <data name="Home_Cmd_UnknownRoute" xml:space="preserve">
+    <value>Ukendt side: {0}. Brug home, about, cv, projects eller contact.</value>
+  </data>
+  <data name="Home_Cmd_Navigating" xml:space="preserve">
+    <value>Navigerer til {0} ...</value>
+  </data>
+  <!-- About page -->
+  <data name="About_Intro1" xml:space="preserve">
+    <value>Til dagligt er jeg Henrik Beske, et helt almindeligt familiemenneske.</value>
+  </data>
+  <data name="About_Intro2" xml:space="preserve">
+    <value>Men idet jeg tager afsted til arbejde, forvandler jeg mig til mrApptastic, en superheroisk webudvikler med gazelleblod fossende gennem blodbanerne.</value>
+  </data>
+  <!-- CV page -->
+  <data name="CV_Name" xml:space="preserve">
+    <value>Henrik Beske</value>
+  </data>
+  <data name="CV_Title" xml:space="preserve">
+    <value>Softwareudvikler</value>
+  </data>
+  <data name="CV_Location" xml:space="preserve">
+    <value>Nordjylland</value>
+  </data>
+  <data name="CV_Country" xml:space="preserve">
+    <value>Danmark</value>
+  </data>
+  <data name="CV_Industry" xml:space="preserve">
+    <value>Software</value>
+  </data>
+  <data name="CV_Current" xml:space="preserve">
+    <value>Nuværende</value>
+  </data>
+  <data name="CV_Previous" xml:space="preserve">
+    <value>Forrige</value>
+  </data>
+  <data name="CV_Education" xml:space="preserve">
+    <value>Uddannelse</value>
+  </data>
+  <data name="CV_ShortDescription" xml:space="preserve">
+    <value>Kort Beskrivelse</value>
+  </data>
+  <data name="CV_Description1" xml:space="preserve">
+    <value>Jeg er en kompetent softwareudvikler med en præference i retning af webudvikling samt udvikling til mobile enheder. Endvidere har jeg erfaring fra flere andre områder - såsom desktop applikationsudvikling, og udvikling til indlejrede enheder.</value>
+  </data>
+  <data name="CV_Description2" xml:space="preserve">
+    <value>Desuden er jeg af den opfattelse, at jeg er en innovativ person med mange idéer. Jeg er en teknisk kompetent, dedikeret person, som bliver ved med at arbejde indtil arbejdet er gjort. Jeg arbejder fint både i grupper og individuelt. Kort sagt er jeg en type person, der ser muligheder fremfor barrierer foran mig.</value>
+  </data>
+  <data name="CV_Experience" xml:space="preserve">
+    <value>Erfaring</value>
+  </data>
+  <data name="CV_Skills" xml:space="preserve">
+    <value>Kompetencer</value>
+  </data>
+  <data name="CV_Certificates" xml:space="preserve">
+    <value>Certifikater</value>
+  </data>
+  <data name="CV_Projects" xml:space="preserve">
+    <value>Projekter</value>
+  </data>
+  <data name="CV_Languages" xml:space="preserve">
+    <value>Sprog</value>
+  </data>
+  <data name="CV_Interests" xml:space="preserve">
+    <value>Interesser</value>
+  </data>
+  <data name="CV_ExportPDF" xml:space="preserve">
+    <value>Gem PDF</value>
+  </data>
+  <data name="CV_Phone" xml:space="preserve">
+    <value>(+45) 24 49 75 55</value>
+  </data>
+  <data name="CV_Email" xml:space="preserve">
+    <value>henrikbeske@gmail.com</value>
+  </data>
+  <data name="CV_LoadingExperiences" xml:space="preserve">
+    <value>Henter erhvervserfaring...</value>
+  </data>
+  <data name="CV_LoadingSkills" xml:space="preserve">
+    <value>Henter kompetencer...</value>
+  </data>
+  <data name="CV_LoadingEducations" xml:space="preserve">
+    <value>Henter uddannelser...</value>
+  </data>
+  <data name="CV_LoadingCertificates" xml:space="preserve">
+    <value>Henter certifikater...</value>
+  </data>
+  <data name="CV_LoadingLanguages" xml:space="preserve">
+    <value>Henter sprog...</value>
+  </data>
+  <data name="CV_LoadingInterests" xml:space="preserve">
+    <value>Henter interesser...</value>
+  </data>
+  <!-- Projects page -->
+  <data name="Projects_Title" xml:space="preserve">
+    <value>Projekter</value>
+  </data>
+  <data name="Projects_Loading" xml:space="preserve">
+    <value>Henter projekter...</value>
+  </data>
+  <data name="Projects_Empty" xml:space="preserve">
+    <value>Ingen projekter fundet.</value>
+  </data>
+  <data name="Projects_LinkDemo" xml:space="preserve">
+    <value>Demo</value>
+  </data>
+  <data name="Projects_LinkSource" xml:space="preserve">
+    <value>Kilde</value>
+  </data>
+  <data name="Projects_LinkDocs" xml:space="preserve">
+    <value>Dokumentation</value>
+  </data>
+  <!-- Contact page -->
+  <data name="Contact_Title" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="Contact_EmailLabel" xml:space="preserve">
+    <value>E-mail</value>
+  </data>
+  <data name="Contact_PhoneLabel" xml:space="preserve">
+    <value>Telefonnummer</value>
+  </data>
+  <!-- Not found page -->
+  <data name="NotFound_Title" xml:space="preserve">
+    <value>Ikke fundet</value>
+  </data>
+  <data name="NotFound_Message" xml:space="preserve">
+    <value>Beklager, indholdet du leder efter findes ikke.</value>
+  </data>
+  <!-- General -->
+  <data name="General_Loading" xml:space="preserve">
+    <value>Indlæser...</value>
+  </data>
+  <data name="General_Current" xml:space="preserve">
+    <value>Nuværende</value>
+  </data>
+  <data name="General_UpdateAvailable" xml:space="preserve">
+    <value>En ny version er tilgængelig!</value>
+  </data>
+  <data name="General_UpdateNow" xml:space="preserve">
+    <value>Opdater nu</value>
+  </data>
+</root>

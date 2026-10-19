@@ -1,0 +1,34 @@
+@inject IStringLocalizer<AppStrings> Loc
+@inject IJSRuntime JS
+
+@if (updateAvailable)
+{
+    <div class="update-banner">
+        <span>@Loc["General_UpdateAvailable"]</span>
+        <button class="update-btn" @onclick="Reload">@Loc["General_UpdateNow"]</button>
+    </div>
+}
+
+@code {
+    private bool updateAvailable = false;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("window.portfolioApp.initServiceWorkerWatcher", DotNetObjectReference.Create(this));
+        }
+    }
+
+    [JSInvokable]
+    public void NotifyUpdateAvailable()
+    {
+        updateAvailable = true;
+        StateHasChanged();
+    }
+
+    private async Task Reload()
+    {
+        await JS.InvokeVoidAsync("location.reload");
+    }
+}

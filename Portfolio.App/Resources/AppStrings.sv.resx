@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <!-- Navigation -->
+  <data name="Nav_Home" xml:space="preserve">
+    <value>Hem</value>
+  </data>
+  <data name="Nav_About" xml:space="preserve">
+    <value>Om mig</value>
+  </data>
+  <data name="Nav_Projects" xml:space="preserve">
+    <value>Projekt</value>
+  </data>
+  <data name="Nav_Contact" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="Nav_CV" xml:space="preserve">
+    <value>CV</value>
+  </data>
+  <!-- Home page -->
+  <data name="Home_Greeting" xml:space="preserve">
+    <value>Hej allihopa!</value>
+  </data>
+  <data name="Home_Title" xml:space="preserve">
+    <value>Henriks Portfölj</value>
+  </data>
+  <data name="Home_Tagline" xml:space="preserve">
+    <value>För jag är inte som de andra utvecklarna.</value>
+  </data>
+  <data name="Home_LookAround" xml:space="preserve">
+    <value>Ta en titt runt - kanske två.</value>
+  </data>
+  <data name="Home_Welcome" xml:space="preserve">
+    <value>Välkommen till min portföljsida.</value>
+  </data>
+  <data name="Home_ExploreWork" xml:space="preserve">
+    <value>Utforska mitt arbete</value>
+  </data>
+  <data name="Home_ScrollDown" xml:space="preserve">
+    <value>Scrolla ned</value>
+  </data>
+  <data name="Home_FeaturedWork" xml:space="preserve">
+    <value>Utvalt Arbete</value>
+  </data>
+  <data name="Home_ViewAllProjects" xml:space="preserve">
+    <value>Se alla projekt</value>
+  </data>
+  <data name="Home_GetInTouch" xml:space="preserve">
+    <value>Ta kontakt</value>
+  </data>
+  <data name="Home_TerminalTitle" xml:space="preserve">
+    <value>mrApptastic ~ portfolio</value>
+  </data>
+  <data name="Home_CommandPlaceholder" xml:space="preserve">
+    <value>Skriv ett kommando (help)</value>
+  </data>
+  <data name="Home_Cmd_HelpHint" xml:space="preserve">
+    <value>Skriv "help" för att se kommandon.</value>
+  </data>
+  <data name="Home_Cmd_HelpOutput" xml:space="preserve">
+    <value>Kommandon: help, whoami, about, skills, contact, clear, go [home|about|cv|projects|contact]</value>
+  </data>
+  <data name="Home_Cmd_WhoAmIOutput" xml:space="preserve">
+    <value>Henrik Beske (mrApptastic) — mjukvaruutvecklare med fokus på webb- och mobila lösningar.</value>
+  </data>
+  <data name="Home_Cmd_AboutOutput" xml:space="preserve">
+    <value>Jag bygger moderna appar med .NET, C#, Blazor, Angular och molnteknik.</value>
+  </data>
+  <data name="Home_Cmd_SkillsOutput" xml:space="preserve">
+    <value>Kompetenser: C#, .NET, Blazor, Angular, TypeScript, REST-API:er, SQL, Azure.</value>
+  </data>
+  <data name="Home_Cmd_ContactOutput" xml:space="preserve">
+    <value>Kontakt: henrikbeske@gmail.com | (+45) 24 49 75 55</value>
+  </data>
+  <data name="Home_Cmd_Unknown" xml:space="preserve">
+    <value>Okänt kommando: {0}. Skriv "help".</value>
+  </data>
+  <data name="Home_Cmd_UnknownRoute" xml:space="preserve">
+    <value>Okänd sida: {0}. Använd home, about, cv, projects eller contact.</value>
+  </data>
+  <data name="Home_Cmd_Navigating" xml:space="preserve">
+    <value>Navigerar till {0} ...</value>
+  </data>
+  <!-- About page -->
+  <data name="About_Intro1" xml:space="preserve">
+    <value>Till vardags ar jag Henrik Beske, en vanlig familjefar.</value>
+  </data>
+  <data name="About_Intro2" xml:space="preserve">
+    <value>Men nar jag beger mig till jobbet forvandlar jag mig till mrApptastic, en superhjaltemodig webbutvecklare med gasellblod som rinner genom blodbanerne.</value>
+  </data>
+  <!-- CV page -->
+  <data name="CV_Name" xml:space="preserve">
+    <value>Henrik Beske</value>
+  </data>
+  <data name="CV_Title" xml:space="preserve">
+    <value>Mjukvaruutvecklare</value>
+  </data>
+  <data name="CV_Location" xml:space="preserve">
+    <value>Nordjylland</value>
+  </data>
+  <data name="CV_Country" xml:space="preserve">
+    <value>Danmark</value>
+  </data>
+  <data name="CV_Industry" xml:space="preserve">
+    <value>Mjukvara</value>
+  </data>
+  <data name="CV_Current" xml:space="preserve">
+    <value>Närvarande</value>
+  </data>
+  <data name="CV_Previous" xml:space="preserve">
+    <value>Föregående</value>
+  </data>
+  <data name="CV_Education" xml:space="preserve">
+    <value>Utbildning</value>
+  </data>
+  <data name="CV_ShortDescription" xml:space="preserve">
+    <value>Kort beskrivning</value>
+  </data>
+  <data name="CV_Description1" xml:space="preserve">
+    <value>Jag är en kompetent mjukvaruutvecklare med förkärlek för webbutveckling samt utveckling för mobila enheter. Vidare har jag erfarenhet från flera andra områden - såsom desktop applikationsutveckling, och utveckling för inbyggda enheter.</value>
+  </data>
+  <data name="CV_Description2" xml:space="preserve">
+    <value>Dessutom är jag av åsikten att jag är en innovativ person med många idéer. Jag är en tekniskt kompetent, engagerad person som jobbar vidare tills arbetet är klart. Jag jobbar bra både i grupp och individuellt. Kort sagt, jag är en typ av person som ser möjligheter snarare än barriärer framför mig.</value>
+  </data>
+  <data name="CV_Experience" xml:space="preserve">
+    <value>Erfarenhet</value>
+  </data>
+  <data name="CV_Skills" xml:space="preserve">
+    <value>Kompetens</value>
+  </data>
+  <data name="CV_Certificates" xml:space="preserve">
+    <value>Certifikat</value>
+  </data>
+  <data name="CV_Projects" xml:space="preserve">
+    <value>Projekt</value>
+  </data>
+  <data name="CV_Languages" xml:space="preserve">
+    <value>Språk</value>
+  </data>
+  <data name="CV_Interests" xml:space="preserve">
+    <value>Intressen</value>
+  </data>
+  <data name="CV_ExportPDF" xml:space="preserve">
+    <value>Spara PDF</value>
+  </data>
+  <data name="CV_Phone" xml:space="preserve">
+    <value>(+45) 24 49 75 55</value>
+  </data>
+  <data name="CV_Email" xml:space="preserve">
+    <value>henrikbeske@gmail.com</value>
+  </data>
+  <data name="CV_LoadingExperiences" xml:space="preserve">
+    <value>Laddar arbetserfarenhet...</value>
+  </data>
+  <data name="CV_LoadingSkills" xml:space="preserve">
+    <value>Laddar kompetens...</value>
+  </data>
+  <data name="CV_LoadingEducations" xml:space="preserve">
+    <value>Laddar utbildningar...</value>
+  </data>
+  <data name="CV_LoadingCertificates" xml:space="preserve">
+    <value>Laddar certifikat...</value>
+  </data>
+  <data name="CV_LoadingLanguages" xml:space="preserve">
+    <value>Laddar språk...</value>
+  </data>
+  <data name="CV_LoadingInterests" xml:space="preserve">
+    <value>Laddar intressen...</value>
+  </data>
+  <!-- Projects page -->
+  <data name="Projects_Title" xml:space="preserve">
+    <value>Projekt</value>
+  </data>
+  <data name="Projects_Loading" xml:space="preserve">
+    <value>Laddar projekt...</value>
+  </data>
+  <data name="Projects_Empty" xml:space="preserve">
+    <value>Inga projekt hittades.</value>
+  </data>
+  <data name="Projects_LinkDemo" xml:space="preserve">
+    <value>Demo</value>
+  </data>
+  <data name="Projects_LinkSource" xml:space="preserve">
+    <value>Källa</value>
+  </data>
+  <data name="Projects_LinkDocs" xml:space="preserve">
+    <value>Dokumentation</value>
+  </data>
+  <!-- Contact page -->
+  <data name="Contact_Title" xml:space="preserve">
+    <value>Kontakt</value>
+  </data>
+  <data name="Contact_EmailLabel" xml:space="preserve">
+    <value>E-post</value>
+  </data>
+  <data name="Contact_PhoneLabel" xml:space="preserve">
+    <value>Telefonnummer</value>
+  </data>
+  <!-- Not found page -->
+  <data name="NotFound_Title" xml:space="preserve">
+    <value>Hittades inte</value>
+  </data>
+  <data name="NotFound_Message" xml:space="preserve">
+    <value>Tyvärr finns inte innehållet du letar efter.</value>
+  </data>
+  <!-- General -->
+  <data name="General_Loading" xml:space="preserve">
+    <value>Laddar...</value>
+  </data>
+  <data name="General_Current" xml:space="preserve">
+    <value>Nuvarande</value>
+  </data>
+  <data name="General_UpdateAvailable" xml:space="preserve">
+    <value>En ny version är tillgänglig!</value>
+  </data>
+  <data name="General_UpdateNow" xml:space="preserve">
+    <value>Uppdatera nu</value>
+  </data>
+</root>

@@ -1,0 +1,30 @@
+@page "/about"
+@inject IStringLocalizer<AppStrings> Loc
+
+<PageTitle>@Loc["Nav_About"] — mrApptastic</PageTitle>
+
+<section class="about-section">
+    <div class="section-container">
+        <div class="about-hero">
+            <div class="about-image-wrapper">
+                <img src="assets/images/Himself.png" alt="mrApptastic" class="about-character" />
+                <img src="assets/images/Me.png" alt="Henrik Beske" class="about-photo" />
+            </div>
+            <div class="about-text">
+                <h1 class="about-title">Henrik <span class="accent">Beske</span></h1>
+                <div class="about-alias">aka <span class="alias-name">mrApptastic</span></div>
+                <p class="about-intro">@Loc["About_Intro1"]</p>
+                <p class="about-intro">@Loc["About_Intro2"]</p>
+            </div>
+        </div>
+
+        <div class="about-street">
+            <div class="street-scene">
+                <img class="street-left" src="assets/images/StreetLeft.png" alt="Street" />
+                <img class="street-right" src="assets/images/StreetRight.png" alt="Street" />
+                <img class="street-self" src="assets/images/Himself.png" alt="mrApptastic on the street" />
+                <div class="road"></div>
+            </div>
+        </div>
+    </div>
+</section>

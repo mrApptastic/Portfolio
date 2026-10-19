@@ -1,0 +1,24 @@
+{
+  "name": "mrApptastic — Portfolio",
+  "short_name": "mrApptastic",
+  "id": "./",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#0d1117",
+  "theme_color": "#0d1117",
+  "prefer_related_applications": false,
+  "description": "Henrik Beske (mrApptastic) — Software Developer Portfolio",
+  "icons": [
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "categories": ["portfolio", "developer"]
+}

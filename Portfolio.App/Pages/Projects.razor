@@ -1,0 +1,85 @@
+@page "/projects"
+@inject IStringLocalizer<AppStrings> Loc
+@inject IPortfolioService PortfolioSvc
+
+<PageTitle>@Loc["Nav_Projects"] — mrApptastic</PageTitle>
+
+<section class="projects-section">
+    <div class="section-container">
+        <h1 class="section-title">@Loc["Projects_Title"]</h1>
+
+        @if (projects == null)
+        {
+            <div class="loading-block">@Loc["Projects_Loading"]</div>
+        }
+        else if (projects.Count == 0)
+        {
+            <p class="empty-state">@Loc["Projects_Empty"]</p>
+        }
+        else
+        {
+            <div class="timeline">
+                @foreach (var (project, idx) in projects.Select((p, i) => (p, i)))
+                {
+                    <div class="timeline-item @(idx % 2 == 0 ? "left" : "right")">
+                        <div class="timeline-connector">
+                            <div class="timeline-dot">
+                                @if (!string.IsNullOrWhiteSpace(project.ImageUrl))
+                                {
+                                    <img src="@project.ImageUrl" alt="@project.Name" class="timeline-img" />
+                                }
+                            </div>
+                        </div>
+                        <div class="timeline-card">
+                            <p class="timeline-date">@FormatDate(project.From, project.To)</p>
+                            <h3 class="timeline-title">@project.Name</h3>
+                            @if (!string.IsNullOrWhiteSpace(project.Place))
+                            {
+                                <p class="timeline-place">@project.Place</p>
+                            }
+                            <div class="timeline-desc">@((MarkupString)project.Description)</div>
+                            <div class="timeline-links">
+                                @if (!string.IsNullOrWhiteSpace(project.DemoUrl))
+                                {
+                                    <a href="@project.DemoUrl" target="_blank" rel="noopener" class="link-badge demo">@Loc["Projects_LinkDemo"]</a>
+                                }
+                                @if (!string.IsNullOrWhiteSpace(project.SourceUrl))
+                                {
+                                    <a href="@project.SourceUrl" target="_blank" rel="noopener" class="link-badge source">@Loc["Projects_LinkSource"]</a>
+                                }
+                                @if (!string.IsNullOrWhiteSpace(project.DocUrl))
+                                {
+                                    <a href="@project.DocUrl" target="_blank" rel="noopener" class="link-badge docs">@Loc["Projects_LinkDocs"]</a>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</section>
+
+@code {
+    private List<Project>? projects;
+
+    protected override async Task OnInitializedAsync()
+    {
+        var lang = System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName;
+        var data = await PortfolioSvc.GetPortfolioAsync(lang);
+        projects = data?.Projects ?? [];
+    }
+
+    private string FormatDate(string from, string to)
+    {
+        if (DateTime.TryParse(from, out var f))
+        {
+            var fromStr = f.Year.ToString();
+            if (string.IsNullOrWhiteSpace(to) || to == "0001-01-01T00:00:00")
+                return $"{fromStr} — {Loc["General_Present"]}";
+            if (DateTime.TryParse(to, out var t))
+                return f.Year == t.Year ? fromStr : $"{fromStr} — {t.Year}";
+        }
+        return from;
+    }
+}
