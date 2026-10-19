@@ -22,6 +22,9 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
       - name: Setup .NET 10
         uses: actions/setup-dotnet@v4
         with:
@@ -40,8 +43,12 @@ jobs:
         shell: bash
         run: |
           REPO_NAME="${GITHUB_REPOSITORY#*/}"
-          BASE_PATH="/${REPO_NAME}/"
-          sed -i "s|<base href=\"/\" />|<base href=\"${BASE_PATH}\" />|g" publish/wwwroot/index.html
+          if [[ "${REPO_NAME}" == *.github.io ]]; then
+            BASE_PATH="/"
+          else
+            BASE_PATH="/${REPO_NAME}/"
+          fi
+          sed -i -E "s|<base href=\"[^\"]*\" />|<base href=\"${BASE_PATH}\" />|g" publish/wwwroot/index.html
           cp publish/wwwroot/index.html publish/wwwroot/404.html
           touch publish/wwwroot/.nojekyll
 
