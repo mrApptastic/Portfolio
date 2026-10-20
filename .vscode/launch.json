@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Blazor WASM",
+            "type": "blazorwasm",
+            "request": "launch",
+            "cwd": "${workspaceFolder}/Portfolio.App",
+            "browser": "chrome",
+            "url": "https://localhost:7185",
+            "webRoot": "${workspaceFolder}/Portfolio.App/wwwroot",
+            "preLaunchTask": "watch-blazor"
+        }
+    ]
+}
