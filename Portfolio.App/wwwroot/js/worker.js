@@ -1,7 +1,7 @@
       // Register service worker
       if ("serviceWorker" in navigator) {
         navigator.serviceWorker
-          .register("js/service-worker.js", { updateViaCache: "none" })
+          .register("./service-worker.js", { updateViaCache: "none" })
           .then((reg) => {
             reg.addEventListener("updatefound", () => {
               const newWorker = reg.installing;
