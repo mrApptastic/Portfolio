@@ -1,103 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>mrApptastic — Portfolio</title>
     <base href="/" />
-    <meta name="description" content="Henrik Beske (mrApptastic) — Software Developer Portfolio" />
+    <meta
+      name="description"
+      content="Henrik Beske (mrApptastic) — Software Developer Portfolio"
+    />
     <meta name="theme-color" content="#0d1117" />
     <!-- GitHub Pages SPA redirect handler -->
     <script>
-        (function(l) {
-            if (l.search[1] === '/') {
-                var decoded = l.search.slice(1).split('&').map(function(s) {
-                    return s.replace(/~and~/g, '&')
-                }).join('?');
-                window.history.replaceState(null, null,
-                    l.pathname.slice(0, -1) + decoded + l.hash
-                );
-            }
-        }(window.location))
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash,
+          );
+        }
+      })(window.location);
     </script>
+    <meta name="build-version" content="__CACHE_BUSTER__" />
     <link rel="preload" id="webassembly" />
-    <link rel="stylesheet" href="css/app.css" />
-    <link rel="icon" type="image/png" href="favicon.png" />
-    <link href="Portfolio.App.styles.css" rel="stylesheet" />
-    <link href="manifest.webmanifest" rel="manifest" />
-    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png" />
-    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png" />
+    <link rel="stylesheet" href="css/app.css?v=__CACHE_BUSTER__" />
+    <link rel="icon" type="image/png" href="favicon.png?v=__CACHE_BUSTER__" />
+    <link href="Portfolio.App.styles.css?v=__CACHE_BUSTER__" rel="stylesheet" />
+    <link href="manifest.webmanifest?v=__CACHE_BUSTER__" rel="manifest" />
+    <link href="Portfolio.App.background.css?v=__CACHE_BUSTER__" rel="stylesheet" />
+    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png?v=__CACHE_BUSTER__" />
+    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png?v=__CACHE_BUSTER__" />
     <!-- Google Analytics — replace GA_MEASUREMENT_ID with your actual ID -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'GA_MEASUREMENT_ID');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "GA_MEASUREMENT_ID");
     </script>
     <script type="importmap"></script>
-</head>
+  </head>
 
-<body>
-    <div id="app">
+  <body>
+    <div id="app-layer">
+      <canvas id="canv"></canvas>
+      <div id="app">
         <div class="splash-screen">
-            <div class="splash-terminal">
-                <span class="splash-prompt">$</span>
-                <span class="splash-cmd">loading portfolio</span>
-                <span class="splash-cursor">_</span>
-            </div>
+          <div class="splash-terminal">
+            <span class="splash-prompt">$</span>
+            <span class="splash-cmd">loading portfolio</span>
+            <span class="splash-cursor">_</span>
+          </div>
         </div>
+      </div>
+      <!-- <div id="blazor-error-ui">
+      An unhandled error has occurred.
+      <a href="." class="reload">Reload</a>
+      <span class="dismiss">🗙</span>
+    </div> -->
     </div>
-
-    <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="." class="reload">Reload</a>
-        <span class="dismiss">🗙</span>
-    </div>
-    <script src="_framework/blazor.webassembly#[.{fingerprint}].js"></script>
-    <script>
-        // Register service worker
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js', { updateViaCache: 'none' })
-                .then(reg => {
-                    reg.addEventListener('updatefound', () => {
-                        const newWorker = reg.installing;
-                        newWorker.addEventListener('statechange', () => {
-                            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
-                                if (window.portfolioApp && window.portfolioApp.notifyUpdate) {
-                                    window.portfolioApp.notifyUpdate();
-                                }
-                            }
-                        });
-                    });
-                });
-        }
-
-        window.portfolioApp = {
-            _updateCallback: null,
-            _dotnetScrollRef: null,
-
-            initServiceWorkerWatcher: function(dotnetRef) {
-                window.portfolioApp._updateCallback = dotnetRef;
-            },
-
-            notifyUpdate: function() {
-                if (window.portfolioApp._updateCallback) {
-                    window.portfolioApp._updateCallback.invokeMethodAsync('NotifyUpdateAvailable');
-                }
-            },
-
-            initScrollWatcher: function(dotnetRef) {
-                window.portfolioApp._dotnetScrollRef = dotnetRef;
-                window.addEventListener('scroll', () => {
-                    const scrolled = window.scrollY > 60;
-                    dotnetRef.invokeMethodAsync('OnScroll', scrolled);
-                }, { passive: true });
-            }
-        };
-    </script>
-</body>
-
+    <script src="_framework/blazor.webassembly.js?v=__CACHE_BUSTER__"></script>
+    <script src="./js/worker.js?v=__CACHE_BUSTER__"></script>
+    <script src="./background.js?v=__CACHE_BUSTER__"></script>
+  </body>
 </html>
-

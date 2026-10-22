@@ -97,7 +97,7 @@
     protected override async Task OnInitializedAsync()
     {
         AddTerminalOutput(Loc["Home_Welcome"]);
-        AddTerminalOutput(Loc["Home_Cmd_HelpHint"]);
+        @* AddTerminalOutput(Loc["Home_Cmd_HelpHint"]); *@
 
         var lang = System.Globalization.CultureInfo.CurrentUICulture.TwoLetterISOLanguageName;
         var data = await PortfolioSvc.GetPortfolioAsync(lang);
