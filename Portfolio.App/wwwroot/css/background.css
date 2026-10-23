@@ -14,13 +14,34 @@
         height: 100vh;
         margin: 0;
         background: hsla(0, 0%, 0%, 1);
-        opacity: 0.11;
+        opacity: 0.08;
       }
       div#app-layer div#app {
         position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
+        width: 100%;x
         height: 100%;
         overflow: scroll;
+      }
+
+      @media print {
+        body {
+          overflow: visible !important;
+          background: #fff !important;
+        }
+
+        div#app-layer {
+          height: auto !important;
+        }
+
+        div#app-layer canvas#canv {
+          display: none !important;
+        }
+
+        div#app-layer div#app {
+          position: static !important;
+          height: auto !important;
+          overflow: visible !important;
+        }
       }

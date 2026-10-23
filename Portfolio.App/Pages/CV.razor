@@ -6,158 +6,160 @@
 <PageTitle>@Loc["Nav_CV"] — mrApptastic</PageTitle>
 
 <section class="cv-section">
-    <div class="cv-container">
-        <div class="cv-actions">
-            <button class="cta-btn primary" @onclick="PrintCV">@Loc["CV_ExportPDF"]</button>
-        </div>
-
-        <div class="cv-header">
-            <img src="assets/Me.png" alt="Henrik Beske" class="cv-photo" />
-            <div class="cv-headline">
-                <h1>@Loc["CV_Name"]</h1>
-                <h2>@Loc["CV_Title"]</h2>
-                <p class="cv-location">@Loc["CV_Location"], @Loc["CV_Country"] | @Loc["CV_Industry"]</p>
-                @if (data?.Experiences?.Count > 0)
-                {
-                    <table class="cv-summary-table">
-                        <tr>
-                            <td class="cv-label">@Loc["CV_Current"]</td>
-                            <td>@data.Experiences[0].Place</td>
-                        </tr>
-                        @if (data.Experiences.Count > 1)
-                        {
-                            <tr>
-                                <td class="cv-label">@Loc["CV_Previous"]</td>
-                                <td>@data.Experiences[1].Place</td>
-                            </tr>
-                        }
-                        @if (data.Educations?.Count > 0)
-                        {
-                            <tr>
-                                <td class="cv-label">@Loc["CV_Education"]</td>
-                                <td>@string.Join(", ", data.Educations.Select(e => e.Name))</td>
-                            </tr>
-                        }
-                    </table>
-                }
+    <div class="section-container">
+        <div class="cv-container">
+            <div class="cv-actions">
+                <button class="cta-btn primary" @onclick="PrintCV">@Loc["CV_ExportPDF"]</button>
             </div>
-        </div>
 
-        <div class="cv-section-block">
-            <h3 class="cv-section-title">@Loc["CV_ShortDescription"]</h3>
-            <p>@Loc["CV_Description1"]</p>
-            <p>@Loc["CV_Description2"]</p>
-        </div>
-
-        @if (data == null)
-        {
-            <div class="loading-block">@Loc["CV_LoadingExperiences"]</div>
-        }
-        else
-        {
-            @if (data.Experiences?.Count > 0)
-            {
-                <div class="cv-section-block">
-                    <h3 class="cv-section-title">@Loc["CV_Experience"]</h3>
-                    @foreach (var (item, idx) in data.Experiences.Select((x, i) => (x, i)))
+            <div class="cv-header">
+                <img src="assets/Me.png" alt="Henrik Beske" class="cv-photo" />
+                <div class="cv-headline">
+                    <h1>@Loc["CV_Name"]</h1>
+                    <h2>@Loc["CV_Title"]</h2>
+                    <p class="cv-location">@Loc["CV_Location"], @Loc["CV_Country"] | @Loc["CV_Industry"]</p>
+                    @if (data?.Experiences?.Count > 0)
                     {
-                        <article class="cv-article">
-                            @if (!string.IsNullOrWhiteSpace(item.ImageUrl))
+                        <table class="cv-summary-table">
+                            <tr>
+                                <td class="cv-label">@Loc["CV_Current"]</td>
+                                <td>@data.Experiences[0].Place</td>
+                            </tr>
+                            @if (data.Experiences.Count > 1)
                             {
-                                <img class="cv-item-logo" src="@item.ImageUrl" alt="@item.Name" title="@item.Name" />
+                                <tr>
+                                    <td class="cv-label">@Loc["CV_Previous"]</td>
+                                    <td>@data.Experiences[1].Place</td>
+                                </tr>
                             }
-                            <h4>@item.Place</h4>
-                            <h5>@item.Name</h5>
-                            <p class="cv-time">@FormatDate(item.From, item.To)</p>
-                            <div>@((MarkupString)item.Description)</div>
-                            @if (idx < data.Experiences.Count - 1) { <hr /> }
-                        </article>
+                            @if (data.Educations?.Count > 0)
+                            {
+                                <tr>
+                                    <td class="cv-label">@Loc["CV_Education"]</td>
+                                    <td>@string.Join(", ", data.Educations.Select(e => e.Name))</td>
+                                </tr>
+                            }
+                        </table>
                     }
                 </div>
-            }
+            </div>
 
-            @if (data.Qualifications?.Count > 0)
+            <div class="cv-section-block">
+                <h3 class="cv-section-title">@Loc["CV_ShortDescription"]</h3>
+                <p>@Loc["CV_Description1"]</p>
+                <p>@Loc["CV_Description2"]</p>
+            </div>
+
+            @if (data == null)
             {
-                <div class="cv-section-block">
-                    <h3 class="cv-section-title">@Loc["CV_Skills"]</h3>
-                    <ul class="cv-skills-list">
-                        @foreach (var q in data.Qualifications)
+                <div class="loading-block">@Loc["CV_LoadingExperiences"]</div>
+            }
+            else
+            {
+                @if (data.Experiences?.Count > 0)
+                {
+                    <div class="cv-section-block">
+                        <h3 class="cv-section-title">@Loc["CV_Experience"]</h3>
+                        @foreach (var (item, idx) in data.Experiences.Select((x, i) => (x, i)))
                         {
-                            <li>@q.Name</li>
-                        }
-                    </ul>
-                </div>
-            }
-
-            @if (data.Educations?.Count > 0)
-            {
-                <div class="cv-section-block">
-                    <h3 class="cv-section-title">@Loc["CV_Education"]</h3>
-                    @foreach (var (item, idx) in data.Educations.Select((x, i) => (x, i)))
-                    {
-                        <article class="cv-article">
-                            @if (!string.IsNullOrWhiteSpace(item.ImageUrl))
-                            {
-                                <img class="cv-item-logo" src="@item.ImageUrl" alt="@item.Name" title="@item.Name" />
-                            }
-                            <h4>@item.Place</h4>
-                            <h5>@item.Name</h5>
-                            <div>@((MarkupString)item.Description)</div>
-                            @if (idx < data.Educations.Count - 1) { <hr /> }
-                        </article>
-                    }
-                </div>
-            }
-
-            @if (data.Certificates?.Count > 0)
-            {
-                <div class="cv-section-block">
-                    <h3 class="cv-section-title">@Loc["CV_Certificates"]</h3>
-                    @foreach (var (item, idx) in data.Certificates.Select((x, i) => (x, i)))
-                    {
-                        <article class="cv-article">
-                            @if (!string.IsNullOrWhiteSpace(item.ImageUrl))
-                            {
-                                <img class="cv-item-logo" src="@item.ImageUrl" alt="@item.Name" title="@item.Name" />
-                            }
-                            <h4>@item.Name</h4>
-                            <h5>@item.Place</h5>
-                            <div>@((MarkupString)item.Description)</div>
-                            @if (idx < data.Certificates.Count - 1) { <hr /> }
-                        </article>
-                    }
-                </div>
-            }
-
-            @if (data.Languages?.Count > 0)
-            {
-                <div class="cv-section-block">
-                    <h3 class="cv-section-title">@Loc["CV_Languages"]</h3>
-                    <div class="cv-grid-2">
-                        @foreach (var lang in data.Languages)
-                        {
-                            <div class="cv-lang-item">
-                                <h4>@lang.Name</h4>
-                                <p>@lang.Description</p>
-                            </div>
+                            <article class="cv-article">
+                                @if (!string.IsNullOrWhiteSpace(item.ImageUrl))
+                                {
+                                    <img class="cv-item-logo" src="@item.ImageUrl" alt="@item.Name" title="@item.Name" />
+                                }
+                                <h4>@item.Place</h4>
+                                <h5>@item.Name</h5>
+                                <p class="cv-time">@FormatDate(item.From, item.To)</p>
+                                <div>@((MarkupString)item.Description)</div>
+                                @if (idx < data.Experiences.Count - 1) { <hr /> }
+                            </article>
                         }
                     </div>
-                </div>
-            }
+                }
 
-            @if (data.Interests?.Count > 0)
-            {
-                <div class="cv-section-block">
-                    <h3 class="cv-section-title">@Loc["CV_Interests"]</h3>
-                    <ul class="cv-skills-list">
-                        @foreach (var interest in data.Interests)
+                @if (data.Qualifications?.Count > 0)
+                {
+                    <div class="cv-section-block">
+                        <h3 class="cv-section-title">@Loc["CV_Skills"]</h3>
+                        <ul class="cv-skills-list">
+                            @foreach (var q in data.Qualifications)
+                            {
+                                <li>@q.Name</li>
+                            }
+                        </ul>
+                    </div>
+                }
+
+                @if (data.Educations?.Count > 0)
+                {
+                    <div class="cv-section-block">
+                        <h3 class="cv-section-title">@Loc["CV_Education"]</h3>
+                        @foreach (var (item, idx) in data.Educations.Select((x, i) => (x, i)))
                         {
-                            <li>@interest.Name</li>
+                            <article class="cv-article">
+                                @if (!string.IsNullOrWhiteSpace(item.ImageUrl))
+                                {
+                                    <img class="cv-item-logo" src="@item.ImageUrl" alt="@item.Name" title="@item.Name" />
+                                }
+                                <h4>@item.Place</h4>
+                                <h5>@item.Name</h5>
+                                <div>@((MarkupString)item.Description)</div>
+                                @if (idx < data.Educations.Count - 1) { <hr /> }
+                            </article>
                         }
-                    </ul>
-                </div>
+                    </div>
+                }
+
+                @if (data.Certificates?.Count > 0)
+                {
+                    <div class="cv-section-block">
+                        <h3 class="cv-section-title">@Loc["CV_Certificates"]</h3>
+                        @foreach (var (item, idx) in data.Certificates.Select((x, i) => (x, i)))
+                        {
+                            <article class="cv-article">
+                                @if (!string.IsNullOrWhiteSpace(item.ImageUrl))
+                                {
+                                    <img class="cv-item-logo" src="@item.ImageUrl" alt="@item.Name" title="@item.Name" />
+                                }
+                                <h4>@item.Name</h4>
+                                <h5>@item.Place</h5>
+                                <div>@((MarkupString)item.Description)</div>
+                                @if (idx < data.Certificates.Count - 1) { <hr /> }
+                            </article>
+                        }
+                    </div>
+                }
+
+                @if (data.Languages?.Count > 0)
+                {
+                    <div class="cv-section-block">
+                        <h3 class="cv-section-title">@Loc["CV_Languages"]</h3>
+                        <div class="cv-grid-2">
+                            @foreach (var lang in data.Languages)
+                            {
+                                <div class="cv-lang-item">
+                                    <h4>@lang.Name</h4>
+                                    <p>@lang.Description</p>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                }
+
+                @if (data.Interests?.Count > 0)
+                {
+                    <div class="cv-section-block">
+                        <h3 class="cv-section-title">@Loc["CV_Interests"]</h3>
+                        <ul class="cv-skills-list">
+                            @foreach (var interest in data.Interests)
+                            {
+                                <li>@interest.Name</li>
+                            }
+                        </ul>
+                    </div>
+                }
             }
-        }
+        </div>
     </div>
 </section>
 
