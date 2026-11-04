@@ -1,0 +1,16 @@
+.hero-section {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas#oldSkool {
+    position: absolute;
+    inset: 0;
+    width: 400px;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    display: block;
+}
