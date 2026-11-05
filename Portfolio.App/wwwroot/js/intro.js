@@ -1,15 +1,8 @@
 var terminal = document.getElementById("oldSkool");
 
-// if (!terminal || !terminal.getContext) {
-//   return;
-// }
-
 var context = terminal.getContext("2d");
 terminal.width = 1024; // window.innerWidth;
 terminal.height = 1024;
-// terminal.style.display = "block";
-// terminal.style.position = "absolute";
-// terminal.style.inset = "0";
 terminal.style.width = "50%";
 terminal.style.height = "100%";
 terminal.style.pointerEvents = "none";
@@ -45,10 +38,10 @@ var CONFIG = {
 
   // Visual style
   fontFamily: "monospace", // any CSS font-family
-  fontSize: 20, // px — the ONE number that drives the layout
+  fontSize: 36, // px — the ONE number that drives the layout
   lineHeightMul: 1.4, // multiplier on fontSize -> line spacing
-  marginLeft: 100, // px from left edge
-  marginTop: 100, // px from top edge
+  marginLeft: 20, // px from left edge
+  marginTop: 20, // px from top edge
 
   // Cursor (the "caret" block)
   cursorWidthMul: 0.6, // × fontSize  -> cursor width
