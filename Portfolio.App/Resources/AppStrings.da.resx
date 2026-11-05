@@ -132,6 +132,18 @@
   <data name="Home_Cmd_Navigating" xml:space="preserve">
     <value>Navigerer til {0} ...</value>
   </data>
+  <data name="Home_Intro_Line1" xml:space="preserve">
+    <value>Hej, verden!</value>
+  </data>
+  <data name="Home_Intro_Line2" xml:space="preserve">
+    <value>Dette er en selvskrivende terminaleffekt.</value>
+  </data>
+  <data name="Home_Intro_Line3" xml:space="preserve">
+    <value>Alle størrelser nedenfor stammer fra FONT_SIZE.</value>
+  </data>
+  <data name="Home_Intro_Line4" xml:space="preserve">
+    <value>Prøv at ændre FONT_SIZE, så skalerer alt.</value>
+  </data>
   <!-- About page -->
   <data name="About_Intro1" xml:space="preserve">
     <value>Til dagligt er jeg Henrik Beske, et helt almindeligt familiemenneske.</value>

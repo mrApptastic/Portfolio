@@ -132,6 +132,18 @@
   <data name="Home_Cmd_Navigating" xml:space="preserve">
     <value>Navigating to {0} ...</value>
   </data>
+  <data name="Home_Intro_Line1" xml:space="preserve">
+    <value>Hello, world!</value>
+  </data>
+  <data name="Home_Intro_Line2" xml:space="preserve">
+    <value>This is a self-typing terminal effect.</value>
+  </data>
+  <data name="Home_Intro_Line3" xml:space="preserve">
+    <value>All sizes below are derived from FONT_SIZE.</value>
+  </data>
+  <data name="Home_Intro_Line4" xml:space="preserve">
+    <value>Try changing FONT_SIZE and everything scales.</value>
+  </data>
   <!-- About page -->
   <data name="About_Intro1" xml:space="preserve">
     <value>Normally, I am Henrik Beske, an ordinary family man.</value>

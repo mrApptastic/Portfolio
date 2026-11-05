@@ -1,14 +1,105 @@
 var terminal = document.getElementById("oldSkool");
+if (!terminal) {
+  throw new Error("Canvas #oldSkool was not found for intro.js.");
+}
 
 var context = terminal.getContext("2d");
-terminal.width = 1024; // window.innerWidth;
-terminal.height = 1024;
-terminal.style.width = "50%";
-terminal.style.height = "100%";
+var resume;
+var introLines = [];
+try {
+  var introLinesRaw = terminal.dataset.introLines;
+  if (introLinesRaw) {
+    var parsedIntroLines = JSON.parse(introLinesRaw);
+    if (Array.isArray(parsedIntroLines) && parsedIntroLines.every(function (line) {
+      return typeof line === "string";
+    })) {
+      introLines = parsedIntroLines;
+    } else {
+      console.error("Invalid intro lines in data-intro-lines. Expected string array.");
+    }
+  }
+} catch (error) {
+  console.error("Failed to parse data-intro-lines for intro.js.", error);
+}
+
+context.textBaseline = "top";
+context.font = "36px monospace";
+
+function wrapTextLine(line, maxWidth) {
+  if (!line) return [""];
+
+  var tokens = line.split(/(\s+)/);
+  var wrapped = [];
+  var current = "";
+
+  for (var i = 0; i < tokens.length; i++) {
+    var token = tokens[i];
+    if (!token) continue;
+
+    var candidate = current + token;
+    if (context.measureText(candidate).width <= maxWidth || current.length === 0) {
+      current = candidate;
+    } else {
+      wrapped.push(current);
+      current = token;
+    }
+  }
+
+  if (current) {
+    wrapped.push(current);
+  }
+
+  return wrapped.length > 0 ? wrapped : [""];
+}
+
+function buildRenderLines(lines) {
+  var viewportLimit = Math.max(220, window.innerWidth * 0.9);
+  var wrapped = [];
+
+  for (var i = 0; i < lines.length; i++) {
+    var line = lines[i];
+    if (line === "") {
+      wrapped.push("");
+      continue;
+    }
+
+    var pieces = wrapTextLine(line, viewportLimit);
+    for (var j = 0; j < pieces.length; j++) {
+      wrapped.push(pieces[j]);
+    }
+  }
+
+  return wrapped;
+}
+
+var renderLines = buildRenderLines(introLines.length > 0 ? introLines : []);
+
+var longestLine = "";
+for (var i = 0; i < renderLines.length; i++) {
+  if (context.measureText(renderLines[i]).width > context.measureText(longestLine).width) {
+    longestLine = renderLines[i];
+  }
+}
+
+var fontSize = 36;
+var lineHeight = fontSize * 1.4;
+var marginLeft = 20;
+var marginTop = 20;
+var canvasWidth = Math.max(240, Math.ceil(context.measureText(longestLine).width + marginLeft * 2 + 20));
+var canvasHeight = Math.ceil(renderLines.length * lineHeight + marginTop * 2 + 20);
+
+terminal.width = canvasWidth;
+terminal.height = canvasHeight;
+terminal.style.width = canvasWidth + "px";
+terminal.style.height = canvasHeight + "px";
 terminal.style.pointerEvents = "none";
 terminal.style.zIndex = "-1";
+terminal.style.display = "block";
+terminal.style.margin = "0 auto";
 
-var resume;
+var textBoxWidth = canvasWidth;
+var textBoxLeft = 0;
+
 function relay() {
   window.requestAnimationFrame(relay);
   resume();
@@ -20,28 +111,17 @@ function relay() {
 
 var CONFIG = {
   // What gets typed out. Each string = one line.
-  text: [
-    "Hello, world!",
-    "",
-    "This is a self-typing terminal effect.",
-    "All sizes below are derived from FONT_SIZE.",
-    "",
-    "Try changing FONT_SIZE and everything scales.",
-    "",
-    "   _.-'`'-._",
-    "  ;  _____  ;",
-    "  | |     | |",
-    "  | |     | |",
-    "  ; :_____: ;",
-    "   '-._____.-'",
-  ],
+  text: renderLines,
 
   // Visual style
+  // The canvas is sized to the widest rendered line, so it stays no wider than the text.
+  blockWidth: textBoxWidth,
+  blockLeft: textBoxLeft,
   fontFamily: "monospace", // any CSS font-family
-  fontSize: 36, // px — the ONE number that drives the layout
+  fontSize: fontSize, // px — the ONE number that drives the layout
   lineHeightMul: 1.4, // multiplier on fontSize -> line spacing
-  marginLeft: 20, // px from left edge
-  marginTop: 20, // px from top edge
+  marginLeft: marginLeft, // px from left edge
+  marginTop: marginTop, // px from top edge
 
   // Cursor (the "caret" block)
   cursorWidthMul: 0.6, // × fontSize  -> cursor width
@@ -80,8 +160,8 @@ var _s = CONFIG.text;
 var x = 0,
   y = 0;
 
-var w = (terminal.width = window.innerWidth);
-var h = (terminal.height = window.innerHeight);
+var w = terminal.width;
+var h = terminal.height;
 
 // db.style.margin = 0;
 // db.style.background = "transparent"; // "hsla(0,0%,0%,1)";
@@ -108,10 +188,11 @@ resume = function () {
   context.globalCompositeOperation = "lighter";
 
   // 3. Draw all completed lines + partial current line
+  var textX = CONFIG.blockLeft + CONFIG.marginLeft;
   for (var i = 0; i <= y && i < _s.length; i++) {
     var t = _s[i];
     if (i === y) t = t.substr(0, x);
-    context.fillText(t, CONFIG.marginLeft, CONFIG.marginTop + i * LINE_H);
+    context.fillText(t, textX, CONFIG.marginTop + i * LINE_H);
   }
 
   // 4. Cursor block right after the last typed char
@@ -119,7 +200,7 @@ resume = function () {
     context.fillStyle = "hsla(" + CONFIG.cursorHue + ",100%,50%,1)";
     var typed = _s[y].substr(0, x);
     context.fillRect(
-      CONFIG.marginLeft + context.measureText(typed).width + CONFIG.cursorOffsetX,
+      textX + context.measureText(typed).width + CONFIG.cursorOffsetX,
       CONFIG.marginTop + y * LINE_H + CONFIG.cursorOffsetY,
       CURSOR_W,
       CURSOR_H,
