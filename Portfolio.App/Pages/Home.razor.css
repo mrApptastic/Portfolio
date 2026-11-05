@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-canvas#oldSkool {
+canvas#oldTerminal {
     position: absolute;
     inset: 0;
     width: 400px;
