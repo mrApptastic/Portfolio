@@ -1,0 +1,28 @@
+@inject IJSRuntime JS
+
+<a @ref="_link"
+   href="#"
+   class="@CssClass"
+   data-contact-kind="@Kind"
+   aria-label="@AriaLabel"
+   rel="@Rel">
+    @PlaceholderText
+</a>
+
+@code {
+    [Parameter] public string Kind { get; set; } = "email";
+    [Parameter] public string CssClass { get; set; } = string.Empty;
+    [Parameter] public string PlaceholderText { get; set; } = "Email";
+    [Parameter] public string AriaLabel { get; set; } = "Contact";
+    [Parameter] public string Rel { get; set; } = string.Empty;
+
+    private ElementReference _link;
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        if (firstRender)
+        {
+            await JS.InvokeVoidAsync("portfolioContact.apply", _link, Kind);
+        }
+    }
+}

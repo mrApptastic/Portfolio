@@ -136,7 +136,8 @@ public class PortfolioTests : PageTest
         await Page.GotoAsync($"{BaseUrl}/contact");
         await Page.WaitForSelectorAsync(".contact-card", new() { Timeout = 15000 });
 
-        var emailLink = await Page.QuerySelectorAsync("a[href='mailto:henrikbeske@gmail.com']");
+        await Page.WaitForFunctionAsync("() => document.querySelector('a[href^=\"mailto:\"]') !== null");
+        var emailLink = await Page.QuerySelectorAsync("a[href^='mailto:']");
         Assert.That(emailLink, Is.Not.Null, "Contact page should have an email mailto link");
     }
 
@@ -146,7 +147,8 @@ public class PortfolioTests : PageTest
         await Page.GotoAsync($"{BaseUrl}/contact");
         await Page.WaitForSelectorAsync(".contact-card", new() { Timeout = 15000 });
 
-        var phoneLink = await Page.QuerySelectorAsync("a[href='tel:+4524497555']");
+        await Page.WaitForFunctionAsync("() => document.querySelector('a[href^=\"tel:\"]') !== null");
+        var phoneLink = await Page.QuerySelectorAsync("a[href^='tel:']");
         Assert.That(phoneLink, Is.Not.Null, "Contact page should have a phone tel link");
     }
 

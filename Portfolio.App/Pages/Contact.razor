@@ -6,6 +6,17 @@
 <section class="contact-section">
     <div class="section-container">
         <h1 class="section-title">@Loc["Contact_Title"]</h1>
+        <div class="about-hero">
+            <div class="about-image-wrapper">
+                <img src="assets/Himself.png" alt="mrApptastic" class="about-character" />
+                <img src="assets/Me.png" alt="Henrik Beske" class="about-photo" />
+            </div>
+            <div class="about-text">
+                <h2 class="about-title">Henrik <span class="accent">Beske</span></h2>
+                <p class="about-intro">@Loc["About_Intro1"]</p>
+                <p class="about-intro">@Loc["About_Intro2"]</p>
+            </div>
+        </div>
 
         <div class="contact-card">
             <div class="contact-info">
@@ -13,14 +24,14 @@
                     <div class="contact-icon">✉️</div>
                     <div>
                         <p class="contact-label">@Loc["Contact_EmailLabel"]</p>
-                        <a href="mailto:henrikbeske@gmail.com" class="contact-link">henrikbeske@gmail.com</a>
+                        <ProtectedContactLink Kind="email" CssClass="contact-link" PlaceholderText="Email" AriaLabel="Email address" />
                     </div>
                 </div>
                 <div class="contact-item">
                     <div class="contact-icon">📱</div>
                     <div>
                         <p class="contact-label">@Loc["Contact_PhoneLabel"]</p>
-                        <a href="tel:+4524497555" class="contact-link">(+45) 24 49 75 55</a>
+                        <ProtectedContactLink Kind="phone" CssClass="contact-link" PlaceholderText="Phone" AriaLabel="Phone number" />
                     </div>
                 </div>
             </div>

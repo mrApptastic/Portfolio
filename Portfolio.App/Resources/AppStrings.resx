@@ -54,157 +54,160 @@
   </resheader>
   <!-- Navigation -->
   <data name="Nav_Home" xml:space="preserve">
-    <value>Forside</value>
+    <value>Home</value>
   </data>
   <data name="Nav_About" xml:space="preserve">
-    <value>Om mig</value>
+    <value>About me</value>
   </data>
   <data name="Nav_Projects" xml:space="preserve">
-    <value>Projekter</value>
+    <value>Projects</value>
   </data>
   <data name="Nav_Contact" xml:space="preserve">
-    <value>Kontakt</value>
+    <value>Contact</value>
   </data>
   <data name="Nav_CV" xml:space="preserve">
     <value>CV</value>
   </data>
   <!-- Home page -->
   <data name="Home_Greeting" xml:space="preserve">
-    <value>Hej med jer!</value>
+    <value>Hello there!</value>
   </data>
   <data name="Home_Title" xml:space="preserve">
-    <value>Henriks Portfolio</value>
+    <value>Henrik's Portfolio</value>
   </data>
   <data name="Home_Tagline" xml:space="preserve">
-    <value>Jeg er nemlig ikke ligesom de andre udviklere.</value>
+    <value>Because I am not like the other developers.</value>
   </data>
   <data name="Home_LookAround" xml:space="preserve">
-    <value>Tag et kig eller to og se jer lidt omkring.</value>
+    <value>Take a look around - perhaps even two.</value>
   </data>
   <data name="Home_Welcome" xml:space="preserve">
-    <value>Velkommen til mit portfolio.</value>
+    <value>Welcome to my portfolio site.</value>
   </data>
   <data name="Home_ExploreWork" xml:space="preserve">
-    <value>Udforsk mit arbejde</value>
+    <value>Explore my work</value>
   </data>
   <data name="Home_ScrollDown" xml:space="preserve">
-    <value>Scroll ned</value>
+    <value>Scroll down</value>
   </data>
   <data name="Home_FeaturedWork" xml:space="preserve">
-    <value>Udvalgt Arbejde</value>
+    <value>Featured Work</value>
   </data>
   <data name="Home_ViewAllProjects" xml:space="preserve">
-    <value>Se alle projekter</value>
+    <value>View all projects</value>
   </data>
   <data name="Home_GetInTouch" xml:space="preserve">
-    <value>Tag fat i mig</value>
+    <value>Get in touch</value>
   </data>
   <data name="Home_TerminalTitle" xml:space="preserve">
     <value>mrApptastic ~ portfolio</value>
   </data>
   <data name="Home_CommandPlaceholder" xml:space="preserve">
-    <value>Skriv en kommando (help)</value>
+    <value>Type a command (help)</value>
   </data>
   <data name="Home_Cmd_HelpHint" xml:space="preserve">
-    <value>Skriv "help" for at se kommandoer.</value>
+    <value>Type "help" to list commands.</value>
   </data>
   <data name="Home_Cmd_HelpOutput" xml:space="preserve">
-    <value>Kommandoer: help, whoami, about, skills, contact, clear, go [home|about|cv|projects|contact]</value>
+    <value>Commands: help, whoami, about, skills, contact, clear, go [home|about|cv|projects|contact]</value>
   </data>
   <data name="Home_Cmd_WhoAmIOutput" xml:space="preserve">
-    <value>Henrik Beske (mrApptastic) — softwareudvikler med fokus på web og mobile løsninger.</value>
+    <value>Henrik Beske (mrApptastic) — software developer focused on web and mobile solutions.</value>
   </data>
   <data name="Home_Cmd_AboutOutput" xml:space="preserve">
-    <value>Jeg bygger moderne apps med .NET, C#, Blazor, Angular og cloud-teknologier.</value>
+    <value>I build modern apps with .NET, C#, Blazor, Angular, and cloud technologies.</value>
   </data>
   <data name="Home_Cmd_SkillsOutput" xml:space="preserve">
-    <value>Kompetencer: C#, .NET, Blazor, Angular, TypeScript, REST API'er, SQL, Azure.</value>
+    <value>Skills: C#, .NET, Blazor, Angular, TypeScript, REST APIs, SQL, Azure.</value>
   </data>
   <data name="Home_Cmd_ContactOutput" xml:space="preserve">
-    <value>Kontakt: henrikbeske@gmail.com | (+45) 24 49 75 55</value>
+    <value>Contact: henrikbeske@gmail.com | (+45) 24 49 75 55</value>
   </data>
   <data name="Home_Cmd_Unknown" xml:space="preserve">
-    <value>Ukendt kommando: {0}. Skriv "help".</value>
+    <value>Unknown command: {0}. Type "help".</value>
   </data>
   <data name="Home_Cmd_UnknownRoute" xml:space="preserve">
-    <value>Ukendt side: {0}. Brug home, about, cv, projects eller contact.</value>
+    <value>Unknown route: {0}. Use home, about, cv, projects, or contact.</value>
   </data>
   <data name="Home_Cmd_Navigating" xml:space="preserve">
-    <value>Navigerer til {0} ...</value>
+    <value>Navigating to {0} ...</value>
   </data>
   <data name="Home_Intro_Line1" xml:space="preserve">
-    <value>Hej, verden!</value>
+    <value>I am used to taking responsibility for making sure tasks are completed in a busy day full of complex requirements. It can involve anything from legislation, new technology that I need to learn, and legacy technology that must be kept running and updated, to customer requests that do not always fit neatly into the existing applications or the needs of other customers. And then there are, of course, the unexpected firefighting manoeuvres that can suddenly arise and require rapid adjustment. This is all part of everyday life in many busy software companies – and something I am used to navigating.</value>
   </data>
   <data name="Home_Intro_Line2" xml:space="preserve">
-    <value>Dette er en selvskrivende terminaleffekt.</value>
+    <value>My current specialisation lies in the scope of .NET and web applications, an area in which I have gradually built a particularly broad toolkit. I have been working with .NET since ASP.NET Web Forms and have, for the most part, worked with almost every type of web application in the .NET world, all the way up to modern web apps in Blazor.</value>
   </data>
   <data name="Home_Intro_Line3" xml:space="preserve">
-    <value>Alle størrelser nedenfor stammer fra FONT_SIZE.</value>
+    <value>It is great to be part of solving complex technical challenges, and I see one of my primary strengths as being very good at learning new things. The journey away from ignorance is one I have undertaken many times in my life, and I intend to continue that journey until my final breath, as I am a true knowledge collector.</value>
   </data>
   <data name="Home_Intro_Line4" xml:space="preserve">
-    <value>Prøv at ændre FONT_SIZE, så skalerer alt.</value>
+    <value>The systems I develop should be valuable and intuitive for users, while the code I write should also be understandable and maintainable for my colleagues.</value>
+  </data>
+  <data name="Home_Intro_Line5" xml:space="preserve">
+    <value>Thank you for reading so far! That is why you are rewarded with a little ASCII art:</value>
   </data>
   <!-- About page -->
   <data name="About_Intro1" xml:space="preserve">
-    <value>Til dagligt er jeg Henrik Beske, et helt almindeligt familiemenneske.</value>
+    <value>Normally, I am Henrik Beske, an ordinary family man.</value>
   </data>
   <data name="About_Intro2" xml:space="preserve">
-    <value>Men idet jeg tager afsted til arbejde, forvandler jeg mig til mrApptastic, en superheroisk webudvikler med gazelleblod fossende gennem blodbanerne.</value>
+    <value>But when I head off to work, I transform myself into mrApptastic, a superheroic web developer with gazelle blood gushing through the veins.</value>
   </data>
   <!-- CV page -->
   <data name="CV_Name" xml:space="preserve">
     <value>Henrik Beske</value>
   </data>
   <data name="CV_Title" xml:space="preserve">
-    <value>Softwareudvikler</value>
+    <value>Software Developer</value>
   </data>
   <data name="CV_Location" xml:space="preserve">
-    <value>Nordjylland</value>
+    <value>Northern Jutland</value>
   </data>
   <data name="CV_Country" xml:space="preserve">
-    <value>Danmark</value>
+    <value>Denmark</value>
   </data>
   <data name="CV_Industry" xml:space="preserve">
     <value>Software</value>
   </data>
   <data name="CV_Current" xml:space="preserve">
-    <value>Nuværende</value>
+    <value>Current</value>
   </data>
   <data name="CV_Previous" xml:space="preserve">
-    <value>Forrige</value>
+    <value>Previous</value>
   </data>
   <data name="CV_Education" xml:space="preserve">
-    <value>Uddannelse</value>
+    <value>Education</value>
   </data>
   <data name="CV_ShortDescription" xml:space="preserve">
-    <value>Kort Beskrivelse</value>
+    <value>Short description</value>
   </data>
   <data name="CV_Description1" xml:space="preserve">
-    <value>Jeg er en kompetent softwareudvikler med en præference i retning af webudvikling samt udvikling til mobile enheder. Endvidere har jeg erfaring fra flere andre områder - såsom desktop applikationsudvikling, og udvikling til indlejrede enheder.</value>
+    <value>I am a competent software developer with a preference towards web development as well as development for mobile devices. Furthermore, I have experience from several other areas - such as desktop application development, and development for embedded devices.</value>
   </data>
   <data name="CV_Description2" xml:space="preserve">
-    <value>Desuden er jeg af den opfattelse, at jeg er en innovativ person med mange idéer. Jeg er en teknisk kompetent, dedikeret person, som bliver ved med at arbejde indtil arbejdet er gjort. Jeg arbejder fint både i grupper og individuelt. Kort sagt er jeg en type person, der ser muligheder fremfor barrierer foran mig.</value>
+    <value>In addition, I am of the opinion that I am an innovative person with many ideas. I am a technically competent, dedicated person who keeps working until the work is done. I work fine both in groups and individually. In short, I am a type of person who sees opportunities rather than barriers in front of me.</value>
   </data>
   <data name="CV_Experience" xml:space="preserve">
-    <value>Erfaring</value>
+    <value>Experience</value>
   </data>
   <data name="CV_Skills" xml:space="preserve">
-    <value>Kompetencer</value>
+    <value>Skills</value>
   </data>
   <data name="CV_Certificates" xml:space="preserve">
-    <value>Certifikater</value>
+    <value>Certificates</value>
   </data>
   <data name="CV_Projects" xml:space="preserve">
-    <value>Projekter</value>
+    <value>Projects</value>
   </data>
   <data name="CV_Languages" xml:space="preserve">
-    <value>Sprog</value>
+    <value>Languages</value>
   </data>
   <data name="CV_Interests" xml:space="preserve">
-    <value>Interesser</value>
+    <value>Interests</value>
   </data>
   <data name="CV_ExportPDF" xml:space="preserve">
-    <value>Gem PDF</value>
+    <value>Export PDF</value>
   </data>
   <data name="CV_Phone" xml:space="preserve">
     <value>(+45) 24 49 75 55</value>
@@ -213,70 +216,70 @@
     <value>henrikbeske@gmail.com</value>
   </data>
   <data name="CV_LoadingExperiences" xml:space="preserve">
-    <value>Henter erhvervserfaring...</value>
+    <value>Loading work experience...</value>
   </data>
   <data name="CV_LoadingSkills" xml:space="preserve">
-    <value>Henter kompetencer...</value>
+    <value>Loading skills...</value>
   </data>
   <data name="CV_LoadingEducations" xml:space="preserve">
-    <value>Henter uddannelser...</value>
+    <value>Loading educations...</value>
   </data>
   <data name="CV_LoadingCertificates" xml:space="preserve">
-    <value>Henter certifikater...</value>
+    <value>Loading certificates...</value>
   </data>
   <data name="CV_LoadingLanguages" xml:space="preserve">
-    <value>Henter sprog...</value>
+    <value>Loading languages...</value>
   </data>
   <data name="CV_LoadingInterests" xml:space="preserve">
-    <value>Henter interesser...</value>
+    <value>Loading interests...</value>
   </data>
   <!-- Projects page -->
   <data name="Projects_Title" xml:space="preserve">
-    <value>Projekter</value>
+    <value>Projects</value>
   </data>
   <data name="Projects_Loading" xml:space="preserve">
-    <value>Henter projekter...</value>
+    <value>Loading projects...</value>
   </data>
   <data name="Projects_Empty" xml:space="preserve">
-    <value>Ingen projekter fundet.</value>
+    <value>No projects found.</value>
   </data>
   <data name="Projects_LinkDemo" xml:space="preserve">
     <value>Demo</value>
   </data>
   <data name="Projects_LinkSource" xml:space="preserve">
-    <value>Kilde</value>
+    <value>Source</value>
   </data>
   <data name="Projects_LinkDocs" xml:space="preserve">
-    <value>Dokumentation</value>
+    <value>Docs</value>
   </data>
   <!-- Contact page -->
   <data name="Contact_Title" xml:space="preserve">
-    <value>Kontakt</value>
+    <value>Contact</value>
   </data>
   <data name="Contact_EmailLabel" xml:space="preserve">
     <value>E-mail</value>
   </data>
   <data name="Contact_PhoneLabel" xml:space="preserve">
-    <value>Telefonnummer</value>
+    <value>Phone number</value>
   </data>
   <!-- Not found page -->
   <data name="NotFound_Title" xml:space="preserve">
-    <value>Ikke fundet</value>
+    <value>Not found</value>
   </data>
   <data name="NotFound_Message" xml:space="preserve">
-    <value>Beklager, indholdet du leder efter findes ikke.</value>
+    <value>Sorry, the content you are looking for does not exist.</value>
   </data>
   <!-- General -->
   <data name="General_Loading" xml:space="preserve">
-    <value>Indlæser...</value>
+    <value>Loading...</value>
   </data>
   <data name="General_Current" xml:space="preserve">
-    <value>Nuværende</value>
+    <value>Current</value>
   </data>
   <data name="General_UpdateAvailable" xml:space="preserve">
-    <value>En ny version er tilgængelig!</value>
+    <value>A new version is available!</value>
   </data>
   <data name="General_UpdateNow" xml:space="preserve">
-    <value>Opdater nu</value>
+    <value>Update now</value>
   </data>
 </root>

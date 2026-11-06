@@ -133,16 +133,19 @@
     <value>Navigerer til {0} ...</value>
   </data>
   <data name="Home_Intro_Line1" xml:space="preserve">
-    <value>Hej, verden!</value>
+    <value>Jeg er vant til at tage ansvar for, at opgaverne bliver gennemført i en hverdag fyldt med komplekse krav. Det kan være alt fra lovgivning, ny teknologi, som jeg skal sætte mig ind i, og gammel teknologi, der skal holdes i live og opdateres, til kundeønsker, der ikke altid passer lige så godt ind i de eksisterende applikationer eller i andre kunders behov. Og så er der selvfølgelig de uforudsete brandslukningsmanøvrer, der pludselig kan opstå og kræver, at man kan omstille sig hurtigt. Det er alt sammen en del af hverdagen i mange travle softwarevirksomheder – og noget, jeg er vant til at navigere i.</value>
   </data>
   <data name="Home_Intro_Line2" xml:space="preserve">
-    <value>Dette er en selvskrivende terminaleffekt.</value>
+    <value>Min specialisering ligger aktuelt inden for .NET- og webapplikationer, hvor jeg gennem årene har opbygget et særdeles bredt værktøjssæt. Jeg har arbejdet med .NET siden ASP.NET Web Forms og har stort set været med i alle former for webapplikationer i .NET-verdenen helt frem til moderne webapps i Blazor.</value>
   </data>
   <data name="Home_Intro_Line3" xml:space="preserve">
-    <value>Alle størrelser nedenfor stammer fra FONT_SIZE.</value>
+    <value>Det er fedt at være med til at løse komplekse tekniske udfordringer, og jeg ser det som en af mine primære styrker, at jeg er rigtig god til at lære nye ting. Rejsen væk fra uvidenhed har jeg efterhånden foretaget mange gange i mit liv, og den rejse vil jeg fortsætte indtil mit sidste åndedrag, fordi jeg er en udpræget videnssamler.</value>
   </data>
   <data name="Home_Intro_Line4" xml:space="preserve">
-    <value>Prøv at ændre FONT_SIZE, så skalerer alt.</value>
+    <value>Systemer, jeg udvikler, skal være værdifulde og intuitive for brugerne, samtidig med at den kode, jeg skriver, skal være forståelig og vedligeholdbar for mine kollegaer.</value>
+  </data>
+  <data name="Home_Intro_Line5" xml:space="preserve">
+    <value>Tak fordi du læste med så langt! Derfor belønnes du med lidt ASCII-art:</value>
   </data>
   <!-- About page -->
   <data name="About_Intro1" xml:space="preserve">
