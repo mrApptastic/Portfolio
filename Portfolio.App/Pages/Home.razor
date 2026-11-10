@@ -2,6 +2,7 @@
 @inject IStringLocalizer<AppStrings> Loc
 @inject IPortfolioService PortfolioSvc
 @inject NavigationManager Nav
+@inject IJSRuntime JS
 
 <PageTitle>Henrik Beske — @Loc["Home_Title"]</PageTitle>
 
@@ -13,18 +14,35 @@
 @code {
     private string IntroLinesJson => System.Text.Json.JsonSerializer.Serialize(new[]
     {
-        Loc["Home_Intro_Line1"].Value,
-        Loc["Home_Intro_Line2"].Value,
-        Loc["Home_Intro_Line3"].Value,
-        Loc["Home_Intro_Line4"].Value,
-        Loc["Home_Intro_Line5"].Value,
+        Loc["Home_Greeting"].Value,
+        Loc["Home_Welcome"].Value,
+        Loc["Home_LookAround"].Value,
+        Loc["Home_Tagline"].Value,
         string.Empty,
-        "   _.-'`'-._",
-        "  ;  _____  ;",
-        "  | |     | |",
-        "  | |     | |",
-        "  ; :_____: ;",
-        "  '-._____.-'"
+        Loc["Home_ASCII_Reward"].Value,
+        string.Empty,
+        "           ,-~~-.___.",
+        "          / ()=(()   \\",
+        "         (   (        0",
+        "          \\._\\, ,----'",
+        "     ##XXXxxxxxxx",
+        "            /  ---'~;",
+        "           /    /~|-",
+        "         =(   ~~  |",
+        "   /~~~~~~~~~~~~~~~~~~~~~\\",
+        "  /_______________________\\",
+        " /_________________________\\",
+        "/___________________________\\ ",
+        "   |____________________|",
+        "   |____________________|",
+        "   |____________________|",
+        "   |                    |",
+        "    "
     });
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+        await JS.InvokeVoidAsync("initIntroTerminal");
+    }
 }
 

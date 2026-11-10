@@ -69,90 +69,23 @@
     <value>CV</value>
   </data>
   <!-- Home page -->
-  <data name="Home_Greeting" xml:space="preserve">
-    <value>Hej med jer!</value>
-  </data>
   <data name="Home_Title" xml:space="preserve">
     <value>Henriks Portfolio</value>
   </data>
-  <data name="Home_Tagline" xml:space="preserve">
-    <value>Jeg er nemlig ikke ligesom de andre udviklere.</value>
+  <data name="Home_Greeting" xml:space="preserve">
+    <value>Hej med jer!</value>
+  </data>
+    <data name="Home_Welcome" xml:space="preserve">
+    <value>Velkommen til mit portfolio.</value>
   </data>
   <data name="Home_LookAround" xml:space="preserve">
     <value>Tag et kig eller to og se jer lidt omkring.</value>
   </data>
-  <data name="Home_Welcome" xml:space="preserve">
-    <value>Velkommen til mit portfolio.</value>
+  <data name="Home_Tagline" xml:space="preserve">
+    <value>Jeg er nemlig ikke ligesom de andre udviklere.</value>
   </data>
-  <data name="Home_ExploreWork" xml:space="preserve">
-    <value>Udforsk mit arbejde</value>
-  </data>
-  <data name="Home_ScrollDown" xml:space="preserve">
-    <value>Scroll ned</value>
-  </data>
-  <data name="Home_FeaturedWork" xml:space="preserve">
-    <value>Udvalgt Arbejde</value>
-  </data>
-  <data name="Home_ViewAllProjects" xml:space="preserve">
-    <value>Se alle projekter</value>
-  </data>
-  <data name="Home_GetInTouch" xml:space="preserve">
-    <value>Tag fat i mig</value>
-  </data>
-  <data name="Home_TerminalTitle" xml:space="preserve">
-    <value>mrApptastic ~ portfolio</value>
-  </data>
-  <data name="Home_CommandPlaceholder" xml:space="preserve">
-    <value>Skriv en kommando (help)</value>
-  </data>
-  <data name="Home_Cmd_HelpHint" xml:space="preserve">
-    <value>Skriv "help" for at se kommandoer.</value>
-  </data>
-  <data name="Home_Cmd_HelpOutput" xml:space="preserve">
-    <value>Kommandoer: help, whoami, about, skills, contact, clear, go [home|about|cv|projects|contact]</value>
-  </data>
-  <data name="Home_Cmd_WhoAmIOutput" xml:space="preserve">
-    <value>Henrik Beske (mrApptastic) — softwareudvikler med fokus på web og mobile løsninger.</value>
-  </data>
-  <data name="Home_Cmd_AboutOutput" xml:space="preserve">
-    <value>Jeg bygger moderne apps med .NET, C#, Blazor, Angular og cloud-teknologier.</value>
-  </data>
-  <data name="Home_Cmd_SkillsOutput" xml:space="preserve">
-    <value>Kompetencer: C#, .NET, Blazor, Angular, TypeScript, REST API'er, SQL, Azure.</value>
-  </data>
-  <data name="Home_Cmd_ContactOutput" xml:space="preserve">
-    <value>Kontakt: henrikbeske@gmail.com | (+45) 24 49 75 55</value>
-  </data>
-  <data name="Home_Cmd_Unknown" xml:space="preserve">
-    <value>Ukendt kommando: {0}. Skriv "help".</value>
-  </data>
-  <data name="Home_Cmd_UnknownRoute" xml:space="preserve">
-    <value>Ukendt side: {0}. Brug home, about, cv, projects eller contact.</value>
-  </data>
-  <data name="Home_Cmd_Navigating" xml:space="preserve">
-    <value>Navigerer til {0} ...</value>
-  </data>
-  <data name="Home_Intro_Line1" xml:space="preserve">
-    <value>Jeg er vant til at tage ansvar for, at opgaverne bliver gennemført i en hverdag fyldt med komplekse krav. Det kan være alt fra lovgivning, ny teknologi, som jeg skal sætte mig ind i, og gammel teknologi, der skal holdes i live og opdateres, til kundeønsker, der ikke altid passer lige så godt ind i de eksisterende applikationer eller i andre kunders behov. Og så er der selvfølgelig de uforudsete brandslukningsmanøvrer, der pludselig kan opstå og kræver, at man kan omstille sig hurtigt. Det er alt sammen en del af hverdagen i mange travle softwarevirksomheder – og noget, jeg er vant til at navigere i.</value>
-  </data>
-  <data name="Home_Intro_Line2" xml:space="preserve">
-    <value>Min specialisering ligger aktuelt inden for .NET- og webapplikationer, hvor jeg gennem årene har opbygget et særdeles bredt værktøjssæt. Jeg har arbejdet med .NET siden ASP.NET Web Forms og har stort set været med i alle former for webapplikationer i .NET-verdenen helt frem til moderne webapps i Blazor.</value>
-  </data>
-  <data name="Home_Intro_Line3" xml:space="preserve">
-    <value>Det er fedt at være med til at løse komplekse tekniske udfordringer, og jeg ser det som en af mine primære styrker, at jeg er rigtig god til at lære nye ting. Rejsen væk fra uvidenhed har jeg efterhånden foretaget mange gange i mit liv, og den rejse vil jeg fortsætte indtil mit sidste åndedrag, fordi jeg er en udpræget videnssamler.</value>
-  </data>
-  <data name="Home_Intro_Line4" xml:space="preserve">
-    <value>Systemer, jeg udvikler, skal være værdifulde og intuitive for brugerne, samtidig med at den kode, jeg skriver, skal være forståelig og vedligeholdbar for mine kollegaer.</value>
-  </data>
-  <data name="Home_Intro_Line5" xml:space="preserve">
-    <value>Tak fordi du læste med så langt! Derfor belønnes du med lidt ASCII-art:</value>
-  </data>
-  <!-- About page -->
-  <data name="About_Intro1" xml:space="preserve">
-    <value>Til dagligt er jeg Henrik Beske, et helt almindeligt familiemenneske.</value>
-  </data>
-  <data name="About_Intro2" xml:space="preserve">
-    <value>Men idet jeg tager afsted til arbejde, forvandler jeg mig til mrApptastic, en superheroisk webudvikler med gazelleblod fossende gennem blodbanerne.</value>
+  <data name="Home_ASCII_Reward" xml:space="preserve">
+    <value>Tak fordi du læste med så langt! Derfor belønnes I med lidt ASCII-art:</value>
   </data>
   <!-- CV page -->
   <data name="CV_Name" xml:space="preserve">
@@ -182,6 +115,18 @@
   <data name="CV_ShortDescription" xml:space="preserve">
     <value>Kort Beskrivelse</value>
   </data>
+  <data name="CV_Intro_Line1" xml:space="preserve">
+    <value>Jeg er vant til at tage ansvar for, at opgaverne bliver gennemført i en hverdag fyldt med komplekse krav. Det kan være alt fra lovgivning, ny teknologi, som jeg skal sætte mig ind i, og gammel teknologi, der skal holdes i live og opdateres, til kundeønsker, der ikke altid passer lige så godt ind i de eksisterende applikationer eller i andre kunders behov. Og så er der selvfølgelig de uforudsete brandslukningsmanøvrer, der pludselig kan opstå og kræver, at man kan omstille sig hurtigt. Det er alt sammen en del af hverdagen i mange travle softwarevirksomheder – og noget, jeg er vant til at navigere i.</value>
+  </data>
+  <data name="CV_Intro_Line2" xml:space="preserve">
+    <value>Min specialisering ligger aktuelt inden for .NET- og webapplikationer, hvor jeg gennem årene har opbygget et særdeles bredt værktøjssæt. Jeg har arbejdet med .NET siden ASP.NET Web Forms og har stort set været med i alle former for webapplikationer i .NET-verdenen helt frem til moderne webapps i Blazor.</value>
+  </data>
+  <data name="CV_Intro_Line3" xml:space="preserve">
+    <value>Det er fedt at være med til at løse komplekse tekniske udfordringer, og jeg ser det som en af mine primære styrker, at jeg er rigtig god til at lære nye ting. Rejsen væk fra uvidenhed har jeg efterhånden foretaget mange gange i mit liv, og den rejse vil jeg fortsætte indtil mit sidste åndedrag, fordi jeg er en udpræget videnssamler.</value>
+  </data>
+  <data name="CV_Intro_Line4" xml:space="preserve">
+    <value>Systemer, jeg udvikler, skal være værdifulde og intuitive for brugerne, samtidig med at den kode, jeg skriver, skal være forståelig og vedligeholdbar for mine kollegaer.</value>
+  </data>
   <data name="CV_Description1" xml:space="preserve">
     <value>Jeg er en kompetent softwareudvikler med en præference i retning af webudvikling samt udvikling til mobile enheder. Endvidere har jeg erfaring fra flere andre områder - såsom desktop applikationsudvikling, og udvikling til indlejrede enheder.</value>
   </data>
@@ -208,12 +153,6 @@
   </data>
   <data name="CV_ExportPDF" xml:space="preserve">
     <value>Gem PDF</value>
-  </data>
-  <data name="CV_Phone" xml:space="preserve">
-    <value>(+45) 24 49 75 55</value>
-  </data>
-  <data name="CV_Email" xml:space="preserve">
-    <value>henrikbeske@gmail.com</value>
   </data>
   <data name="CV_LoadingExperiences" xml:space="preserve">
     <value>Henter erhvervserfaring...</value>
@@ -255,6 +194,12 @@
   <!-- Contact page -->
   <data name="Contact_Title" xml:space="preserve">
     <value>Kontakt</value>
+  </data>
+  <data name="Contact_Intro1" xml:space="preserve">
+    <value>Til hverdag er jeg et helt almindeligt menneske.</value>
+  </data>
+  <data name="Contact_Intro2" xml:space="preserve">
+    <value>Men når jeg tager på arbejde, forvandler jeg mig til en superheroisk webudvikler med gazelleblod fossende gennem blodbanerne.</value>
   </data>
   <data name="Contact_EmailLabel" xml:space="preserve">
     <value>E-mail</value>

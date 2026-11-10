@@ -69,90 +69,23 @@
     <value>CV</value>
   </data>
   <!-- Home page -->
-  <data name="Home_Greeting" xml:space="preserve">
-    <value>Hello there!</value>
-  </data>
   <data name="Home_Title" xml:space="preserve">
     <value>Henrik's Portfolio</value>
   </data>
-  <data name="Home_Tagline" xml:space="preserve">
-    <value>Because I am not like the other developers.</value>
+  <data name="Home_Greeting" xml:space="preserve">
+    <value>Hello there!</value>
+  </data>
+  <data name="Home_Welcome" xml:space="preserve">
+    <value>Welcome to my portfolio.</value>
   </data>
   <data name="Home_LookAround" xml:space="preserve">
     <value>Take a look around - perhaps even two.</value>
   </data>
-  <data name="Home_Welcome" xml:space="preserve">
-    <value>Welcome to my portfolio site.</value>
+  <data name="Home_Tagline" xml:space="preserve">
+    <value>Because I am not like the other developers.</value>
   </data>
-  <data name="Home_ExploreWork" xml:space="preserve">
-    <value>Explore my work</value>
-  </data>
-  <data name="Home_ScrollDown" xml:space="preserve">
-    <value>Scroll down</value>
-  </data>
-  <data name="Home_FeaturedWork" xml:space="preserve">
-    <value>Featured Work</value>
-  </data>
-  <data name="Home_ViewAllProjects" xml:space="preserve">
-    <value>View all projects</value>
-  </data>
-  <data name="Home_GetInTouch" xml:space="preserve">
-    <value>Get in touch</value>
-  </data>
-  <data name="Home_TerminalTitle" xml:space="preserve">
-    <value>mrApptastic ~ portfolio</value>
-  </data>
-  <data name="Home_CommandPlaceholder" xml:space="preserve">
-    <value>Type a command (help)</value>
-  </data>
-  <data name="Home_Cmd_HelpHint" xml:space="preserve">
-    <value>Type "help" to list commands.</value>
-  </data>
-  <data name="Home_Cmd_HelpOutput" xml:space="preserve">
-    <value>Commands: help, whoami, about, skills, contact, clear, go [home|about|cv|projects|contact]</value>
-  </data>
-  <data name="Home_Cmd_WhoAmIOutput" xml:space="preserve">
-    <value>Henrik Beske (mrApptastic) — software developer focused on web and mobile solutions.</value>
-  </data>
-  <data name="Home_Cmd_AboutOutput" xml:space="preserve">
-    <value>I build modern apps with .NET, C#, Blazor, Angular, and cloud technologies.</value>
-  </data>
-  <data name="Home_Cmd_SkillsOutput" xml:space="preserve">
-    <value>Skills: C#, .NET, Blazor, Angular, TypeScript, REST APIs, SQL, Azure.</value>
-  </data>
-  <data name="Home_Cmd_ContactOutput" xml:space="preserve">
-    <value>Contact: henrikbeske@gmail.com | (+45) 24 49 75 55</value>
-  </data>
-  <data name="Home_Cmd_Unknown" xml:space="preserve">
-    <value>Unknown command: {0}. Type "help".</value>
-  </data>
-  <data name="Home_Cmd_UnknownRoute" xml:space="preserve">
-    <value>Unknown route: {0}. Use home, about, cv, projects, or contact.</value>
-  </data>
-  <data name="Home_Cmd_Navigating" xml:space="preserve">
-    <value>Navigating to {0} ...</value>
-  </data>
-  <data name="Home_Intro_Line1" xml:space="preserve">
-    <value>I am used to taking responsibility for making sure tasks are completed in a busy day full of complex requirements. It can involve anything from legislation, new technology that I need to learn, and legacy technology that must be kept running and updated, to customer requests that do not always fit neatly into the existing applications or the needs of other customers. And then there are, of course, the unexpected firefighting manoeuvres that can suddenly arise and require rapid adjustment. This is all part of everyday life in many busy software companies – and something I am used to navigating.</value>
-  </data>
-  <data name="Home_Intro_Line2" xml:space="preserve">
-    <value>My current specialisation lies in the scope of .NET and web applications, an area in which I have gradually built a particularly broad toolkit. I have been working with .NET since ASP.NET Web Forms and have, for the most part, worked with almost every type of web application in the .NET world, all the way up to modern web apps in Blazor.</value>
-  </data>
-  <data name="Home_Intro_Line3" xml:space="preserve">
-    <value>It is great to be part of solving complex technical challenges, and I see one of my primary strengths as being very good at learning new things. The journey away from ignorance is one I have undertaken many times in my life, and I intend to continue that journey until my final breath, as I am a true knowledge collector.</value>
-  </data>
-  <data name="Home_Intro_Line4" xml:space="preserve">
-    <value>The systems I develop should be valuable and intuitive for users, while the code I write should also be understandable and maintainable for my colleagues.</value>
-  </data>
-  <data name="Home_Intro_Line5" xml:space="preserve">
+  <data name="Home_ASCII_Reward" xml:space="preserve">
     <value>Thank you for reading so far! That is why you are rewarded with a little ASCII art:</value>
-  </data>
-  <!-- About page -->
-  <data name="About_Intro1" xml:space="preserve">
-    <value>Normally, I am Henrik Beske, an ordinary family man.</value>
-  </data>
-  <data name="About_Intro2" xml:space="preserve">
-    <value>But when I head off to work, I transform myself into mrApptastic, a superheroic web developer with gazelle blood gushing through the veins.</value>
   </data>
   <!-- CV page -->
   <data name="CV_Name" xml:space="preserve">
@@ -162,7 +95,7 @@
     <value>Software Developer</value>
   </data>
   <data name="CV_Location" xml:space="preserve">
-    <value>Northern Jutland</value>
+    <value>North Jutland</value>
   </data>
   <data name="CV_Country" xml:space="preserve">
     <value>Denmark</value>
@@ -180,7 +113,19 @@
     <value>Education</value>
   </data>
   <data name="CV_ShortDescription" xml:space="preserve">
-    <value>Short description</value>
+    <value>Short Description</value>
+  </data>
+  <data name="CV_Intro_Line1" xml:space="preserve">
+    <value>I am used to taking responsibility for making sure tasks are completed in a busy day full of complex requirements. It can involve anything from legislation, new technology that I need to learn, and legacy technology that must be kept running and updated, to customer requests that do not always fit neatly into the existing applications or the needs of other customers. And then there are, of course, the unexpected firefighting manoeuvres that can suddenly arise and require rapid adjustment. This is all part of everyday life in many busy software companies – and something I am used to navigating.</value>
+  </data>
+  <data name="CV_Intro_Line2" xml:space="preserve">
+    <value>My current specialisation lies in the scope of .NET and web applications, an area in which I have gradually built a particularly broad toolkit. I have been working with .NET since ASP.NET Web Forms and have, for the most part, worked with almost every type of web application in the .NET world, all the way up to modern web apps in Blazor.</value>
+  </data>
+  <data name="CV_Intro_Line3" xml:space="preserve">
+    <value>It is great to be part of solving complex technical challenges, and I see one of my primary strengths as being very good at learning new things. The journey away from ignorance is one I have undertaken many times in my life, and I intend to continue that journey until my final breath, as I am a true knowledge collector.</value>
+  </data>
+  <data name="CV_Intro_Line4" xml:space="preserve">
+    <value>The systems I develop should be valuable and intuitive for users, while the code I write should also be understandable and maintainable for my colleagues.</value>
   </data>
   <data name="CV_Description1" xml:space="preserve">
     <value>I am a competent software developer with a preference towards web development as well as development for mobile devices. Furthermore, I have experience from several other areas - such as desktop application development, and development for embedded devices.</value>
@@ -209,14 +154,8 @@
   <data name="CV_ExportPDF" xml:space="preserve">
     <value>Export PDF</value>
   </data>
-  <data name="CV_Phone" xml:space="preserve">
-    <value>(+45) 24 49 75 55</value>
-  </data>
-  <data name="CV_Email" xml:space="preserve">
-    <value>henrikbeske@gmail.com</value>
-  </data>
   <data name="CV_LoadingExperiences" xml:space="preserve">
-    <value>Loading work experience...</value>
+    <value>Loading experiences...</value>
   </data>
   <data name="CV_LoadingSkills" xml:space="preserve">
     <value>Loading skills...</value>
@@ -250,11 +189,17 @@
     <value>Source</value>
   </data>
   <data name="Projects_LinkDocs" xml:space="preserve">
-    <value>Docs</value>
+    <value>Documentation</value>
   </data>
   <!-- Contact page -->
   <data name="Contact_Title" xml:space="preserve">
     <value>Contact</value>
+  </data>
+  <data name="Contact_Intro1" xml:space="preserve">
+    <value>In everyday life, I am just an ordinary person.</value>
+  </data>
+  <data name="Contact_Intro2" xml:space="preserve">
+    <value>But when I head off to work, I transform myself into a superheroic web developer with gazelle blood gushing through the veins.</value>
   </data>
   <data name="Contact_EmailLabel" xml:space="preserve">
     <value>E-mail</value>

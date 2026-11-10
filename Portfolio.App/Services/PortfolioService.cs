@@ -12,8 +12,19 @@ public class PortfolioService(HttpClient http) : IPortfolioService
     {
         try
         {
-            var result = await http.GetFromJsonAsync<PortfolioList>($"{ApiBase}{language}");
-            return result;
+            return await http.GetFromJsonAsync<PortfolioList>($"{FallbackBase}{language}.json?v=" + DateTime.Now.Ticks);
+        }
+        catch
+        {
+            return new PortfolioList();
+        }
+    }
+
+    public async Task<PortfolioList?> GetPortfolioAsync2(string language)
+    {
+        try
+        {
+            return await http.GetFromJsonAsync<PortfolioList>($"{ApiBase}{language}");
         }
         catch
         {

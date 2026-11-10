@@ -1,7 +1,8 @@
 (function () {
   function initIntroTerminal() {
-    if (window.__portfolioIntroInitialized) {
-      return;
+    if (window.__portfolioIntroAnimationFrame) {
+      cancelAnimationFrame(window.__portfolioIntroAnimationFrame);
+      window.__portfolioIntroAnimationFrame = null;
     }
 
     var terminal = document.getElementById("oldTerminal");
@@ -14,7 +15,8 @@
       return;
     }
 
-    window.__portfolioIntroInitialized = true;
+    context.setTransform(1, 0, 0, 1, 0, 0);
+    context.clearRect(0, 0, terminal.width, terminal.height);
 
     var introLines = [];
     try {
