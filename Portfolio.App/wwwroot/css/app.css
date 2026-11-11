@@ -329,7 +329,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 1rem 0; }
 }
 .cv-section-title { font-size: .85rem; font-weight: 700; color: var(--accent); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: .05em; }
 .cv-article { position: relative; padding-bottom: 1.25rem; }
-.cv-item-logo { float: right; height: 50px; margin-left: 1rem; }
+.cv-item-logo { float: right; height: 50px; margin-left: 1rem;  background: white !important; }
 .cv-article h4 { font-size: 1rem; font-weight: 600; }
 .cv-article h5 { font-size: .9rem; color: var(--text-secondary); font-weight: 400; }
 .cv-time { font-size: .8rem; color: var(--accent); margin: .25rem 0; }
@@ -399,7 +399,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 1rem 0; }
     justify-content: center;
     flex-shrink: 0;
 }
-.timeline-img { width: 100%; height: 100%; object-fit: contain; padding: 4px; }
+.timeline-img { width: 100%; height: 100%; object-fit: contain; padding: 4px; background: white !important; }
 .timeline-card {
     width: 45%;
     background: var(--bg-secondary);
