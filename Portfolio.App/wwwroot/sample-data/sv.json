@@ -1,9 +1,17 @@
 {
 	"certificates": [
 		{
+			"name": "Developing Solutions for Microsoft Azure",
+			"place": "Teknologisk Institut",
+			"description": "<p>1 veckas kurs i Azure och Microsoft Entra.</p>",
+			"from": "2025-10-01T00:00:00",
+			"to": "2025-10-31T00:00:00",
+			"imageUrl": "assets/education/TeknologiskInstitut.png"
+		},
+		{
 			"name": "Adobe Creative Suite 5",
 			"place": "University College Nordjylland",
-			"description": "<p>Course in Photoshop, Illustrator and In Design.</p>",
+			"description": "<p>Kurs i Photoshop, Illustrator och InDesign.</p>",
 			"from": "2011-04-11T00:00:00",
 			"to": "2011-05-27T00:00:00",
 			"imageUrl": "assets/education/Adobe.png"
@@ -11,35 +19,27 @@
 	],
 	"educations": [
 		{
-			"name": "Diploma Education in Software Development",
-			"place": "SmartLearning",
-			"description": "<p>Bachelor degree level education in software development.</p>",
-			"from": "2022-09-05T00:00:00",
-			"to": "2099-12-31T00:00:00",
-			"imageUrl": "assets/mr.png"
-		},
-		{
-			"name": "Web Developer",
+			"name": "Webbintegratör",
 			"place": "Tech College",
-			"description": "<p> Vocational training in web design and development.</p>",
+			"description": "<p>Yrkesutbildning inom webbdesign och webbutveckling.</p>",
 			"from": "2014-01-01T00:00:00",
 			"to": "2015-10-31T00:00:00",
-			"imageUrl": "assets/mr.png"
+			"imageUrl": "assets/education/MediaCollege.png"
 		},
 		{
-			"name": "AP Degree in IT and Electronics",
+			"name": "IT-teknolog (AK)",
 			"place": "University College Nordjylland",
-			"description": "<p>Academy Degree in Software Development and Electronics.</p>",
+			"description": "<p>Kortare högre utbildning inom mjukvara och elektronik.</p>",
 			"from": "2008-09-01T00:00:00",
 			"to": "2011-01-31T00:00:00",
-			"imageUrl": "assets/mr.png"
+			"imageUrl": "assets/education/UCN.png"
 		}
 	],
 	"experiences": [
 		{
-			"name": "Developer",
-			"place": "UVdata",
-			"description": "<p>Software development directed at the ecucation sector.</p>",
+			"name": "Utvecklare",
+			"place": "UVdata A/S",
+			"description": "<p>Webb- och desktoplösningar för utbildningssektorn.</p><p>Projekt: UVskole, DSA Løn, Skolebeviser.dk, Skoleopskrivning.dk, Ventelisten.net och VoresSkole.net.</p><ul><li>Utveckling av system i .NET 4.8/8, .NET MVC, Angular 19, Blazor och Vue3.</li><li>Arbete med REST-tjänster och Firebird 2.5/3.0/5.0-databaser.</li><li>Arbete med externa integrationer: MasterCard överföringstjänst, Microsoft Graph API, Bankintegration samt e-signering med INGrope.</li><li>Säkring av system med NemLog-in och Microsoft Entra.</li><li>2nd line-support och kundrelaterat arbete kring pilottester av funktioner.</li></ul>",
 			"from": "2023-02-01T00:00:00",
 			"to": "2099-12-31T00:00:00",
 			"imageUrl": "assets/jobs/Tulip.png"
@@ -47,7 +47,7 @@
 		{
 			"name": "Web Developer",
 			"place": "JCD A/S",
-			"description": "<p> Software development for external clients on a task basis. </p>",
+			"description": "<p>Konsultarbete för externa kunder.</p><p>Projekt: Dansk Cater, Systemköp, Deltidsansatte Brandmænds Faglige Organisation, Migatronic, Folkeuniversitetet och Borg Automative.</p><ul><li>Utveckling av webbapplikationer i .NET 6, Umbraco 10 och Vue2.</li><li>Arbete med SQL Server samt REST- och SOAP-tjänster med integrationer mot MS Dynamics.</li></ul>",
 			"from": "2022-10-01T00:00:00",
 			"to": "2022-12-31T00:00:00",
 			"imageUrl": "assets/jobs/Tulip.png"
@@ -55,7 +55,7 @@
 		{
 			"name": "Senior Developer",
 			"place": "OptikIT A/S",
-			"description": "<p> Development of web views for desktop application for the optician industry. </p>\n<p> New development of web applications for managing appointment booking for opticians. </p>",
+			"description": "<p>Webblösningar för optikerbranschen.</p><p>Projekt: HORIZON, WebBooking, WebBooking Admin och HORIZON Mobile.</p><ul><li>Nyutveckling av webbfönster för desktopapplikation samt PWA-applikationer och bokningsapp i Angular 9-14.</li><li>Utveckling av RESTful microservices i .NET Core 2.0/3.1 och .NET 5.0 med Entity Framework-baserat datalager.</li><li>Kommunikation med butikernas databaser via säkra SSH-anslutningar.</li><li>Integration till streckkodsläsare, säkring med AzureAD/custom JWT schemes och hantering av översättningar i SPA:er och tjänster.</li></ul>",
 			"from": "2019-12-01T00:00:00",
 			"to": "2022-09-30T00:00:00",
 			"imageUrl": "assets/jobs/Tulip.png"
@@ -63,7 +63,7 @@
 		{
 			"name": "Software Developer",
 			"place": "CodeCreator ApS",
-			"description": "<p> Full-stack web development for cloud solution on AutoPilot (Time Case Management System). </p>\n<p> Software development for external clients on a task basis. </p>",
+			"description": "<p>Konsultarbete för externa kunder samt internt arbete med tids- och ärendehanteringssystem.</p><p>Projekt: CASI, Vision of Scandivia (VOS), AutoPilot, Davai, Mariagerfjord Kommune, Nørskov Miljø, AMU Nordjylland, AKU Aalborg, Dong Energy.</p><ul><li>Fullstack-utveckling för AutoPilot och externa projekt i ASP.NET MVC och AngularJS med MS SQL-databaser.</li><li>Mentorsroll för en ung utvecklare med Asperger, inklusive undervisning och tekniskt stöd.</li></ul>",
 			"from": "2016-06-15T00:00:00",
 			"to": "2019-08-31T00:00:00",
 			"imageUrl": "assets/jobs/CodeCreator.png"
@@ -184,6 +184,17 @@
 		}
 	],
 	"projects": [
+		{
+			"name": "Vänteliste- och anmälningsportal för friskolor och internatskolor",
+			"place": "Skoleopskrivning.dk",
+			"description": "<p>Portal för väntelistor och anmälan till danska friskolor och internatskolor.</p><p>Applikationen är byggd i Blazor WASM och kommunicerar med backend via REST-tjänster. Den erbjuder inloggning med e-post, inloggning med MitID samt betalning med NETS Easy.</p><p>Jag var huvudutvecklare för frontend, backend, GUI, databasedesign och bidrog aktivt till att sätta upp CI/CD-pipelinen.</p>",
+			"from": "2025-01-01T00:00:00",
+			"to": "2026-12-31T00:00:00",
+			"imageUrl": "assets/projects/Ventelisten.png",
+			"demoUrl": "https://testskoleopskrivning.uvdata.net/999997",
+			"docUrl": null,
+			"sourceUrl": null
+		},
 		{
 			"name": "School certificate archive for private schools",
 			"place": "UVskole",
@@ -451,34 +462,64 @@
 	],
 	"qualifications": [
 		{
-			"name": "Content Management Systems (CMS)",
-			"description": "<p> I have mainly dealt with Wordpress and Umbraco (both several different versions), but also have experience with Joomla. </p>",
-			"imageUrl": "assets/mr.png"
+			"name": "Användargränssnittsdesign",
+			"description": "<p>Det faller sig naturligt för mig att sätta mig i användarens situation. När jag arbetar med ett system ska det inte bara fungera när de “rätta” händelserna inträffar. Det ska vara logiskt och självklart vilka möjligheter som finns.</p><p>Jag är dessutom en entusiastisk grafiker med erfarenhet av friläggning, retuschering, bildreparation samt renritning av logotyper, interaktiv grafik och datavisualisering.</p>",
+			"imageUrl": "assets/skills/GUIDesign.png"
 		},
 		{
-			"name": "Database",
-			"description": "<p> I have several years of experience working with SQL databases. Both\nwith design of relational databases as well as design and optimization\nof queries with e.g. joins, subqueries, stored procedures and views for statistical extracts etc. </p>\n<p> I have a good understanding of various kinds of SQL databases. In addition, I have experience with Entity Framework and LINQ / LINQ to Entities as well as a basic familiarity with document databases. </p>",
-			"imageUrl": "assets/skills/Database.png"
+			"name": "Content Management System (CMS)",
+			"description": "<p>Jag har främst arbetat med WordPress och Umbraco (flera olika versioner), men har även erfarenhet av Joomla.</p>",
+			"imageUrl": "assets/skills/CMS.png"
 		},
 		{
-			"name": "GUI Design",
-			"description": "<p> It comes naturally to me to put myself in the user's place. When I work\non a system, it should not only work when the \"right\" events occur. It must be logical and obvious what is of options - preferably to the extent that the user does not notice it. </p>\n<p> Furthermore, I am an enthusiastic graphic designer who has mastered many useful things like e.g. clipping, retouching, image repair as well as drawing of logos and interactive graphics and data visualization. </p>",
-			"imageUrl": "assets/mr.png"
+			"name": "Programvaruutveckling",
+			"description": "<p>Jag började programmera på hobbybasis omkring 2005 och föredrar ett objektorienterat utvecklingsparadigm med lagerindelad arkitektur. Jag är också van vid versionshantering med grenar för features, buggar, utveckling och publicering.</p><p>Jag har störst erfarenhet av ASP.NET och C#, men kan även PHP, Java och C/C++. Mest erfarenhet har jag av webbutveckling, men även desktop- och mobilutveckling.</p>",
+			"imageUrl": "assets/skills/CSharp.png"
 		},
 		{
-			"name": "Search Engine Optimisation (SEO)",
-			"description": "<p> I understand how web crawlers work as well how it is most appropriate to build its HTML code best to a crawler's processes. </p>\n<p> In addition, I have knowledge of several techniques such as landing\npages, XML Sitemaps, and how the Google Search Console works and it can be used to optimize the different pages tendency to appear in various searches. </p>",
-			"imageUrl": "assets/mr.png"
+			"name": "Sökmotoroptimering (SEO)",
+			"description": "<p>Jag har god förståelse för hur webbcrawlers fungerar och hur HTML bör struktureras för bästa möjliga indexering.</p><p>Jag har också erfarenhet av tekniker som landing pages, XML-sitemaps samt hur Google Search Console kan användas för att förbättra synlighet i sökresultat.</p>",
+			"imageUrl": "assets/skills/SEO.png"
 		},
 		{
-			"name": "Software Development",
-			"description": "<p> I started programming on a hobby basis around 2005 and prefer to work with code based on an object-oriented development paradigm with a layered architecture. Furthermore, I am used to using version control with branches for features, bugs, development and publishing. </p>\nThe universe I know the most about is ASP.Net and C#, but I am also well into e.g. PHP, Java and C/C++. I have the most experience with web development, but I also have experience in desktop and mobile development. </p>",
-			"imageUrl": "assets/mr.png"
+			"name": "Webbutveckling",
+			"description": "<p>Utveckling för moderna webbläsare är min hemmaplan. Jag trivs med möjligheterna i HTML5, CSS3 och ECMAScript, t.ex. Canvas, SVG, animationer, audio och video.</p><p>Jag är dessutom van vid RESTful webbtjänster och har god kunskap om bl.a. jQuery, Bootstrap, CSS-preprocessors (SASS/LESS) samt ramverk som Angular, Vue och React.</p>",
+			"imageUrl": "assets/skills/WebApplications.png"
 		},
 		{
-			"name": "Web Development",
-			"description": "<p>Development for modern web browsers is my home ground. I thrive well\nwith the built-in options HTML5, CSS3 and ECMAScript give - e.g. Canvas, SVG, Animations, Audio and Video. </p>\n<p> Furthermore, I am used to working with RESTful web services and have\ngood knowledge of various extensions such as. jQuery and Bootstrap, CSS Preprocessers (SASS and LESS) as well as application systems as Angular, Vue and React. </p>",
-			"imageUrl": "assets/mr.png"
+			"name": "Frontend",
+			"description": "<p>Angular, Blazor, Bootstrap, PWA, SCSS, Tailwind och Vue.</p>",
+			"imageUrl": "assets/skills/WebApplications.png"
+		},
+		{
+			"name": "Backend",
+			"description": "<p>Basic Authentication, Entra ID, JWT, Microservices, Nem-Login, OAuth2, OIDC, REST, SFTP och SOAP.</p>",
+			"imageUrl": "assets/skills/CSharp.png"
+		},
+		{
+			"name": "Utvecklarverktyg",
+			"description": "<p>Bruno, Continue.dev, GitHub Copilot, GitHub Copilot CLI, IBExpert, Postman, SQL Management Studio, Visual Studio och VS Code.</p>",
+			"imageUrl": "assets/skills/GUIDesign.png"
+		},
+		{
+			"name": "Databas",
+			"description": "<p>DbUp, Entity Framework, Firebird SQL, LINQ, MySQL, SQL Server och SQLite.</p>",
+			"imageUrl": "assets/skills/DatabaseSystems.png"
+		},
+		{
+			"name": "CI/CD",
+			"description": "<p>Bitbucket, Blue Green/Canary, DevOps, Docker, GitHub, GitLab, TeamCity och Octopus.</p>",
+			"imageUrl": "assets/skills/SEO.png"
+		},
+		{
+			"name": "Moln",
+			"description": "<p>App Services, Application Insights, Azure, Azure CLI, Gmail API, Microsoft Graph API och Storage Accounts.</p>",
+			"imageUrl": "assets/skills/CMS.png"
+		},
+		{
+			"name": "Test",
+			"description": "<p>Cypress, Jasmine, Karma, Moq, NSubstitute, NUnit, Playwright, TestCafé och xUnit.</p>",
+			"imageUrl": "assets/skills/WebApplications.png"
 		}
 	]
 }

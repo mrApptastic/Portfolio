@@ -38,8 +38,8 @@
 	"experiences": [
 		{
 			"name": "Udvikler",
-			"place": "UVdata",
-			"description": "<p>Udvikling af software rettet imod undervisningssektoren.</p>",
+			"place": "UVdata A/S",
+			"description": "<p>Web- og desktopløsninger til uddannelsessektoren.</p><p>Projekter: UVskole, DSA Løn, Skolebeviser.dk, Skoleopskrivning.dk, Ventelisten.net og VoresSkole.net.</p><ul><li>Udvikling af systemer i .NET 4.8/8, .NET MVC, Angular 19, Blazor og Vue3.</li><li>Arbejdet med REST-services og Firebird 2.5/3.0/5.0 databaser.</li><li>Arbejdet med eksterne integrationer: MasterCard Overførselsservice, Microsoft Graph API, Bankintegration samt E-signering med INGrope.</li><li>Sikring af systemer med NemLog-in og Microsoft Entra.</li><li>2nd line support og kunderelateret arbejde ift. pilot tests med features.</li></ul>",
 			"from": "2023-02-01T00:00:00",
 			"to": "2099-12-31T00:00:00",
 			"imageUrl": "assets/jobs/uvdata.png"
@@ -47,7 +47,7 @@
 		{
 			"name": "Webudvikler",
 			"place": "JCD A/S",
-			"description": "<p>Softwareudvikling for eksterne kunder på opgavebasis.</p>",
+			"description": "<p>Konsulentarbejde for eksterne kunder.</p><p>Projekter: Dansk Cater, Systemköp, Deltidsansatte Brandmænds Faglige Organisation, Migatronic, Folkeuniversitetet og Borg Automative.</p><ul><li>Udvikling af webapplikationer i .NET 6, Umbraco 10 og Vue2.</li><li>Arbejdet med SQL Server samt REST- og SOAP-services med integrationer til MS Dynamics.</li></ul>",
 			"from": "2022-10-01T00:00:00",
 			"to": "2022-12-31T00:00:00",
 			"imageUrl": "assets/jobs/JCD.png"
@@ -55,7 +55,7 @@
 		{
 			"name": "Seniorudvikler",
 			"place": "OptikIT A/S",
-			"description": "\t\t\t\t\t\t<p>Udvikling af web views til desktopapplikation til optikerbranchen.</p>\n\t\t\t\t\t\t<p>Nyudvikling af webapplikationer til håndtering af aftalebooking for optikere.</p>",
+			"description": "<p>Webløsninger til optikerbranchen.</p><p>Projekter: HORIZON, WebBooking, WebBooking Admin og HORIZON Mobile.</p><ul><li>Nyudvikling af webvinduer til desktopapplikation samt PWA-applikationer og Booking App i Angular 9-14.</li><li>Udvikling af RESTful microservices i .NET Core 2.0/3.1 og .NET 5.0 med datalag baseret på Entity Framework.</li><li>Kommunikation til butikkernes egne databaser via sikre SSH-forbindelser.</li><li>Integration til stregkodeskanner, sikring med AzureAD/custom JWT schemes samt håndtering af oversættelser i SPAs og services.</li></ul>",
 			"from": "2019-12-01T00:00:00",
 			"to": "2022-09-30T00:00:00",
 			"imageUrl": "assets/jobs/OptikIT.png"
@@ -63,7 +63,7 @@
 		{
 			"name": "Softwareudvikler",
 			"place": "CodeCreator ApS",
-			"description": "\t\t\t\t\t\t<p>Full-stack webudvikling til cloud-løsning på AutoPilot (Timesagsstyringssystem).</p>\n\t\t\t\t\t\t<p>Softwareudvikling for eksterne kunder på opgavebasis.</p>\n",
+			"description": "<p>Konsulentarbejde for eksterne kunder samt in-house arbejde på timesagsstyringssystem.</p><p>Projekter: CASI, Vision of Scandivia (VOS), AutoPilot, Davai, Mariagerfjord Kommune, Nørskov Miljø, AMU Nordjylland, AKU Aalborg, Dong Energy.</p><ul><li>Fullstack-udvikling til AutoPilot samt eksterne projekter i ASP.NET MVC og AngularJS med MS SQL databaser.</li><li>Mentorrolle for ung udvikler med Asbergers, herunder undervisning og teknisk støtte.</li></ul>",
 			"from": "2016-06-15T00:00:00",
 			"to": "2019-08-31T00:00:00",
 			"imageUrl": "assets/jobs/CodeCreator.png"
@@ -184,6 +184,17 @@
 		}
 	],
 	"projects": [
+		{
+			"name": "Venteliste- og opskrivningsportal til frie grundskoler og efterskoler",
+			"place": "Skoleopskrivning.dk",
+			"description": "<p>Portal til ventelister og opskrivning for frie grundskoler og efterskoler i Danmark.</p><p>Applikationen er skrevet i Blazor WASM og kommunikerer med backenden via REST-services. Den tilbyder login med e-mail, login med MitID samt betaling med NETS Easy.</p><p>Jeg var primær udvikler på frontend, backend, GUI, databasedesign samt medvirkede aktivt i opsætningen af CI/CD-pipelinen.</p>",
+			"from": "2025-01-01T00:00:00",
+			"to": "2026-12-31T00:00:00",
+			"imageUrl": "assets/projects/Ventelisten.png",
+			"demoUrl": "https://testskoleopskrivning.uvdata.net/999997",
+			"docUrl": null,
+			"sourceUrl": null
+		},
 		{
 			"name": "Skolebevisarkiv til frie grundskoler",
 			"place": "UVskole",
@@ -461,11 +472,6 @@
 			"imageUrl": "assets/skills/CMS.png"
 		},
 		{
-			"name": "Database",
-			"description": "<p>Jeg har adskillige års erfaring i at arbejde med SQL-databaser. Både med design af relationelle databaser samt udforming og optimering af forespørgsler med f.eks. joins, subqueries, stored procedures og views til statistiske udtræk o.l.</p>\n<p>Jeg er godt inde i forskellige former for SQL-databaser. Desuden har jeg erfaring med Entity Framework og LINQ/LINQ to Entities samt et grundlæggende kendskab til dokumentdatabaser.</p>",
-			"imageUrl": "assets/skills/DatabaseSystems.png"
-		},
-		{
 			"name": "Softwareudvikling",
 			"description": "<p>Jeg startede med at programmere på hobbybasis omkring 2005 og foretrækker at arbejde med kode ud fra et objekt-orienteret udviklingsparadigme med en lagdelt arkitektur. Endvidere er jeg vant til at anvende versionsstyring med branches til features, bugs, udvikling og publicering.</p>\n<p>Det univers jeg har størst kendskab til er ASP.Net og C#, men jeg er også godt inde i f.eks. PHP, Java og C/C++. Jeg har størst erfaring med webudvikling, men har erfaring indenfor desktop- og mobiludvikling.</p>",
 			"imageUrl": "assets/skills/CSharp.png"
@@ -478,6 +484,41 @@
 		{
 			"name": "Webudvikling",
 			"description": "<p>Udvikling til moderne webbrowsere er min hjemmebane. Jeg trives godt med de indbyggede muligheder som HTML5, CSS3 og ECMAScriptet giver. F.eks. Canvas, SVG, Animationer, Audio og Video.</p>\n<p>Endvidere er jeg vant til at arbejde med RESTful webtjenester og har godt kendskab til forskellige udvidelser som f.eks. jQuery og Bootstrap, CSS Preprocessers (SASS og LESS) samt applikationssystemer som Angular, Vue og React.</p>",
+			"imageUrl": "assets/skills/WebApplications.png"
+		},
+		{
+			"name": "Frontend",
+			"description": "<p>Angular, Blazor, Bootstrap, PWA, SCSS, Tailwind og Vue.</p>",
+			"imageUrl": "assets/skills/WebApplications.png"
+		},
+		{
+			"name": "Backend",
+			"description": "<p>Basic Authentication, Entra ID, JWT, Microservices, Nem-Login, OAuth2, OIDC, REST, SFTP og SOAP.</p>",
+			"imageUrl": "assets/skills/CSharp.png"
+		},
+		{
+			"name": "Udviklerværktøjer",
+			"description": "<p>Bruno, Continue.dev, GitHub Copilot, GitHub Copilot CLI, IBExpert, Postman, SQL Management Studio, Visual Studio og VS Code.</p>",
+			"imageUrl": "assets/skills/GUIDesign.png"
+		},
+		{
+			"name": "Database",
+			"description": "<p>DbUp, Entity Framework, Firebird SQL, LINQ, MySQL, SQL Server og SQLite.</p>",
+			"imageUrl": "assets/skills/DatabaseSystems.png"
+		},
+		{
+			"name": "CI/CD",
+			"description": "<p>Bitbucket, Blue Green/Canary, DevOps, Docker, GitHub, GitLab, TeamCity og Octopus.</p>",
+			"imageUrl": "assets/skills/SEO.png"
+		},
+		{
+			"name": "Cloud",
+			"description": "<p>App Services, Application Insights, Azure, Azure CLI, Gmail API, Microsoft Graph API og Storage Accounts.</p>",
+			"imageUrl": "assets/skills/CMS.png"
+		},
+		{
+			"name": "Test",
+			"description": "<p>Cypress, Jasmine, Karma, Moq, NSubstitute, NUnit, Playwright, TestCafé og xUnit.</p>",
 			"imageUrl": "assets/skills/WebApplications.png"
 		}
 	]

@@ -86,7 +86,13 @@
                         <ul class="cv-skills-list">
                             @foreach (var q in data.Qualifications)
                             {
-                                <li>@q.Name</li>
+                                <li>
+                                    <strong>@q.Name</strong>
+                                    @if (!string.IsNullOrWhiteSpace(q.Description))
+                                    {
+                                        <div>@((MarkupString)q.Description)</div>
+                                    }
+                                </li>
                             }
                         </ul>
                     </div>
