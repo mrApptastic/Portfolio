@@ -3,10 +3,11 @@
 @inject IPortfolioService PortfolioSvc
 @inject IJSRuntime JS
 
-<PageTitle>@Loc["Nav_CV"] — mrApptastic</PageTitle>
+<PageTitle>@Loc["Nav_CV"] — Henrik Beske</PageTitle>
 
 <section class="cv-section">
     <div class="section-container">
+        <h1 class="section-title">Curriculum Vitae</h1>
         <div class="cv-container">
             <div class="cv-actions">
                 <button class="cta-btn primary" @onclick="PrintCV">@Loc["CV_ExportPDF"]</button>
@@ -17,30 +18,8 @@
                 <div class="cv-headline">
                     <h1>@Loc["CV_Name"]</h1>
                     <h2>@Loc["CV_Title"]</h2>
-                    <p class="cv-location">@Loc["CV_Location"], @Loc["CV_Country"] | @Loc["CV_Industry"]</p>
-                    @if (data?.Experiences?.Count > 0)
-                    {
-                        <table class="cv-summary-table">
-                            <tr>
-                                <td class="cv-label">@Loc["CV_Current"]</td>
-                                <td>@data.Experiences[0].Place</td>
-                            </tr>
-                            @if (data.Experiences.Count > 1)
-                            {
-                                <tr>
-                                    <td class="cv-label">@Loc["CV_Previous"]</td>
-                                    <td>@data.Experiences[1].Place</td>
-                                </tr>
-                            }
-                            @if (data.Educations?.Count > 0)
-                            {
-                                <tr>
-                                    <td class="cv-label">@Loc["CV_Education"]</td>
-                                    <td>@string.Join(", ", data.Educations.Select(e => e.Name))</td>
-                                </tr>
-                            }
-                        </table>
-                    }
+                    <p class="cv-location">@Loc["CV_Location"], @Loc["CV_Country"]</p>
+                    <p class="cv-key-skills">.NET • Blazor • Angular • Azure • Microsoft Entra ID • DevOps</p>
                 </div>
             </div>
 
@@ -73,7 +52,10 @@
                                 <h5>@item.Name</h5>
                                 <p class="cv-time">@FormatDate(item.From, item.To)</p>
                                 <div>@((MarkupString)item.Description)</div>
-                                @if (idx < data.Experiences.Count - 1) { <hr /> }
+                                @if (idx < data.Experiences.Count - 1)
+                                {
+                                    <hr />
+                                }
                             </article>
                         }
                     </div>
@@ -112,7 +94,10 @@
                                 <h4>@item.Place</h4>
                                 <h5>@item.Name</h5>
                                 <div>@((MarkupString)item.Description)</div>
-                                @if (idx < data.Educations.Count - 1) { <hr /> }
+                                @if (idx < data.Educations.Count - 1)
+                                {
+                                    <hr />
+                                }
                             </article>
                         }
                     </div>
@@ -132,7 +117,10 @@
                                 <h4>@item.Name</h4>
                                 <h5>@item.Place</h5>
                                 <div>@((MarkupString)item.Description)</div>
-                                @if (idx < data.Certificates.Count - 1) { <hr /> }
+                                @if (idx < data.Certificates.Count - 1)
+                                {
+                                    <hr />
+                                }
                             </article>
                         }
                     </div>

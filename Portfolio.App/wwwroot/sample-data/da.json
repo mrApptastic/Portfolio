@@ -1,525 +1,520 @@
 {
-	"certificates": [
-		{
-			"name": "Developing Solutions for Microsoft Azure",
-			"place": "Teknologisk Institut",
-			"description": "<p>1 uges kursus i Azure og Microsoft Entra.</p>",
-			"from": "2025-10-01T00:00:00",
-			"to": "2025-10-31T00:00:00",
-			"imageUrl": "assets/education/TeknologiskInstitut.png"
-		},
-		{
-			"name": "Adobe Creative Suite 5",
-			"place": "University College Nordjylland",
-			"description": "<p>Kurses i Photoshop, Illustrator og In Design.</p>",
-			"from": "2011-04-11T00:00:00",
-			"to": "2011-05-27T00:00:00",
-			"imageUrl": "assets/education/Adobe.png"
-		}
-	],
-	"educations": [
-		{
-			"name": "Webintegrator",
-			"place": "Tech College",
-			"description": "<p>Erhvervsuddannelse indenfor webdesign og -udvikling.</p>",
-			"from": "2014-01-01T00:00:00",
-			"to": "2015-10-31T00:00:00",
-			"imageUrl": "assets/education/MediaCollege.png"
-		},
-		{
-			"name": "IT-Teknolog (AK)",
-			"place": "University College Nordjylland",
-			"description": "<p>Kort Videregående Uddannelse indenfor software og elektronik.</p>",
-			"from": "2008-09-01T00:00:00",
-			"to": "2011-01-31T00:00:00",
-			"imageUrl": "assets/education/UCN.png"
-		}
-	],
-	"experiences": [
-		{
-			"name": "Udvikler",
-			"place": "UVdata A/S",
-			"description": "<p>Web- og desktopløsninger til uddannelsessektoren.</p><p>Projekter: UVskole, DSA Løn, Skolebeviser.dk, Skoleopskrivning.dk, Ventelisten.net og VoresSkole.net.</p><ul><li>Udvikling af systemer i .NET 4.8/8, .NET MVC, Angular 19, Blazor og Vue3.</li><li>Arbejdet med REST-services og Firebird 2.5/3.0/5.0 databaser.</li><li>Arbejdet med eksterne integrationer: MasterCard Overførselsservice, Microsoft Graph API, Bankintegration samt E-signering med INGrope.</li><li>Sikring af systemer med NemLog-in og Microsoft Entra.</li><li>2nd line support og kunderelateret arbejde ift. pilot tests med features.</li></ul>",
-			"from": "2023-02-01T00:00:00",
-			"to": "2099-12-31T00:00:00",
-			"imageUrl": "assets/jobs/uvdata.png"
-		},
-		{
-			"name": "Webudvikler",
-			"place": "JCD A/S",
-			"description": "<p>Konsulentarbejde for eksterne kunder.</p><p>Projekter: Dansk Cater, Systemköp, Deltidsansatte Brandmænds Faglige Organisation, Migatronic, Folkeuniversitetet og Borg Automative.</p><ul><li>Udvikling af webapplikationer i .NET 6, Umbraco 10 og Vue2.</li><li>Arbejdet med SQL Server samt REST- og SOAP-services med integrationer til MS Dynamics.</li></ul>",
-			"from": "2022-10-01T00:00:00",
-			"to": "2022-12-31T00:00:00",
-			"imageUrl": "assets/jobs/JCD.png"
-		},
-		{
-			"name": "Seniorudvikler",
-			"place": "OptikIT A/S",
-			"description": "<p>Webløsninger til optikerbranchen.</p><p>Projekter: HORIZON, WebBooking, WebBooking Admin og HORIZON Mobile.</p><ul><li>Nyudvikling af webvinduer til desktopapplikation samt PWA-applikationer og Booking App i Angular 9-14.</li><li>Udvikling af RESTful microservices i .NET Core 2.0/3.1 og .NET 5.0 med datalag baseret på Entity Framework.</li><li>Kommunikation til butikkernes egne databaser via sikre SSH-forbindelser.</li><li>Integration til stregkodeskanner, sikring med AzureAD/custom JWT schemes samt håndtering af oversættelser i SPAs og services.</li></ul>",
-			"from": "2019-12-01T00:00:00",
-			"to": "2022-09-30T00:00:00",
-			"imageUrl": "assets/jobs/OptikIT.png"
-		},
-		{
-			"name": "Softwareudvikler",
-			"place": "CodeCreator ApS",
-			"description": "<p>Konsulentarbejde for eksterne kunder samt in-house arbejde på timesagsstyringssystem.</p><p>Projekter: CASI, Vision of Scandivia (VOS), AutoPilot, Davai, Mariagerfjord Kommune, Nørskov Miljø, AMU Nordjylland, AKU Aalborg, Dong Energy.</p><ul><li>Fullstack-udvikling til AutoPilot samt eksterne projekter i ASP.NET MVC og AngularJS med MS SQL databaser.</li><li>Mentorrolle for ung udvikler med Asbergers, herunder undervisning og teknisk støtte.</li></ul>",
-			"from": "2016-06-15T00:00:00",
-			"to": "2019-08-31T00:00:00",
-			"imageUrl": "assets/jobs/CodeCreator.png"
-		}
-	],
-	"interests": [
-		{
-			"name": "Astronomi",
-			"description": null,
-			"imageUrl": "assets/mr.png"
-		},
-		{
-			"name": "Brydning",
-			"description": null,
-			"imageUrl": "assets/interests/Brydning.png"
-		},
-		{
-			"name": "DosBox",
-			"description": null,
-			"imageUrl": "assets/mr.png"
-		},
-		{
-			"name": "Familie",
-			"description": null,
-			"imageUrl": "assets/interests/Familie.png"
-		},
-		{
-			"name": "Fodbold",
-			"description": null,
-			"imageUrl": "assets/mr.png"
-		},
-		{
-			"name": "Historie",
-			"description": null,
-			"imageUrl": "assets/interests/Historie.png"
-		},
-		{
-			"name": "Idéhistorie",
-			"description": null,
-			"imageUrl": "assets/mr.png"
-		},
-		{
-			"name": "Lokalhistorie",
-			"description": null,
-			"imageUrl": "assets/mr.png"
-		},
-		{
-			"name": "Læsning",
-			"description": null,
-			"imageUrl": "assets/mr.png"
-		},
-		{
-			"name": "Løb",
-			"description": null,
-			"imageUrl": "assets/mr.png"
-		},
-		{
-			"name": "Møntsamling",
-			"description": null,
-			"imageUrl": "assets/mr.png"
-		},
-		{
-			"name": "Rollespil",
-			"description": null,
-			"imageUrl": "assets/mr.png"
-		},
-		{
-			"name": "Scratch",
-			"description": null,
-			"imageUrl": "assets/mr.png"
-		},
-		{
-			"name": "Skrivning",
-			"description": null,
-			"imageUrl": "assets/mr.png"
-		},
-		{
-			"name": "Slægtsforskning",
-			"description": null,
-			"imageUrl": "assets/mr.png"
-		},
-		{
-			"name": "Tegning",
-			"description": null,
-			"imageUrl": "assets/mr.png"
-		}
-	],
-	"languages": [
-		{
-			"name": "Dansk",
-			"description": "Flydende",
-			"imageUrl": "assets/languages/Dansk.png"
-		},
-		{
-			"name": "Engelsk",
-			"description": "Flydende",
-			"imageUrl": "assets/languages/Engelsk.png"
-		},
-		{
-			"name": "Italiensk",
-			"description": "Grundlæggende",
-			"imageUrl": "assets/languages/Italiensk.png"
-		},
-		{
-			"name": "Latin",
-			"description": "Grundlæggende",
-			"imageUrl": "assets/languages/Latin.png"
-		},
-		{
-			"name": "Spansk",
-			"description": "Grundlæggende",
-			"imageUrl": "assets/languages/Spansk.png"
-		},
-		{
-			"name": "Tysk",
-			"description": "Grundlæggende",
-			"imageUrl": "assets/languages/Tysk.png"
-		}
-	],
-	"projects": [
-		{
-			"name": "Venteliste- og opskrivningsportal til frie grundskoler og efterskoler",
-			"place": "Skoleopskrivning.dk",
-			"description": "<p>Portal til ventelister og opskrivning for frie grundskoler og efterskoler i Danmark.</p><p>Applikationen er skrevet i Blazor WASM og kommunikerer med backenden via REST-services. Den tilbyder login med e-mail, login med MitID samt betaling med NETS Easy.</p><p>Jeg var primær udvikler på frontend, backend, GUI, databasedesign samt medvirkede aktivt i opsætningen af CI/CD-pipelinen.</p>",
-			"from": "2025-01-01T00:00:00",
-			"to": "2026-12-31T00:00:00",
-			"imageUrl": "assets/projects/Ventelisten.png",
-			"demoUrl": "https://testskoleopskrivning.uvdata.net/999997",
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Skolebevisarkiv til frie grundskoler",
-			"place": "UVskole",
-			"description": "<p>Bevisarkivet (aka. Skolebeviser.dk) er single page application skrevet i Angular 19, som anvender Nem-Login brokeren KMDIdentity (OpenId) til tokenbaseret adgang til services skrevet i Dotnet 8.0.</p><p>Jeg har nyudviklet applikationen og stået for implementering af grafisk design, oversættelser samt funktionalitet i brugerflade ift. sikring, visning og hentning af beviser.</p>",
-			"from": "2024-01-01T12:28:56.415",
-			"to": "2026-07-311T23:59:59.999",
-			"imageUrl": "assets/projects/uvskole.png",
-			"demoUrl": "https://skolebeviser.dk/",
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Webapplikationer releteret til Lønsystem til frie grundskoler",
-			"place": "DSA-Løn",
-			"description": "<p>DSA-Løn er et lønsystem rettet mod frie grundskoler, der automatiserer beregning af løn, skatter og pensioner i henhold til gældende overenskomster. Systemet anvendes af mere end 300 danske skoler og er skrevet i Delphi Pascal med  Access database.</p><p>Jeg har udelukkende arbejdet på webapplikationer relateret til programmet:</p><ul><li>Lønoverførselsservice: Overvågning, tilretning i fejlede overførsler (typisk på grund af netværksfejl), udskiftning af PPK-nøgler til SFTP-overførsler samt kommunikation med MasterCard ift. fejlsager.</li><li> Vejledningssite: Udskiftning af site til Single Page Application via Wordpress API inkl. Autentificeringsproces.</li>",
-			"from": "2023-06-01T12:28:56.415",
-			"to": "2026-07-311T23:59:59.999",
-			"imageUrl": "assets/projects/DSALoen.png",
-			"demoUrl": null,
-			"docUrl": "https://www.uvdata.dk/dsa-loen-3/",
-			"sourceUrl": null
-		},
-		{
-			"name": "Intranetsystem til frie grundskoler",
-			"place": "UVskole",
-			"description": "<p>VoresSkole.net er en ASP NET MVC Webapplikation, der Intranet funktionalitet samt karakter- og skemamoduler.</p><p>Jeg har især foretaget optimeringer på karakterdelen.</p>",
-			"from": "2023-05-01T12:28:56.415",
-			"to": "2026-07-311T23:59:59.999",
-			"imageUrl": "assets/projects/VoresSkole.png",
-			"demoUrl": "https://www.voresskole.net/",
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Administrationssystem til frie grundskoler",
-			"place": "UVskole",
-			"description": "<p>UVskole er et elevadministrations- samt økonomisystem målrettet frie grundskoler. Det er en klient/server-opdelt desktopapplikation skrevet i .NET Framework 4.8 med en Firebird database. Systemet rummer integrationer til adskillige services hos undervisningsministeriet samt eksterne samarbejdspartnere.</p><p>Mine bidrag:</p><ul><li>Forside: Udskiftning af gammelt Blogengine.net site til en single page application skrevet i Vue 3, som via Wordpress API anvender tokenbaseret autentificeringsproces og sikrer adgang til f.eks. vejledninger og videoer.</li><li>Bankintegration: Integration til ekstern service hos Dansk Bankintegration inkl. autentificeringsproces; herunder teknisk kommunikation med udvikler fra Dansk Bankintegration.</li><li>Bankafstemninger og -udligninger: Vindue implementeret ift. Den Nye Bogføringslov. Indlæsning af CSV-filer fra bank samt indlæsning via service fra Bankintegration.</li><li>BevisArkiv: Vindue til visning og sletning af genererede beviser.</li><li>Afgangsbevis Wizard: Tilføjet generering af PDF-beviser, der sendes til BevisArkiv.</li><li>Ventelisteopsætning: Style sheets, velkomsttekst og brugerdefinerede tekster samt lukkeår – altså klasser pr. skoleår, der kan lukkes for opskrivninger.</li><li>Nemhandeltilmelding: Tilmeldingsformular til Nemhandel.</li><li>Microsoft Graph API integration: Opsætning af applikation i Azure samt implementering af vindue til gennemførsel af autentificeringsproces, således en bruger kan logge på sin Office 365-konto og sende mails gennem UVskole.</li><li>Eksterne Services: Zenbi: Implementering af services vedr. synkronisering af hold mellem Zenbi og UVskole. BevisArkiv: Services vedr. hentning af skoler, personer og skolebeviser fra UVskole. MSGraphAPI: Service til at modtage callback fra Microsoft i forbindelse med autentificeringsprocessen i UVskole.</li><li>2nd Line Support: Supportsager, der især vedrører Ventelisten, VoresSkole og Bankintegration/Bankafstemning.</li></ul>",
-			"from": "2023-04-01T12:28:56.415",
-			"to": "2026-07-311T23:59:59.999",
-			"imageUrl": "assets/projects/uvskole.png",
-			"demoUrl": null,
-			"docUrl": "https://www.uvdata.dk/produkter/uvskole/",
-			"sourceUrl": null
-		},
-		{
-			"name": "Venteliste til frie grundskoler",
-			"place": "UVskole",
-			"description": "<p>Et ventelistesystem til opskrivning af nye elever på frie grundskoler. Applikationen er udviklet i ASP.NET MVC med en single-page application med Vue 3 som frontend. Den benytter Firebird som database, NetEasy som e-handelsmodul og NemLog-in-brokeren KMD Identity til login.</p><p>Jeg har bidraget med modernisering samt implementering af nye funktionaliteter til webapplikationen.</p>",
-			"from": "2023-02-01T12:28:56.415",
-			"to": "2026-07-311T23:59:59.999",
-			"imageUrl": "assets/projects/uvskole.png",
-			"demoUrl": "https://www.ventelisten.net/999998",
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Applikationer til producent af svejsemaskiner",
-			"place": "Migatronic A/S",
-			"description": "<p>Et Umbraco 10 website med tilknyttet Dotnet 6.0 RestAPI samt MS Dynamics integrationer</p>\n<p>Jeg har arbejdet på XML-filindlæsning af brugte produkter.</p>",
-			"from": "2022-11-18T22:23:43.807",
-			"to": "2022-11-18T22:23:43.807",
-			"imageUrl": "assets/projects/migatronic.png",
-			"demoUrl": "https://www.migatronic.com/da",
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Applikationer til indkøbsfællesskab",
-			"place": "Dansk Cater A/S",
-			"description": "<p>En række af websites, applikationer, api'er samt MS Dynamics integrationer til stort dansk indkøbsfællesskab. \n</p>\n<p>\nJeg har arbejdet på messetilmeldingssitet, hvor jeg har implementeret funktionalitet ift. tilmelding samt migreret et SOAP API til Dotnet Core 6.0.\n</p>",
-			"from": "2022-11-07T00:00:00",
-			"to": "2022-11-17T00:00:00",
-			"imageUrl": "assets/projects/danskcater.png",
-			"demoUrl": "https://cater.dk/",
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Applikationer til indkøbsfællesskab",
-			"place": "Systemköp i Sverige AB",
-			"description": "<p>En række af websites, applikationer, api'er samt MS Dynamics integrationer til stort svensk indkøbsfællesskab. \n</p>\n<p>\nJeg har lavet statistiske udtræk til deres kundeportal.\n</p>",
-			"from": "2022-10-19T00:00:00",
-			"to": "2022-11-04T00:00:00",
-			"imageUrl": "assets/projects/systemkop.png",
-			"demoUrl": "https://www.systemkop.se/",
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Intranet til fagforening for brandmænd",
-			"place": "Deltidsansatte Brandfolks Faglige Organisation",
-			"description": "<p>Et Umbraco 10 website med tilknyttet Dotnet 6.0 back-end til fagforening for deltidsansatte brandmænd.</p>\n<p>Jeg har udviklet rollebaseret, sikret filupload til deres intranet, dataudtræk til medlemskort samt MITId integration.</p>",
-			"from": "2022-10-12T00:00:00",
-			"to": "2022-11-30T00:00:00",
-			"imageUrl": "assets/projects/dbrand.png",
-			"demoUrl": "https://dbrand.dk/",
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Webside",
-			"place": "Folkeuniversitet i Aarhus",
-			"description": "<p>\nUmbraco 10 webside med Dotnet Core 6.0 back-end til folkeoplysende kursussted.\n</p>\n<p>\nJeg har arbejdet på filteringsfunktionalitet ift. festivaller.\n</p>",
-			"from": "2022-10-11T00:00:00",
-			"to": "2022-10-11T00:00:00",
-			"imageUrl": "assets/projects/folkeuniversitetet.png",
-			"demoUrl": "https://fuau.dk/",
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Webside",
-			"place": "Borg Automative A/S",
-			"description": "<p>\nUmbraco 10 webside med Dotnet Core 6.0 back-end til refabrikeringsvirksomhed indenfor autoreservedele.\n</p>\n<p>\nJeg har arbejdet på designændringer ift. opgradering til Umbraco 10.\n</p>",
-			"from": "2022-10-01T00:00:00",
-			"to": "2022-10-10T00:00:00",
-			"imageUrl": "assets/projects/borg.png",
-			"demoUrl": "https://www.borgautomotive.com/",
-			"docUrl": null,
-			"sourceUrl": ""
-		},
-		{
-			"name": "Nager.Date",
-			"place": "Open Source-projekt",
-			"description": "<p>Open source API, som leverer information omkring ferie- og helligdage i hele verden.</p>\n<p>Jeg har tilføjet informationer omkring færøske og grønlandske ferie- samt helligdage.</p>",
-			"from": "2022-04-28T00:00:00",
-			"to": "2022-05-17T00:00:00",
-			"imageUrl": "assets/projects/Nager.png",
-			"demoUrl": null,
-			"docUrl": "https://date.nager.at/",
-			"sourceUrl": "https://github.com/nager/Nager.Date"
-		},
-		{
-			"name": "Ignite UI for Angular",
-			"place": "Open Source-projekt",
-			"description": "<p>Delvist open source kompenentbibliotek af Infragistics.</p>\n<p>Jeg har lavet danske standardoversættelser til komponenter.</p>",
-			"from": "2021-09-13T00:00:00",
-			"to": "2021-09-13T00:00:00",
-			"imageUrl": "assets/projects/IgniteUI.png",
-			"demoUrl": null,
-			"docUrl": "https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/angular-grid-overview-guide",
-			"sourceUrl": "https://github.com/mrApptastic/igniteui-angular"
-		},
-		{
-			"name": "Applikationer til optikerbranchen",
-			"place": "OptikIT A/S",
-			"description": "<p>En række systemer, der servicerer adskillige hundrede skandinaviske optikere. Hovedproduktet HORIZON er en hybrid desktopapplikation med vinduer lavet i Delphi, .Net (WPF) samt web views (CEF og Typescript Angular). Her har jeg arbejdet på følgende applikationer:</p>\n<ul>\n\t<li>Web Booking (2019-2022): Aftalebookingsystem til optikeres kunder; f.eks. synsprøver m.v. Jeg har udviklet applikationen fra scratch i Angular, og den er pt. taget i brug af mere end 200 butikker i Danmark, Sverige, Grønland og Færøerne.</li>\n\t<li>Web Admin (2020-2022): Kontoadministrationsside, der styrer brugeradgang, mobilbrugeradgang, design, åbningstider, foretrukket sprog, samt flere andre til i fht. kundernes Web Booking. Ligeledes en applikation jeg har udviklet fra scratch. </li>\n\t<li>HORIZON (2020-22): Webvinduer udviklet i Angular til håndtering af medarbejdere, aftaletyper, prøverum, aftalekalender, kunder, leverandørerer, tredjepartsbetalere, lukkedage, afstemning af posteringer, samt stel- og glaskort. Endvidere har jeg håndteret sprogstyring på projektet (XLIFF).</li>\n\t<li>Web Share (2020-22): Repo med Npm packages, der inkluderer styles, assets, komponenter samt anden kode, der er delt mellem flere webprojekter.</li>\n\t<li>Storelist Editor (2020-2021): Lille applikation til intern anvendelse i forhold til oprettelse, opdatering og synkronisering af butikker.</li>\n\t<li>Cloud API (2021-2022): API til Authentication samt settings for cloud apps. API'et er hostet på Azure og sørger for sikker kommunikation mellem skyen og butikkernes backend for frontend (BFF) i forhold til f.eks. bestillinger af aftaler.</li>\n\t<li>Microservices (2020-2022): En række RESTful webtjenestjer udviklet i ASP .NET Core til håndtering af kunder, aftaler, lagerstyring, salg, synsprøver o.l. Jeg har arbejdet på flere af disse tjenester, samt udviklet enkelte af dem fra bunden.</li>\n\t<li>HORIZON Mobile (2020-2022): Progressive Web App (PWA) udviklet i Angular til håndtering af optikeres aftaler. Her har jeg bl.a. håndteret authentication med JSON Web Tokens (JWT).</li>\n</ul>",
-			"from": "2019-12-01T00:00:00",
-			"to": "2022-01-31T00:00:00",
-			"imageUrl": "assets/projects/OptikIT.png",
-			"demoUrl": "https://appointments.optikit.dk/da/MjQxMmQ0MTItY2FlYy00MThiLWI3MDgtYjUxYWFhMjM0OGRk",
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Personnel Management System",
-			"place": "Davai ApS",
-			"description": "<p>System til at håndtere projekter og ansatte, samt specielle funktioner tilknyttet denne virksomhed, der beskæftiger sig med rekruttering til offshore-projekter.</p>\n\t\t\t\t\t\t<p>Min opgave bestod i omskrivning af et personnel management system fra webforms til MVC med AngularJS front.</p>",
-			"from": "2019-02-01T00:00:00",
-			"to": "2019-03-01T00:00:00",
-			"imageUrl": "assets/projects/Davai.png",
-			"demoUrl": null,
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Kemiservice",
-			"place": "Nørskov Miljø ApS",
-			"description": "<p>Opslagssystem vedrørende jura, certificering samt arbejdsmiljø i forhold til kemikalier.</p>\n\t\t\t\t\t\t<p>Tilføjet mulighed for at ønske bestemte kemikalier samt godkendelsesprocedurer og statistik.</p>",
-			"from": "2018-05-01T00:00:00",
-			"to": "2018-11-30T00:00:00",
-			"imageUrl": "assets/projects/Norskov.png",
-			"demoUrl": null,
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Sundhed og Træning SÅ LETTER VI",
-			"place": "Mariager Fjord Kommune",
-			"description": "<p>MVC-applikation med AngularJS front, som er udviklet til projektet SÅ LETTER VI, der er et tilbud i Mariager Fjord Kommune for overvægtige børn og unge. Jeg har implementeret grafer, statistik, data export, CRUD samt anomymisering af data på denne applikation.</p>",
-			"from": "2018-04-01T00:00:00",
-			"to": "2018-08-31T00:00:00",
-			"imageUrl": "assets/projects/MariageFjordKommune.png",
-			"demoUrl": null,
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Booking System",
-			"place": "Vos ApS",
-			"description": "<p>Specielt udviklet booking system for virksomhed, der opretter og sælger rejsepakker til udenlandske rejsebureauer. Det er udviklet i MVC med AngularJS front, og jeg har deltaget i følgende:</p>\n\t\t\t\t\t\t<p>Filtrering samt udtræk af tour-statistik på baggrund af bl.a. kæder, leverandører og kunder.</p>\n\t\t\t\t\t\t<p>Automatisering af booking og beskeder til samarbejdspartnere. Optimering af informationer til medarbejdere på bl.a. dashboard.PDF-Eksport af f.eks. vouchers og tourplaner. Beregning af salgspriser</p>",
-			"from": "2018-02-01T00:00:00",
-			"to": "2019-01-15T00:00:00",
-			"imageUrl": "assets/projects/VOS.png",
-			"demoUrl": null,
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Mentorrolle",
-			"place": "CodeCreator ApS",
-			"description": "<p>Mentor for samt oplæring af ung mand med Asbergers syndrom.</p>",
-			"from": "2017-10-01T00:00:00",
-			"to": "2018-11-30T00:00:00",
-			"imageUrl": "assets/jobs/CodeCreator.png",
-			"demoUrl": null,
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Website",
-			"place": "AKU Aalborg",
-			"description": "<p>Umbraco-website for kollegielejligheds-udlejningsfond. Har foretaget implementering af MapKit (Google Maps plug-in) samt cookie consent advarsel.</p>",
-			"from": "2017-04-01T00:00:00",
-			"to": "2017-04-02T00:00:00",
-			"imageUrl": "assets/projects/AKU.png",
-			"demoUrl": "https://www.aku-aalborg.dk/",
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Turabs Online",
-			"place": "Dong Energy A/S",
-			"description": "<p>En web forms applikation skrevet i ASP (Classic) med det formål at overvåge og indsamle statistik fra 4 kraftvarmeværker i Syddanmark.</p>\n\t\t\t\t\t\t<p>Jeg har foretaget designændringer i forbindelse med navneskriftet til Orsted.</p>",
-			"from": "2017-02-01T00:00:00",
-			"to": "2017-02-02T00:00:00",
-			"imageUrl": "assets/projects/DONG.png",
-			"demoUrl": null,
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "EU Socialfondsprojekt",
-			"place": "AMU Nordjylland",
-			"description": "<p>MVC Applikation med en AngularJS front app udviklet til projektstyring af et EU Socialfondsprojekt. Jeg har udført rettelser i front, implementering af CRUD samt bug fixes</p>",
-			"from": "2017-01-01T00:00:00",
-			"to": "2017-01-15T00:00:00",
-			"imageUrl": "assets/projects/AMU.png",
-			"demoUrl": null,
-			"docUrl": null,
-			"sourceUrl": null
-		},
-		{
-			"name": "Dekstopapplikation samt website til beregning og visning af fordelingsregnskaber",
-			"place": "Casi Technology A/S",
-			"description": "<p>Applikation og Website til beregning af fordelingsregnskaber. Udviklet som Windows Forms desktopapplikation til generering af fordelingsregnskaber for boligforeninger o.l. samt Web Forms Applikation til visning og generering af fordelingsregnskaber.</p>\n\t\t\t\t\t\t<p>Blandt de opgaver jeg har lavet er følgende: Lagring af versioner af regnskaber, visning af rapporter på web samt sikkerhed, debugging og rettelser til beregningsrutiner, design samt rettelser til telerik reporting items vedr. f.eks. skønsberegning, implementering af rapportgenerering, skøn samt grafisk visning af målerdata på website, implementeret acontoindlæsning fra bl.a. textfiler og excel-ark på webløsning, rettet i konsolapplikation til automatiseret indlæsning af data fra zip-filer og xml-filer, indlæsningsrutine til datafiler fra temperatur- og fugtmålere samt grafisk visning af data på webside.</p>",
-			"from": "2016-10-01T00:00:00",
-			"to": "2018-11-30T00:00:00",
-			"imageUrl": "assets/projects/CASI.png",
-			"demoUrl": "",
-			"docUrl": "https://casi.dk/casi-loesninger/",
-			"sourceUrl": ""
-		},
-		{
-			"name": "Cloud løsning",
-			"place": "AutoPilot ApS",
-			"description": "<p>Et timesagsstyringsprogram med mange og store kunder indenfor arkitekt- og ingeniørbranchen. Består af en desktopapplikation, der har små 20 år på bagen samt en cloud løsning:\n<ul>\n<li>Manage Site: Tilføjet samt tilrettet diverse CRUD til applikationens community database.</li>\n<li>Upload Site: Omskrivning af front fra DurandalJS til AngularJS.</li>\n<li>Login Site: Implementering af to-faktor login-system samt bug fixes.</li>\n<li>Behovsliste: Omskrivning af Windows Forms applikation til AngularJS-applikation med ASP-Net MVC, backend samt re-mapping og overførsel af data.</li>\n<li>Project Site, Integration Site, Company Site og Concern Site: Opsætning af grafer samt implementering af delte directives, filters og services.</li>\n</ul>\n</p>",
-			"from": "2016-06-15T00:00:00",
-			"to": "2019-05-30T00:00:00",
-			"imageUrl": "assets/jobs/AutoPilot.png",
-			"demoUrl": "",
-			"docUrl": "https://autopilot.dk/produkt/timeregistrering/",
-			"sourceUrl": null
-		}
-	],
-	"qualifications": [
-		{
-			"name": "Brugerfladedesign",
-			"description": "<p>Det falder mig naturligt at sætte mig i brugerens sted. Når jeg arbejder\npå et system, skal det ikke kun fungere når de ”rigtige” begivenheder finder sted. Det skal være logisk og indlysende hvad der er af muligheder - helst i sådan en grad brugeren ikke opdager det.</p>\n<p>Endvidere er jeg en entusiastisk grafiker, som har styr på mange nyttige ting som f.eks. fritlægning, retouschering, reparation af billeder samt rentegning af logoer og interaktiv grafik og datavisualisering.</p>",
-			"imageUrl": "assets/skills/GUIDesign.png"
-		},
-		{
-			"name": "Content Management Systemer (CMS)",
-			"description": "<p>Jeg har primært beskæftiget mig med Wordpress og Umbraco (begge flere forskellige versioner), men har også erfaring med Joomla.</p>",
-			"imageUrl": "assets/skills/CMS.png"
-		},
-		{
-			"name": "Softwareudvikling",
-			"description": "<p>Jeg startede med at programmere på hobbybasis omkring 2005 og foretrækker at arbejde med kode ud fra et objekt-orienteret udviklingsparadigme med en lagdelt arkitektur. Endvidere er jeg vant til at anvende versionsstyring med branches til features, bugs, udvikling og publicering.</p>\n<p>Det univers jeg har størst kendskab til er ASP.Net og C#, men jeg er også godt inde i f.eks. PHP, Java og C/C++. Jeg har størst erfaring med webudvikling, men har erfaring indenfor desktop- og mobiludvikling.</p>",
-			"imageUrl": "assets/skills/CSharp.png"
-		},
-		{
-			"name": "Søgemaskineoptimering (SEO)",
-			"description": "<p>Jeg har forstand på til hvorledes web crawlers fungerer samt hvordan det er mest hensigtsmæssigt at opbygge sin HTML-kode i forhold til en crawlers processer.</p>\n<p>Desuden har jeg kendskab til flere teknikker som f.eks. landing pages, XML-sitemaps, samt hvorledes Google Search Console fungerer og det kan anvendes til at optimere de forskellige siders tilbøjelighed til at dukke op i forskellige søgninger.</p>",
-			"imageUrl": "assets/skills/SEO.png"
-		},
-		{
-			"name": "Webudvikling",
-			"description": "<p>Udvikling til moderne webbrowsere er min hjemmebane. Jeg trives godt med de indbyggede muligheder som HTML5, CSS3 og ECMAScriptet giver. F.eks. Canvas, SVG, Animationer, Audio og Video.</p>\n<p>Endvidere er jeg vant til at arbejde med RESTful webtjenester og har godt kendskab til forskellige udvidelser som f.eks. jQuery og Bootstrap, CSS Preprocessers (SASS og LESS) samt applikationssystemer som Angular, Vue og React.</p>",
-			"imageUrl": "assets/skills/WebApplications.png"
-		},
-		{
-			"name": "Frontend",
-			"description": "<p>Angular, Blazor, Bootstrap, PWA, SCSS, Tailwind og Vue.</p>",
-			"imageUrl": "assets/skills/WebApplications.png"
-		},
-		{
-			"name": "Backend",
-			"description": "<p>Basic Authentication, Entra ID, JWT, Microservices, Nem-Login, OAuth2, OIDC, REST, SFTP og SOAP.</p>",
-			"imageUrl": "assets/skills/CSharp.png"
-		},
-		{
-			"name": "Udviklerværktøjer",
-			"description": "<p>Bruno, Continue.dev, GitHub Copilot, GitHub Copilot CLI, IBExpert, Postman, SQL Management Studio, Visual Studio og VS Code.</p>",
-			"imageUrl": "assets/skills/GUIDesign.png"
-		},
-		{
-			"name": "Database",
-			"description": "<p>DbUp, Entity Framework, Firebird SQL, LINQ, MySQL, SQL Server og SQLite.</p>",
-			"imageUrl": "assets/skills/DatabaseSystems.png"
-		},
-		{
-			"name": "CI/CD",
-			"description": "<p>Bitbucket, Blue Green/Canary, DevOps, Docker, GitHub, GitLab, TeamCity og Octopus.</p>",
-			"imageUrl": "assets/skills/SEO.png"
-		},
-		{
-			"name": "Cloud",
-			"description": "<p>App Services, Application Insights, Azure, Azure CLI, Gmail API, Microsoft Graph API og Storage Accounts.</p>",
-			"imageUrl": "assets/skills/CMS.png"
-		},
-		{
-			"name": "Test",
-			"description": "<p>Cypress, Jasmine, Karma, Moq, NSubstitute, NUnit, Playwright, TestCafé og xUnit.</p>",
-			"imageUrl": "assets/skills/WebApplications.png"
-		}
-	]
+  "certificates": [
+    {
+      "name": "Developing Solutions for Microsoft Azure",
+      "place": "Teknologisk Institut",
+      "description": "<p>1 uges kursus i Azure og Microsoft Entra.</p>",
+      "from": "2025-10-01T00:00:00",
+      "to": "2025-10-31T00:00:00",
+      "imageUrl": "assets/education/TeknologiskInstitut.png"
+    },
+    {
+      "name": "Adobe Creative Suite 5",
+      "place": "University College Nordjylland",
+      "description": "<p>Kurses i Photoshop, Illustrator og In Design.</p>",
+      "from": "2011-04-11T00:00:00",
+      "to": "2011-05-27T00:00:00",
+      "imageUrl": "assets/education/Adobe.png"
+    }
+  ],
+  "educations": [
+    {
+      "name": "Webintegrator",
+      "place": "Tech College",
+      "description": "<p>Erhvervsuddannelse indenfor webdesign og -udvikling.</p>",
+      "from": "2014-01-01T00:00:00",
+      "to": "2015-10-31T00:00:00",
+      "imageUrl": "assets/education/MediaCollege.png"
+    },
+    {
+      "name": "IT-Teknolog (AK)",
+      "place": "University College Nordjylland",
+      "description": "<p>Kort Videregående Uddannelse indenfor software og elektronik.</p>",
+      "from": "2008-09-01T00:00:00",
+      "to": "2011-01-31T00:00:00",
+      "imageUrl": "assets/education/UCN.png"
+    }
+  ],
+  "experiences": [
+    {
+      "name": "Udvikler",
+      "place": "UVdata A/S",
+      "description": "<p>Web- og desktopløsninger til uddannelsessektoren. Projekter: UVskole, DSA Løn, Skolebeviser.dk, Skoleopskrivning.dk, Ventelisten.net og VoresSkole.net.<ul><li>Udvikling af systemer i .NET 4.8/8, .NET MVC, Angular 19, Blazor og Vue3.</li><li>Arbejde med REST-services og Firebird 2.5/3.0/5.0 databaser.</li><li>Arbejde med eksterne integrationer: MasterCard Overførselsservice, Microsoft Graph API, Bankintegration samt E-signering med INGrope.</li><li>Sikring af systemer med NemLog-in og Microsoft Entra.</li><li>2nd line support og kunderelateret arbejde ift. pilot tests med features.</li></ul></p>",
+      "from": "2023-02-01T00:00:00",
+      "to": "2026-09-30T00:00:00",
+      "imageUrl": "assets/jobs/uvdata.png"
+    },
+    {
+      "name": "Webudvikler",
+      "place": "JCD A/S",
+      "description": "<p>Konsulentarbejde for eksterne kunder. Projekter: Dansk Cater, Systemköp, Deltidsansatte Brandmænds Faglige Organisation, Migatronic, Folkeuniversitetet og Borg Automative.<ul><li>Udvikling af webapplikationer i .NET 6, Umbraco 10 og Vue2.</li><li>Arbejde med SQL Server samt REST- og SOAP Services med integrationer til MS Dynamics.</li></ul></p>",
+      "from": "2022-10-01T00:00:00",
+      "to": "2022-12-31T00:00:00",
+      "imageUrl": "assets/jobs/JCD.png"
+    },
+    {
+      "name": "Seniorudvikler",
+      "place": "OptikIT A/S",
+      "description": "<p>Webløsninger til optikerbranchen. Projekter: HORIZON, WebBooking, WebBooking Admin og HORIZON Mobile.<ul><li>Nyudvikling af webvinduer til desktopapplikation samt PWA Applikationer og Booking App i Angular 9-14.</li><li>Udvikling af RESTful microservices i .NET Core 2.0/3.1 og .NET 5.0 med datalag baseret på Entity Framework. Kommunikationen til butikkernes egne databaser skete via sikre SSH-forbindelser.</li><li>Udviklet integration til stregkodescanner, sikret applikationer med AzureAD samt custom JWT Schemes og håndteret oversættelser både i SPAs og services.</li></ul></p>",
+      "from": "2019-12-01T00:00:00",
+      "to": "2022-09-30T00:00:00",
+      "imageUrl": "assets/jobs/OptikIT.png"
+    },
+    {
+      "name": "Softwareudvikler",
+      "place": "CodeCreator ApS",
+      "description": "<p>Konsulentarbejde for eksterne kunder samt in-house arbejde på timesagsstyringssystem. Projekter: CASI, Vision of Scandivia (VOS), AutoPilot, Davai, Mariagerfjord Kommune, Nørskov Miljø, AMU Nordjylland, AKU Aalborg, Dong Energy.<ul><li>Fullstack-udvikling til AutoPilot (time- og sagsstyring) samt eksterne projekter i ASP.NET MVC og AngularJS samt MS SQL databaser.</li><li>Mentorrolle for ung udvikler med Asbergers; herunder undervisning og teknisk støtte.</li></ul></p>",
+      "from": "2016-06-15T00:00:00",
+      "to": "2019-08-31T00:00:00",
+      "imageUrl": "assets/jobs/CodeCreator.png"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Astronomi",
+      "description": null,
+      "imageUrl": "assets/mr.png"
+    },
+    {
+      "name": "Brydning",
+      "description": null,
+      "imageUrl": "assets/interests/Brydning.png"
+    },
+    {
+      "name": "DosBox",
+      "description": null,
+      "imageUrl": "assets/mr.png"
+    },
+    {
+      "name": "Familie",
+      "description": null,
+      "imageUrl": "assets/interests/Familie.png"
+    },
+    {
+      "name": "Fodbold",
+      "description": null,
+      "imageUrl": "assets/mr.png"
+    },
+    {
+      "name": "Historie",
+      "description": null,
+      "imageUrl": "assets/interests/Historie.png"
+    },
+    {
+      "name": "Idéhistorie",
+      "description": null,
+      "imageUrl": "assets/mr.png"
+    },
+    {
+      "name": "Lokalhistorie",
+      "description": null,
+      "imageUrl": "assets/mr.png"
+    },
+    {
+      "name": "Læsning",
+      "description": null,
+      "imageUrl": "assets/mr.png"
+    },
+    {
+      "name": "Løb",
+      "description": null,
+      "imageUrl": "assets/mr.png"
+    },
+    {
+      "name": "Møntsamling",
+      "description": null,
+      "imageUrl": "assets/mr.png"
+    },
+    {
+      "name": "Rollespil",
+      "description": null,
+      "imageUrl": "assets/mr.png"
+    },
+    {
+      "name": "Scratch",
+      "description": null,
+      "imageUrl": "assets/mr.png"
+    },
+    {
+      "name": "Skrivning",
+      "description": null,
+      "imageUrl": "assets/mr.png"
+    },
+    {
+      "name": "Slægtsforskning",
+      "description": null,
+      "imageUrl": "assets/mr.png"
+    },
+    {
+      "name": "Tegning",
+      "description": null,
+      "imageUrl": "assets/mr.png"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Dansk",
+      "description": "Flydende",
+      "imageUrl": "assets/languages/Dansk.png"
+    },
+    {
+      "name": "Engelsk",
+      "description": "Flydende",
+      "imageUrl": "assets/languages/Engelsk.png"
+    },
+    {
+      "name": "Italiensk",
+      "description": "Grundlæggende",
+      "imageUrl": "assets/languages/Italiensk.png"
+    },
+    {
+      "name": "Latin",
+      "description": "Grundlæggende",
+      "imageUrl": "assets/languages/Latin.png"
+    },
+    {
+      "name": "Spansk",
+      "description": "Grundlæggende",
+      "imageUrl": "assets/languages/Spansk.png"
+    },
+    {
+      "name": "Tysk",
+      "description": "Grundlæggende",
+      "imageUrl": "assets/languages/Tysk.png"
+    }
+  ],
+  "projects": [
+    {
+      "name": "Venteliste- og opskrivningsportal til frie grundskoler og efterskoler",
+      "place": "Skoleopskrivning.dk",
+      "description": "<p>Portal til ventelister og opskrivning for frie grundskoler og efterskoler i Danmark.</p><p>Applikationen er skrevet i Blazor WASM og kommunikerer med backenden via REST-services. Den tilbyder login med e-mail, login med MitID samt betaling med NETS Easy.</p><p>Jeg var primær udvikler på frontend, backend, GUI, databasedesign samt medvirkede aktivt i opsætningen af CI/CD-pipelinen.</p>",
+      "from": "2025-01-01T00:00:00",
+      "to": "2026-07-31T00:00:00",
+      "imageUrl": "assets/projects/uvskole.png",
+      "demoUrl": "https://testskoleopskrivning.uvdata.net/999997",
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Skolebevisarkiv til frie grundskoler",
+      "place": "UVskole",
+      "description": "<p>Afgangsbevis- og skolebevisportal for frie grundskoler og efterskoler i Danmark.</p><p>Applikationen er skrevet i Angular, og kommunikerer med backenden via REST services. Også her har jeg selv været primær udvikler og på CI/CD.</p>",
+      "from": "2024-01-01T12:28:56.415",
+      "to": "2026-07-31T23:59:59.999",
+      "imageUrl": "assets/projects/uvskole.png",
+      "demoUrl": "https://testskolebeviser.uvdata.net/",
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Webapplikationer releteret til Lønsystem til frie grundskoler",
+      "place": "DSA-Løn",
+      "description": "<p>DSA-Løn er et lønsystem rettet mod frie grundskoler, der automatiserer beregning af løn, skatter og pensioner i henhold til gældende overenskomster. Systemet anvendes af mere end 300 danske skoler og er skrevet i Delphi Pascal med  Access database.</p><p>Jeg har udelukkende arbejdet på webapplikationer relateret til programmet:</p><ul><li>Lønoverførselsservice: Overvågning, tilretning i fejlede overførsler (typisk på grund af netværksfejl), udskiftning af PPK-nøgler til SFTP-overførsler samt kommunikation med MasterCard ift. fejlsager.</li><li> Vejledningssite: Udskiftning af site til Single Page Application via Wordpress API inkl. Autentificeringsproces.</li>",
+      "from": "2023-06-01T12:28:56.415",
+      "to": "2026-07-31T23:59:59.999",
+      "imageUrl": "assets/projects/DSALoen.png",
+      "demoUrl": null,
+      "docUrl": "https://www.uvdata.dk/dsa-loen-3/",
+      "sourceUrl": null
+    },
+    {
+      "name": "Intranetsystem til frie grundskoler",
+      "place": "UVskole",
+      "description": "<p>VoresSkole.net er en ASP NET MVC Webapplikation, der Intranet funktionalitet samt karakter- og skemamoduler.</p><p>Jeg har især foretaget optimeringer på karakterdelen.</p>",
+      "from": "2023-05-01T12:28:56.415",
+      "to": "2026-07-31T23:59:59.999",
+      "imageUrl": "assets/projects/VoresSkole.png",
+      "demoUrl": "https://www.voresskole.net/",
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Administrationssystem til frie grundskoler",
+      "place": "UVskole",
+      "description": "<p>UVskole er et elevadministrations- samt økonomisystem målrettet frie grundskoler. Det er en klient/server-opdelt desktopapplikation skrevet i .NET Framework 4.8 med en Firebird database. Systemet rummer integrationer til adskillige services hos undervisningsministeriet samt eksterne samarbejdspartnere.</p><p>Mine bidrag:</p><ul><li>Forside: Udskiftning af gammelt Blogengine.net site til en single page application skrevet i Vue 3, som via Wordpress API anvender tokenbaseret autentificeringsproces og sikrer adgang til f.eks. vejledninger og videoer.</li><li>Bankintegration: Integration til ekstern service hos Dansk Bankintegration inkl. autentificeringsproces; herunder teknisk kommunikation med udvikler fra Dansk Bankintegration.</li><li>Bankafstemninger og -udligninger: Vindue implementeret ift. Den Nye Bogføringslov. Indlæsning af CSV-filer fra bank samt indlæsning via service fra Bankintegration.</li><li>BevisArkiv: Vindue til visning og sletning af genererede beviser.</li><li>Afgangsbevis Wizard: Tilføjet generering af PDF-beviser, der sendes til BevisArkiv.</li><li>Ventelisteopsætning: Style sheets, velkomsttekst og brugerdefinerede tekster samt lukkeår – altså klasser pr. skoleår, der kan lukkes for opskrivninger.</li><li>Nemhandeltilmelding: Tilmeldingsformular til Nemhandel.</li><li>Microsoft Graph API integration: Opsætning af applikation i Azure samt implementering af vindue til gennemførsel af autentificeringsproces, således en bruger kan logge på sin Office 365-konto og sende mails gennem UVskole.</li><li>Eksterne Services: Zenbi: Implementering af services vedr. synkronisering af hold mellem Zenbi og UVskole. BevisArkiv: Services vedr. hentning af skoler, personer og skolebeviser fra UVskole. MSGraphAPI: Service til at modtage callback fra Microsoft i forbindelse med autentificeringsprocessen i UVskole.</li><li>2nd Line Support: Supportsager, der især vedrører Ventelisten, VoresSkole og Bankintegration/Bankafstemning.</li></ul>",
+      "from": "2023-04-01T12:28:56.415",
+      "to": "2026-07-31T23:59:59.999",
+      "imageUrl": "assets/projects/uvskole.png",
+      "demoUrl": null,
+      "docUrl": "https://www.uvdata.dk/produkter/uvskole/",
+      "sourceUrl": null
+    },
+    {
+      "name": "Venteliste til frie grundskoler",
+      "place": "UVskole",
+      "description": "<p>Et ventelistesystem til opskrivning af nye elever på frie grundskoler. Applikationen er udviklet i ASP.NET MVC med en single-page application med Vue 3 som frontend. Den benytter Firebird som database, NetEasy som e-handelsmodul og NemLog-in-brokeren KMD Identity til login.</p><p>Jeg har bidraget med modernisering samt implementering af nye funktionaliteter til webapplikationen.</p>",
+      "from": "2023-02-01T12:28:56.415",
+      "to": "2026-07-31T23:59:59.999",
+      "imageUrl": "assets/projects/uvskole.png",
+      "demoUrl": "https://www.ventelisten.net/999998",
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Applikationer til producent af svejsemaskiner",
+      "place": "Migatronic A/S",
+      "description": "<p>Et Umbraco 10 website med tilknyttet Dotnet 6.0 RestAPI samt MS Dynamics integrationer</p>\n<p>Jeg har arbejdet på XML-filindlæsning af brugte produkter.</p>",
+      "from": "2022-11-18T22:23:43.807",
+      "to": "2022-11-18T22:23:43.807",
+      "imageUrl": "assets/projects/migatronic.png",
+      "demoUrl": "https://www.migatronic.com/da",
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Applikationer til indkøbsfællesskab",
+      "place": "Dansk Cater A/S",
+      "description": "<p>En række af websites, applikationer, api'er samt MS Dynamics integrationer til stort dansk indkøbsfællesskab. \n</p>\n<p>\nJeg har arbejdet på messetilmeldingssitet, hvor jeg har implementeret funktionalitet ift. tilmelding samt migreret et SOAP API til Dotnet Core 6.0.\n</p>",
+      "from": "2022-11-07T00:00:00",
+      "to": "2022-11-17T00:00:00",
+      "imageUrl": "assets/projects/danskcater.png",
+      "demoUrl": "https://cater.dk/",
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Applikationer til indkøbsfællesskab",
+      "place": "Systemköp i Sverige AB",
+      "description": "<p>En række af websites, applikationer, api'er samt MS Dynamics integrationer til stort svensk indkøbsfællesskab. \n</p>\n<p>\nJeg har lavet statistiske udtræk til deres kundeportal.\n</p>",
+      "from": "2022-10-19T00:00:00",
+      "to": "2022-11-04T00:00:00",
+      "imageUrl": "assets/projects/systemkop.png",
+      "demoUrl": "https://www.systemkop.se/",
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Intranet til fagforening for brandmænd",
+      "place": "Deltidsansatte Brandfolks Faglige Organisation",
+      "description": "<p>Et Umbraco 10 website med tilknyttet Dotnet 6.0 back-end til fagforening for deltidsansatte brandmænd.</p>\n<p>Jeg har udviklet rollebaseret, sikret filupload til deres intranet, dataudtræk til medlemskort samt MITId integration.</p>",
+      "from": "2022-10-12T00:00:00",
+      "to": "2022-11-30T00:00:00",
+      "imageUrl": "assets/projects/dbrand.png",
+      "demoUrl": "https://dbrand.dk/",
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Webside",
+      "place": "Folkeuniversitet i Aarhus",
+      "description": "<p>\nUmbraco 10 webside med Dotnet Core 6.0 back-end til folkeoplysende kursussted.\n</p>\n<p>\nJeg har arbejdet på filteringsfunktionalitet ift. festivaller.\n</p>",
+      "from": "2022-10-11T00:00:00",
+      "to": "2022-10-11T00:00:00",
+      "imageUrl": "assets/projects/folkeuniversitetet.png",
+      "demoUrl": "https://fuau.dk/",
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Webside",
+      "place": "Borg Automative A/S",
+      "description": "<p>\nUmbraco 10 webside med Dotnet Core 6.0 back-end til refabrikeringsvirksomhed indenfor autoreservedele.\n</p>\n<p>\nJeg har arbejdet på designændringer ift. opgradering til Umbraco 10.\n</p>",
+      "from": "2022-10-01T00:00:00",
+      "to": "2022-10-10T00:00:00",
+      "imageUrl": "assets/projects/borg.png",
+      "demoUrl": "https://www.borgautomotive.com/",
+      "docUrl": null,
+      "sourceUrl": ""
+    },
+    {
+      "name": "Nager.Date",
+      "place": "Open Source-projekt",
+      "description": "<p>Open source API, som leverer information omkring ferie- og helligdage i hele verden.</p>\n<p>Jeg har tilføjet informationer omkring færøske og grønlandske ferie- samt helligdage.</p>",
+      "from": "2022-04-28T00:00:00",
+      "to": "2022-05-17T00:00:00",
+      "imageUrl": "assets/projects/Nager.png",
+      "demoUrl": null,
+      "docUrl": "https://date.nager.at/",
+      "sourceUrl": "https://github.com/nager/Nager.Date"
+    },
+    {
+      "name": "Ignite UI for Angular",
+      "place": "Open Source-projekt",
+      "description": "<p>Delvist open source kompenentbibliotek af Infragistics.</p>\n<p>Jeg har lavet danske standardoversættelser til komponenter.</p>",
+      "from": "2021-09-13T00:00:00",
+      "to": "2021-09-13T00:00:00",
+      "imageUrl": "assets/projects/IgniteUI.png",
+      "demoUrl": null,
+      "docUrl": "https://www.infragistics.com/products/ignite-ui-angular/angular/components/general/angular-grid-overview-guide",
+      "sourceUrl": "https://github.com/mrApptastic/igniteui-angular"
+    },
+    {
+      "name": "Applikationer til optikerbranchen",
+      "place": "OptikIT A/S",
+      "description": "<p>En række systemer, der servicerer adskillige hundrede skandinaviske optikere. Hovedproduktet HORIZON er en hybrid desktopapplikation med vinduer lavet i Delphi, .Net (WPF) samt web views (CEF og Typescript Angular). Her har jeg arbejdet på følgende applikationer:</p>\n<ul>\n\t<li>Web Booking (2019-2022): Aftalebookingsystem til optikeres kunder; f.eks. synsprøver m.v. Jeg har udviklet applikationen fra scratch i Angular, og den er pt. taget i brug af mere end 200 butikker i Danmark, Sverige, Grønland og Færøerne.</li>\n\t<li>Web Admin (2020-2022): Kontoadministrationsside, der styrer brugeradgang, mobilbrugeradgang, design, åbningstider, foretrukket sprog, samt flere andre til i fht. kundernes Web Booking. Ligeledes en applikation jeg har udviklet fra scratch. </li>\n\t<li>HORIZON (2020-22): Webvinduer udviklet i Angular til håndtering af medarbejdere, aftaletyper, prøverum, aftalekalender, kunder, leverandørerer, tredjepartsbetalere, lukkedage, afstemning af posteringer, samt stel- og glaskort. Endvidere har jeg håndteret sprogstyring på projektet (XLIFF).</li>\n\t<li>Web Share (2020-22): Repo med Npm packages, der inkluderer styles, assets, komponenter samt anden kode, der er delt mellem flere webprojekter.</li>\n\t<li>Storelist Editor (2020-2021): Lille applikation til intern anvendelse i forhold til oprettelse, opdatering og synkronisering af butikker.</li>\n\t<li>Cloud API (2021-2022): API til Authentication samt settings for cloud apps. API'et er hostet på Azure og sørger for sikker kommunikation mellem skyen og butikkernes backend for frontend (BFF) i forhold til f.eks. bestillinger af aftaler.</li>\n\t<li>Microservices (2020-2022): En række RESTful webtjenestjer udviklet i ASP .NET Core til håndtering af kunder, aftaler, lagerstyring, salg, synsprøver o.l. Jeg har arbejdet på flere af disse tjenester, samt udviklet enkelte af dem fra bunden.</li>\n\t<li>HORIZON Mobile (2020-2022): Progressive Web App (PWA) udviklet i Angular til håndtering af optikeres aftaler. Her har jeg bl.a. håndteret authentication med JSON Web Tokens (JWT).</li>\n</ul>",
+      "from": "2019-12-01T00:00:00",
+      "to": "2022-01-31T00:00:00",
+      "imageUrl": "assets/projects/OptikIT.png",
+      "demoUrl": "https://appointments.optikit.dk/da/MjQxMmQ0MTItY2FlYy00MThiLWI3MDgtYjUxYWFhMjM0OGRk",
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Personnel Management System",
+      "place": "Davai ApS",
+      "description": "<p>System til at håndtere projekter og ansatte, samt specielle funktioner tilknyttet denne virksomhed, der beskæftiger sig med rekruttering til offshore-projekter.</p>\n\t\t\t\t\t\t<p>Min opgave bestod i omskrivning af et personnel management system fra webforms til MVC med AngularJS front.</p>",
+      "from": "2019-02-01T00:00:00",
+      "to": "2019-03-01T00:00:00",
+      "imageUrl": "assets/projects/Davai.png",
+      "demoUrl": null,
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Kemiservice",
+      "place": "Nørskov Miljø ApS",
+      "description": "<p>Opslagssystem vedrørende jura, certificering samt arbejdsmiljø i forhold til kemikalier.</p>\n\t\t\t\t\t\t<p>Tilføjet mulighed for at ønske bestemte kemikalier samt godkendelsesprocedurer og statistik.</p>",
+      "from": "2018-05-01T00:00:00",
+      "to": "2018-11-30T00:00:00",
+      "imageUrl": "assets/projects/Norskov.png",
+      "demoUrl": null,
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Sundhed og Træning SÅ LETTER VI",
+      "place": "Mariager Fjord Kommune",
+      "description": "<p>MVC-applikation med AngularJS front, som er udviklet til projektet SÅ LETTER VI, der er et tilbud i Mariager Fjord Kommune for overvægtige børn og unge. Jeg har implementeret grafer, statistik, data export, CRUD samt anomymisering af data på denne applikation.</p>",
+      "from": "2018-04-01T00:00:00",
+      "to": "2018-08-31T00:00:00",
+      "imageUrl": "assets/projects/MariageFjordKommune.png",
+      "demoUrl": null,
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Booking System",
+      "place": "Vos ApS",
+      "description": "<p>Specielt udviklet booking system for virksomhed, der opretter og sælger rejsepakker til udenlandske rejsebureauer. Det er udviklet i MVC med AngularJS front, og jeg har deltaget i følgende:</p>\n\t\t\t\t\t\t<p>Filtrering samt udtræk af tour-statistik på baggrund af bl.a. kæder, leverandører og kunder.</p>\n\t\t\t\t\t\t<p>Automatisering af booking og beskeder til samarbejdspartnere. Optimering af informationer til medarbejdere på bl.a. dashboard.PDF-Eksport af f.eks. vouchers og tourplaner. Beregning af salgspriser</p>",
+      "from": "2018-02-01T00:00:00",
+      "to": "2019-01-15T00:00:00",
+      "imageUrl": "assets/projects/VOS.png",
+      "demoUrl": null,
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Mentorrolle",
+      "place": "CodeCreator ApS",
+      "description": "<p>Mentor for samt oplæring af ung mand med Asbergers syndrom.</p>",
+      "from": "2017-10-01T00:00:00",
+      "to": "2018-11-30T00:00:00",
+      "imageUrl": "assets/jobs/CodeCreator.png",
+      "demoUrl": null,
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Website",
+      "place": "AKU Aalborg",
+      "description": "<p>Umbraco-website for kollegielejligheds-udlejningsfond. Har foretaget implementering af MapKit (Google Maps plug-in) samt cookie consent advarsel.</p>",
+      "from": "2017-04-01T00:00:00",
+      "to": "2017-04-02T00:00:00",
+      "imageUrl": "assets/projects/AKU.png",
+      "demoUrl": "https://www.aku-aalborg.dk/",
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Turabs Online",
+      "place": "Dong Energy A/S",
+      "description": "<p>En web forms applikation skrevet i ASP (Classic) med det formål at overvåge og indsamle statistik fra 4 kraftvarmeværker i Syddanmark.</p>\n\t\t\t\t\t\t<p>Jeg har foretaget designændringer i forbindelse med navneskriftet til Orsted.</p>",
+      "from": "2017-02-01T00:00:00",
+      "to": "2017-02-02T00:00:00",
+      "imageUrl": "assets/projects/DONG.png",
+      "demoUrl": null,
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "EU Socialfondsprojekt",
+      "place": "AMU Nordjylland",
+      "description": "<p>MVC Applikation med en AngularJS front app udviklet til projektstyring af et EU Socialfondsprojekt. Jeg har udført rettelser i front, implementering af CRUD samt bug fixes</p>",
+      "from": "2017-01-01T00:00:00",
+      "to": "2017-01-15T00:00:00",
+      "imageUrl": "assets/projects/AMU.png",
+      "demoUrl": null,
+      "docUrl": null,
+      "sourceUrl": null
+    },
+    {
+      "name": "Dekstopapplikation samt website til beregning og visning af fordelingsregnskaber",
+      "place": "Casi Technology A/S",
+      "description": "<p>Applikation og Website til beregning af fordelingsregnskaber. Udviklet som Windows Forms desktopapplikation til generering af fordelingsregnskaber for boligforeninger o.l. samt Web Forms Applikation til visning og generering af fordelingsregnskaber.</p>\n\t\t\t\t\t\t<p>Blandt de opgaver jeg har lavet er følgende: Lagring af versioner af regnskaber, visning af rapporter på web samt sikkerhed, debugging og rettelser til beregningsrutiner, design samt rettelser til telerik reporting items vedr. f.eks. skønsberegning, implementering af rapportgenerering, skøn samt grafisk visning af målerdata på website, implementeret acontoindlæsning fra bl.a. textfiler og excel-ark på webløsning, rettet i konsolapplikation til automatiseret indlæsning af data fra zip-filer og xml-filer, indlæsningsrutine til datafiler fra temperatur- og fugtmålere samt grafisk visning af data på webside.</p>",
+      "from": "2016-10-01T00:00:00",
+      "to": "2018-11-30T00:00:00",
+      "imageUrl": "assets/projects/CASI.png",
+      "demoUrl": "",
+      "docUrl": "https://casi.dk/casi-loesninger/",
+      "sourceUrl": ""
+    },
+    {
+      "name": "Cloud løsning",
+      "place": "AutoPilot ApS",
+      "description": "<p>Et timesagsstyringsprogram med mange og store kunder indenfor arkitekt- og ingeniørbranchen. Består af en desktopapplikation, der har små 20 år på bagen samt en cloud løsning:\n<ul>\n<li>Manage Site: Tilføjet samt tilrettet diverse CRUD til applikationens community database.</li>\n<li>Upload Site: Omskrivning af front fra DurandalJS til AngularJS.</li>\n<li>Login Site: Implementering af to-faktor login-system samt bug fixes.</li>\n<li>Behovsliste: Omskrivning af Windows Forms applikation til AngularJS-applikation med ASP-Net MVC, backend samt re-mapping og overførsel af data.</li>\n<li>Project Site, Integration Site, Company Site og Concern Site: Opsætning af grafer samt implementering af delte directives, filters og services.</li>\n</ul>\n</p>",
+      "from": "2016-06-15T00:00:00",
+      "to": "2019-05-30T00:00:00",
+      "imageUrl": "assets/jobs/AutoPilot.png",
+      "demoUrl": "",
+      "docUrl": "https://autopilot.dk/produkt/timeregistrering/",
+      "sourceUrl": null
+    }
+  ],
+  "qualifications": [
+    {
+      "name": "Brugerfladedesign",
+      "description": "<p>2D Grafik, Adobe CS, Canva, Billedbehandling, Datavisualisering, Gestalt-lovene, Gimp, Inkscape, Usability, UX og Web Accessibility (WCAG)</p>",
+      "imageUrl": "assets/skills/UserExperience.png"
+    },
+    {
+      "name": "Content Management Systemer (CMS)",
+      "description": "<p>BlogEngine, CuteNews, Joomla, PHPBB, PHPFusion, Umbraco og WordPress</p>",
+      "imageUrl": "assets/skills/CMS.png"
+    },
+    {
+      "name": "Softwareudvikling",
+      "description": "<p>Design Patterns, Dependency Injection, DevOps, MVC/MVVM, Objectorienteret Analyse og Design (OOAD), SCRUM, SOLID-Principperne, Struktureret Programudvikling (SPU)</p>",
+      "imageUrl": "assets/skills/SoftwareDevelopment.png"
+    },
+    {
+      "name": "Programmering",
+      "description": "<p>C, C#, C++, GDScript, Java, JavaScript, TypeScript, PHP og Python</p>",
+      "imageUrl": "assets/skills/Programming.png"
+    },
+    {
+      "name": "Frontend Webudvikling",
+      "description": "<p>Angular, Blazor, Bootstrap, Canvas, CSS, Google Analytics/Tag Manager, HTML, LESS, Offline-First, Progressive Web Apps (PWA), React, SASS, SCSS, SVG, Søgemaskineoptimering (SEO), Tailwind og Vue.</p>",
+      "imageUrl": "assets/skills/WebDevelopment.png"
+    },
+    {
+      "name": "Backend Webudvikling",
+      "description": "<p>.NET Framework, ASP.NET, ASP.NET Core, Basic Authentication, Circuit Breaker, Cross-Site Request Forgery Tokens (CSRF), Entra ID, Fejlhåndtering/Robusthed, FTP/SFTP, JSON Web Tokens (JWT), Key Vaults, Laravel, Microservices, Multi-Factor Authentication (MFA), Nem-Login, OAuth2, OIDC, ORM, Rate Limiting, REST, SOAP, TLS/HTTPS, og User Secrets.</p>",
+      "imageUrl": "assets/skills/CSharp.png"
+    },
+    {
+      "name": "Udviklerværktøjer",
+      "description": "<p>Android Studio, Bruno, Composer, Continue.dev, Docker, Eclipse, GitHub Copilot, GitHub Copilot CLI, IBExpert, IntelliJ, Node.js, Notepad++, Node Package Manager (NPM), NuGet Package Manager, Ollama, Postman, Powershell, SQL Management Studio, SQL Workbench, Visual Studio, VS Code og XAMPP</p>",
+      "imageUrl": "assets/skills/VisualStudio.png"
+    },
+    {
+      "name": "Database",
+      "description": "<p>ADO.NET, DbUp, Entity Framework, Firebird SQL, LINQ, MariaDB, MySQL, Poco, SQL Server og SQLite.</p>",
+      "imageUrl": "assets/skills/DatabaseSystems.png"
+    },
+    {
+      "name": "CI/CD",
+      "description": "<p>Bitbucket, Blue Green/Canary, Feature Branching, Git Flow, GitHub, GitLab, TeamCity og Octopus.</p>",
+      "imageUrl": "assets/skills/DigitalSignalbehandling.png"
+    },
+    {
+      "name": "Cloud",
+      "description": "<p>App Services, Application Insights, Azure, Azure CLI, Gmail API, Microsoft Graph API og Storage Accounts.</p>",
+      "imageUrl": "assets/skills/Restful.png"
+    },
+    {
+      "name": "Test",
+      "description": "<p>Cypress, E2ETesting, Integration Testing, Jasmine, Karma, Moq, NSubstitute, NUnit, Playwright, TestCafé, Unit Testing, og xUnit.</p>",
+      "imageUrl": "assets/skills/AnalogDesign.png"
+    }
+  ]
 }

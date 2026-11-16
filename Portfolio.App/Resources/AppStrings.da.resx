@@ -85,7 +85,7 @@
     <value>Jeg er nemlig ikke ligesom de andre udviklere.</value>
   </data>
   <data name="Home_ASCII_Reward" xml:space="preserve">
-    <value>Tak fordi du læste med så langt! Derfor belønnes I med lidt ASCII-art:</value>
+    <value>Tak fordi I læste med så langt! Derfor belønnes I med lidt ASCII-art:</value>
   </data>
   <!-- CV page -->
   <data name="CV_Name" xml:space="preserve">

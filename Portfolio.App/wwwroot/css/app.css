@@ -303,6 +303,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 1rem 0; }
 
 /* ============= CV ============= */
 .cv-section .section-container { max-width: 860px; }
+div.cv-section-block p { margin-bottom: 1rem;}
 .cv-container { display: flex; flex-direction: column; gap: 2rem; }
 .cv-actions { display: flex; justify-content: flex-end; }
 .cv-actions .cta-btn { max-width: 100%; }
@@ -332,6 +333,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 1rem 0; }
 .cv-item-logo { float: right; height: 50px; margin-left: 1rem;  background: white !important; }
 .cv-article h4 { font-size: 1rem; font-weight: 600; }
 .cv-article h5 { font-size: .9rem; color: var(--text-secondary); font-weight: 400; }
+.cv-article ul { list-style: inside; }
 .cv-time { font-size: .8rem; color: var(--accent); margin: .25rem 0; }
 .cv-skills-list { display: flex; flex-wrap: wrap; gap: .5rem; }
 .cv-skills-list li {
