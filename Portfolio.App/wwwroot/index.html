@@ -5,10 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Henrik Beske — Portfolio</title>
     <base href="/" />
-    <meta
-      name="description"
-      content="Henrik Beske — Portfolio"
-    />
+    <meta name="description" content="Henrik Beske — Portfolio" />
     <meta name="theme-color" content="#0d1117" />
     <!-- GitHub Pages SPA redirect handler -->
     <script>
@@ -35,25 +32,45 @@
     <link rel="icon" type="image/png" href="assets/mr.png?v=__CACHE_BUSTER__" />
     <link href="manifest.webmanifest?v=__CACHE_BUSTER__" rel="manifest" />
     <link href="css/background.css?v=__CACHE_BUSTER__" rel="stylesheet" />
-    <link rel="apple-touch-icon" sizes="512x512" href="icon-512.png?v=__CACHE_BUSTER__" />
-    <link rel="apple-touch-icon" sizes="192x192" href="icon-192.png?v=__CACHE_BUSTER__" />
-    <!-- Google Analytics — replace GA_MEASUREMENT_ID with your actual ID -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"
-    ></script>
+    <link
+      rel="apple-touch-icon"
+      sizes="512x512"
+      href="icon-512.png?v=__CACHE_BUSTER__"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="icon-192.png?v=__CACHE_BUSTER__"
+    />
+    <!-- Google Tag Manager -->
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "GA_MEASUREMENT_ID");
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-PP72K7HG");
     </script>
+    <!-- End Google Tag Manager -->
+
     <script type="importmap"></script>
   </head>
 
   <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PP72K7HG"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <div id="app-layer">
       <canvas id="canv"></canvas>
       <div id="app">
