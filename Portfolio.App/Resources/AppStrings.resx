@@ -84,8 +84,11 @@
   <data name="Home_Tagline" xml:space="preserve">
     <value>Because I am not like the other developers.</value>
   </data>
+    <data name="Home_Thanks" xml:space="preserve">
+    <value>Thank you for reading so far!</value>
+  </data>
   <data name="Home_ASCII_Reward" xml:space="preserve">
-    <value>Thank you for reading so far! That is why you are rewarded with a little ASCII art:</value>
+    <value>For that, you are rewarded with a little ASCII art:</value>
   </data>
   <!-- CV page -->
   <data name="CV_Name" xml:space="preserve">

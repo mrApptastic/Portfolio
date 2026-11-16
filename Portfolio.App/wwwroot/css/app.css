@@ -49,7 +49,7 @@ hr { border: none; border-top: 1px solid var(--border); margin: 1rem 0; }
     padding: 0 1.5rem;
     z-index: 1000;
     transition: background .3s, box-shadow .3s;
-    background: transparent;
+    background: rgba(0,0,0,0.9);
 }
 .portfolio-nav.scrolled {
     background: rgba(13,17,23,.95);
@@ -415,7 +415,8 @@ div.cv-section-block p { margin-bottom: 1rem;}
 .timeline-title { font-size: 1rem; font-weight: 600; margin-bottom: .25rem; }
 .timeline-place { font-size: .8rem; color: var(--text-secondary); margin-bottom: .5rem; }
 .timeline-desc { font-size: .85rem; color: var(--text-secondary); margin-bottom: .75rem; }
-.timeline-desc p { margin: 0; }
+.timeline-desc p { margin: 0; margin-bottom: .75rem; }
+.timeline-desc ul { list-style: inside; }
 .timeline-links { display: flex; gap: .5rem; flex-wrap: wrap; }
 .link-badge {
     display: inline-block;
