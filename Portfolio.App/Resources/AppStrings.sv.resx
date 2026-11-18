@@ -62,6 +62,12 @@
   <data name="Nav_Projects" xml:space="preserve">
     <value>Projekt</value>
   </data>
+  <data name="Nav_HobbyProjects" xml:space="preserve">
+    <value>Hobbyprojekt</value>
+  </data>
+  <data name="Nav_GraphicDesign" xml:space="preserve">
+    <value>Grafisk Design</value>
+  </data>
   <data name="Nav_Contact" xml:space="preserve">
     <value>Kontakt</value>
   </data>
@@ -193,6 +199,86 @@
   </data>
   <data name="Projects_LinkDocs" xml:space="preserve">
     <value>Dokumentation</value>
+  </data>
+  <!-- Hobby projects page -->
+  <data name="HobbyProjects_Title" xml:space="preserve">
+    <value>Hobbyprojekt</value>
+  </data>
+  <data name="HobbyProjects_Intro" xml:space="preserve">
+    <value>Ett urval av sidoprojekt där jag utforskar idéer, experimenterar med verktyg och bygger av ren nyfikenhet.</value>
+  </data>
+  <data name="HobbyProjects_PlaceholderNote" xml:space="preserve">
+    <value>Tillfälligt platshållarinnehåll — jag ersätter dessa med riktiga projektdata senare.</value>
+  </data>
+  <data name="HobbyProjects_LinkDemo" xml:space="preserve">
+    <value>Live-demo</value>
+  </data>
+  <data name="HobbyProjects_LinkRepository" xml:space="preserve">
+    <value>Repository</value>
+  </data>
+  <data name="HobbyProjects_LinkDetails" xml:space="preserve">
+    <value>Detaljer</value>
+  </data>
+  <data name="HobbyProject_NewsletterName" xml:space="preserve">
+    <value>App för nyhetsbrevskampanjer</value>
+  </data>
+  <data name="HobbyProject_NewsletterDescription" xml:space="preserve">
+    <value>En liten PWA för att hantera nyhetsbrevskampanjer med Google Sheets- och Google Mail-API:er.</value>
+  </data>
+  <data name="HobbyProject_DndCharacterName" xml:space="preserve">
+    <value>DnD-karaktärsverktyg</value>
+  </data>
+  <data name="HobbyProject_DndCharacterDescription" xml:space="preserve">
+    <value>Ett avancerat verktyg för att skapa och hantera DnD 5.5e-karaktärer. DnD är ett populärt bordsrollspel.</value>
+  </data>
+  <data name="HobbyProject_RpgMapName" xml:space="preserve">
+    <value>RPG-stridskarta</value>
+  </data>
+  <data name="HobbyProject_RpgMapDescription" xml:space="preserve">
+    <value>Ett canvasbaserat verktyg för att skapa och hantera RPG-stridskartor.</value>
+  </data>
+  <data name="HobbyProject_DndGeneratorName" xml:space="preserve">
+    <value>DnD-karaktärsgenerator med ett klick</value>
+  </data>
+  <data name="HobbyProject_DndGeneratorDescription" xml:space="preserve">
+    <value>Ett litet verktyg för att snabbt skapa DnD 5e-karaktärer med ett enda klick.</value>
+  </data>
+  <data name="HobbyProject_ColourApiName" xml:space="preserve">
+    <value>Färg-API</value>
+  </data>
+  <data name="HobbyProject_ColourApiDescription" xml:space="preserve">
+    <value>Ett REST-API för att hämta information om många färger. Det finns en demoapplikation.</value>
+  </data>
+  <data name="HobbyProject_RectGameName" xml:space="preserve">
+    <value>Rect-spel</value>
+  </data>
+  <data name="HobbyProject_RectGameDescription" xml:space="preserve">
+    <value>Ett litet canvasbaserat spel som liknar soloversionen av Pong.</value>
+  </data>
+  <data name="HobbyProject_CanvasChatName" xml:space="preserve">
+    <value>Canvas-chat</value>
+  </data>
+  <data name="HobbyProject_CanvasChatDescription" xml:space="preserve">
+    <value>Ett realtidsbaserat samarbetsverktyg för chatt där användare kan rita på en gemensam canvas.</value>
+  </data>
+  <data name="HobbyProject_VectorGraphicsName" xml:space="preserve">
+    <value>Vektorgrafikverktyg</value>
+  </data>
+  <data name="HobbyProject_VectorGraphicsDescription" xml:space="preserve">
+    <value>Ett verktyg för att skapa och redigera vektorgrafik på en HTML-canvas.</value>
+  </data>
+  <!-- Graphic design page -->
+  <data name="GraphicDesign_Title" xml:space="preserve">
+    <value>Grafisk Design</value>
+  </data>
+  <data name="GraphicDesign_Intro" xml:space="preserve">
+    <value>Ett visuellt galleri med utvalda designkoncept. Klicka på en bild för att öppna den fullständiga designen.</value>
+  </data>
+  <data name="GraphicDesign_PlaceholderNote" xml:space="preserve">
+    <value>Platshållarsamling — slutliga designverk kan bytas in senare.</value>
+  </data>
+  <data name="GraphicDesign_LinkOpen" xml:space="preserve">
+    <value>Öppna full design</value>
   </data>
   <!-- Contact page -->
   <data name="Contact_Title" xml:space="preserve">

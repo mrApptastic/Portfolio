@@ -438,6 +438,138 @@ div.cv-section-block p { margin-bottom: 1rem;}
     .timeline-card { width: calc(100% - 80px); }
 }
 
+/* ============= HOBBY PROJECTS ============= */
+.hobby-lab-section .section-container { max-width: 1100px; }
+.hobby-intro {
+    color: var(--text-secondary);
+    max-width: 700px;
+    margin-bottom: 1rem;
+}
+.hobby-placeholder-note {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 2rem;
+    font-family: var(--font-mono);
+    color: var(--text-secondary);
+    font-size: .85rem;
+}
+.hobby-note-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--accent-green);
+}
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.25rem;
+}
+.hobby-card {
+    background: linear-gradient(180deg, rgba(88,166,255,.08), rgba(22,27,34,.75));
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+.hobby-image-wrap { background: var(--bg-secondary); height: 170px; }
+.hobby-image-link { display: block; height: 100%; }
+.hobby-image { width: 100%; height: 100%; object-fit: cover; }
+.hobby-card-content { padding: 1rem; }
+.hobby-status {
+    font-size: .7rem;
+    display: inline-block;
+    font-family: var(--font-mono);
+    color: var(--accent-green);
+    border: 1px solid rgba(0, 233, 0, .4);
+    padding: .1rem .5rem;
+    border-radius: 99px;
+    margin-bottom: .5rem;
+}
+.hobby-card h3 { font-size: 1rem; margin-bottom: .5rem; }
+.hobby-description {
+    font-size: .85rem;
+    color: var(--text-secondary);
+    margin-bottom: .75rem;
+}
+.hobby-tags {
+    display: flex;
+    gap: .4rem;
+    flex-wrap: wrap;
+    margin-bottom: .9rem;
+}
+.hobby-tags span {
+    font-size: .72rem;
+    border-radius: 99px;
+    border: 1px solid var(--border);
+    padding: .15rem .45rem;
+    color: var(--text-secondary);
+    background: var(--bg-card);
+}
+.hobby-links {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+}
+
+/* ============= GRAPHIC DESIGN ============= */
+.graphic-design-section .section-container { max-width: 1100px; }
+.graphic-intro {
+    color: var(--text-secondary);
+    max-width: 760px;
+    margin-bottom: 1rem;
+}
+.design-placeholder-note {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 2rem;
+    color: var(--text-secondary);
+}
+.design-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+}
+.design-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.design-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow);
+}
+.design-image-link {
+    display: block;
+    background: var(--bg-card);
+}
+.design-image {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+.design-card-content { padding: 1rem; }
+.design-tool {
+    font-size: .75rem;
+    font-family: var(--font-mono);
+    color: var(--accent-orange);
+    margin-bottom: .45rem;
+}
+.design-card h3 { font-size: 1rem; margin-bottom: .45rem; }
+.design-description {
+    font-size: .85rem;
+    color: var(--text-secondary);
+    margin-bottom: .75rem;
+}
+.design-open-link {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: .85rem;
+}
+
 /* ============= CONTACT ============= */
 .contact-section .section-container { max-width: 700px; }
 .contact-card {

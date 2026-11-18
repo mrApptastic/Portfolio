@@ -62,6 +62,12 @@
   <data name="Nav_Projects" xml:space="preserve">
     <value>Projects</value>
   </data>
+  <data name="Nav_HobbyProjects" xml:space="preserve">
+    <value>Hobby Projects</value>
+  </data>
+  <data name="Nav_GraphicDesign" xml:space="preserve">
+    <value>Graphic Design</value>
+  </data>
   <data name="Nav_Contact" xml:space="preserve">
     <value>Contact</value>
   </data>
@@ -193,6 +199,86 @@
   </data>
   <data name="Projects_LinkDocs" xml:space="preserve">
     <value>Documentation</value>
+  </data>
+  <!-- Hobby projects page -->
+  <data name="HobbyProjects_Title" xml:space="preserve">
+    <value>Hobby Projects</value>
+  </data>
+  <data name="HobbyProjects_Intro" xml:space="preserve">
+    <value>A selection of side projects where I explore ideas, experiment with tools, and build for pure curiosity.</value>
+  </data>
+  <data name="HobbyProjects_PlaceholderNote" xml:space="preserve">
+    <value>Placeholder content for now — I will replace these entries with real project data.</value>
+  </data>
+  <data name="HobbyProjects_LinkDemo" xml:space="preserve">
+    <value>Live Demo</value>
+  </data>
+  <data name="HobbyProjects_LinkRepository" xml:space="preserve">
+    <value>Repository</value>
+  </data>
+  <data name="HobbyProjects_LinkDetails" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="HobbyProject_NewsletterName" xml:space="preserve">
+    <value>Newsletter Campaign App</value>
+  </data>
+  <data name="HobbyProject_NewsletterDescription" xml:space="preserve">
+    <value>A small PWA for managing newsletter campaigns using Google Sheets and Google Mail APIs.</value>
+  </data>
+  <data name="HobbyProject_DndCharacterName" xml:space="preserve">
+    <value>DnD Character Tool</value>
+  </data>
+  <data name="HobbyProject_DndCharacterDescription" xml:space="preserve">
+    <value>An advanced tool for generating and managing DnD 5.5e characters. DnD is a popular tabletop role-playing game.</value>
+  </data>
+  <data name="HobbyProject_RpgMapName" xml:space="preserve">
+    <value>RPG Combat Map Tool</value>
+  </data>
+  <data name="HobbyProject_RpgMapDescription" xml:space="preserve">
+    <value>A canvas-based tool for creating and managing RPG combat maps.</value>
+  </data>
+  <data name="HobbyProject_DndGeneratorName" xml:space="preserve">
+    <value>DnD One-Click Character Generator</value>
+  </data>
+  <data name="HobbyProject_DndGeneratorDescription" xml:space="preserve">
+    <value>A small tool for quickly generating DnD 5e characters with a single click.</value>
+  </data>
+  <data name="HobbyProject_ColourApiName" xml:space="preserve">
+    <value>Colour API</value>
+  </data>
+  <data name="HobbyProject_ColourApiDescription" xml:space="preserve">
+    <value>A REST API for retrieving information on many colours. A demo application is available.</value>
+  </data>
+  <data name="HobbyProject_RectGameName" xml:space="preserve">
+    <value>Rect Game</value>
+  </data>
+  <data name="HobbyProject_RectGameDescription" xml:space="preserve">
+    <value>A small canvas-based game similar to the solo version of Pong.</value>
+  </data>
+  <data name="HobbyProject_CanvasChatName" xml:space="preserve">
+    <value>Canvas Chat</value>
+  </data>
+  <data name="HobbyProject_CanvasChatDescription" xml:space="preserve">
+    <value>A real-time collaborative chat tool where users can draw on a shared canvas.</value>
+  </data>
+  <data name="HobbyProject_VectorGraphicsName" xml:space="preserve">
+    <value>Vector Graphics Tool</value>
+  </data>
+  <data name="HobbyProject_VectorGraphicsDescription" xml:space="preserve">
+    <value>A tool for creating and editing vector graphics on an HTML canvas.</value>
+  </data>
+  <!-- Graphic design page -->
+  <data name="GraphicDesign_Title" xml:space="preserve">
+    <value>Graphic Design</value>
+  </data>
+  <data name="GraphicDesign_Intro" xml:space="preserve">
+    <value>A visual gallery with selected design concepts. Click any image to open the full design.</value>
+  </data>
+  <data name="GraphicDesign_PlaceholderNote" xml:space="preserve">
+    <value>Placeholder collection — final design works can be swapped in later.</value>
+  </data>
+  <data name="GraphicDesign_LinkOpen" xml:space="preserve">
+    <value>Open full design</value>
   </data>
   <!-- Contact page -->
   <data name="Contact_Title" xml:space="preserve">

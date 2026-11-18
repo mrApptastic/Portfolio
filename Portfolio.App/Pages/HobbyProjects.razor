@@ -1,0 +1,160 @@
+@page "/hobby-projects"
+@inject IStringLocalizer<AppStrings> Loc
+
+<PageTitle>@Loc["Nav_HobbyProjects"] — Henrik Beske</PageTitle>
+
+<section class="hobby-lab-section">
+    <div class="section-container">
+        <h1 class="section-title">@Loc["HobbyProjects_Title"]</h1>
+        <p class="hobby-intro">@Loc["HobbyProjects_Intro"]</p>
+
+        <div class="hobby-placeholder-note">
+            <span class="hobby-note-dot"></span>
+            <span>@Loc["HobbyProjects_PlaceholderNote"]</span>
+        </div>
+
+        <div class="hobby-grid">
+            @foreach (var project in hobbyProjects)
+            {
+                <article class="hobby-card">
+                    <div class="hobby-image-wrap">
+                        @if (!string.IsNullOrWhiteSpace(project.ImageUrl))
+                        {
+                            <a href="@project.DemoUrl" target="_blank" rel="noopener" class="hobby-image-link">
+                                <img src="@project.ImageUrl" alt="@Loc[project.NameKey]" class="hobby-image" />
+                            </a>
+                        }
+                    </div>
+                    <div class="hobby-card-content">
+                        <p class="hobby-status">@project.Status</p>
+                        <h3>@Loc[project.NameKey]</h3>
+                        <p class="hobby-description">@Loc[project.DescriptionKey]</p>
+                        <div class="hobby-tags">
+                            @foreach (var tag in project.Tags)
+                            {
+                                <span>@tag</span>
+                            }
+                        </div>
+                        <div class="hobby-links">
+                            <a href="@project.DemoUrl" target="_blank" rel="noopener"
+                               class="link-badge demo">@Loc["HobbyProjects_LinkDemo"]</a>
+                            <a href="@project.RepositoryUrl" target="_blank" rel="noopener"
+                               class="link-badge source">@Loc["HobbyProjects_LinkRepository"]</a>
+                            @if (!string.IsNullOrWhiteSpace(project.DetailsUrl))
+                            {
+                                <a href="@project.DetailsUrl" target="_blank" rel="noopener"
+                                   class="link-badge docs">@Loc["HobbyProjects_LinkDetails"]</a>
+                            }
+                        </div>
+                    </div>
+                </article>
+            }
+        </div>
+    </div>
+</section>
+
+@code {
+    private static readonly List<HobbyProjectItem> hobbyProjects =
+    [
+        new()
+        {
+            NameKey = "HobbyProject_NewsletterName",
+            DescriptionKey = "HobbyProject_NewsletterDescription",
+            ImageUrl = "assets/hobby/NewsLetterInator.png",
+            DemoUrl = "https://mrapptastic.github.io/NewsLetterInator/",
+            RepositoryUrl = "https://github.com/mrApptastic/NewsLetterInator",
+            DetailsUrl =  null,
+            Status = "Actively Evolving",
+            Tags = ["Blazor",  "PWA", ".NET", "C#", "Google Sheets API", "Google Mail API" ]
+        },
+        new()
+        {
+            NameKey = "HobbyProject_DndCharacterName",
+            DescriptionKey = "HobbyProject_DndCharacterDescription",
+            ImageUrl = "assets/hobby/DndInator.png",
+            DemoUrl = "https://mrapptastic.github.io/DndInator/",
+            RepositoryUrl = "https://github.com/mrApptastic/DndInator",
+            DetailsUrl = null,
+            Status = "Actively Evolving",
+            Tags = ["Blazor", "PWA", ".NET", "C#", "Form-Fillable PDF", "Html Agility Pack"]
+        },
+        new()
+        {
+            NameKey = "HobbyProject_RpgMapName",
+            DescriptionKey = "HobbyProject_RpgMapDescription",
+            ImageUrl = "assets/hobby/RPG_Map.png",
+            DemoUrl = "https://mrapptastic.github.io/DndCanvas/",
+            RepositoryUrl = "https://github.com/mrApptastic/DndCanvas",
+            DetailsUrl = null,
+            Status = "Weekend Project",
+            Tags = ["JavaScript", "Vue", "Canvas"]
+        },
+        new()
+        {
+            NameKey = "HobbyProject_DndGeneratorName",
+            DescriptionKey = "HobbyProject_DndGeneratorDescription",
+            ImageUrl = "assets/hobby/DndCharacterTool.png",
+            DemoUrl = "https://stackblitz.com/edit/vue-kkbekz",
+            RepositoryUrl = "https://github.com/mrApptastic/Drizztinator",
+            DetailsUrl = null,
+            Status = "Holiday Project",
+            Tags = ["JavaScript", "Vue", "Form-Fillable PDF"]
+        },
+         new()
+        {
+             NameKey = "HobbyProject_ColourApiName",
+             DescriptionKey = "HobbyProject_ColourApiDescription",
+            ImageUrl = "assets/hobby/ColourAPI.png",
+            DemoUrl = "https://stackblitz.com/edit/vue-smundz",
+            RepositoryUrl = "https://github.com/mrApptastic/TrueColoursAPI",
+            DetailsUrl = null,
+            Status = "Prototype",
+            Tags = [".NET Core", "C#", "MySQL", "Vue", "Canvas", "Html Agility Pack" ]
+        },
+        new()
+        {
+            NameKey = "HobbyProject_RectGameName",
+            DescriptionKey = "HobbyProject_RectGameDescription",
+            ImageUrl = "assets/hobby/RectGame.png",
+            DemoUrl = "https://mrapptastic.github.io/rectAngular/",
+            RepositoryUrl = "https://github.com/mrApptastic/rectAngular",
+            DetailsUrl = null,
+            Status = "Prototype",
+            Tags = [ "JavaScript", "Canvas"]
+        },
+        new()
+        {
+            NameKey = "HobbyProject_CanvasChatName",
+            DescriptionKey = "HobbyProject_CanvasChatDescription",
+            ImageUrl = "assets/hobby/CanvasChat.png",
+            DemoUrl = "http://tesj.dk",
+            RepositoryUrl = "https://github.com/mrApptastic/CanvasChat",
+            DetailsUrl = null,
+            Status = "Prototype",
+            Tags = [".NET Framework", "C#", "SignalR", "JavaScript", "jQuery", "Canvas"]
+        },
+        new()
+        {
+            NameKey = "HobbyProject_VectorGraphicsName",
+            DescriptionKey = "HobbyProject_VectorGraphicsDescription",
+            ImageUrl = "assets/hobby/VectorTool.png",
+            DemoUrl = "https://mrapptastic.github.io/captainCanvas/",
+            RepositoryUrl = "https://github.com/mrApptastic/captainCanvas",
+            DetailsUrl = null,
+            Status = "Prototype",
+            Tags = ["JavaScript", "Canvas"]
+        }
+    ];
+
+    private class HobbyProjectItem
+    {
+        public string NameKey { get; set; } = "";
+        public string DescriptionKey { get; set; } = "";
+        public string ImageUrl { get; set; } = "";
+        public string DemoUrl { get; set; } = "";
+        public string RepositoryUrl { get; set; } = "";
+        public string? DetailsUrl { get; set; } = null;
+        public string Status { get; set; } = "";
+        public string[] Tags { get; set; } = [];
+    }
+}

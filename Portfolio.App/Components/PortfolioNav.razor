@@ -13,6 +13,8 @@
         <NavLink href="" Match="NavLinkMatch.All" @onclick="CloseMenu">@Loc["Nav_Home"]</NavLink>
         <NavLink href="cv" @onclick="CloseMenu">@Loc["Nav_CV"]</NavLink>
         <NavLink href="projects" @onclick="CloseMenu">@Loc["Nav_Projects"]</NavLink>
+        <NavLink href="hobby-projects" @onclick="CloseMenu">@Loc["Nav_HobbyProjects"]</NavLink>
+        <NavLink href="graphic-design" @onclick="CloseMenu">@Loc["Nav_GraphicDesign"]</NavLink>
         <NavLink href="contact" @onclick="CloseMenu">@Loc["Nav_Contact"]</NavLink>
         <div class="lang-selector">
             <button class="lang-btn @(currentLang == "da" ? "active" : "")" @onclick='() => SetLanguage("da")' title="Dansk">🇩🇰</button>

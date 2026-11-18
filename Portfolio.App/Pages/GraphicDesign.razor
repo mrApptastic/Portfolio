@@ -1,0 +1,82 @@
+@page "/graphic-design"
+@inject IStringLocalizer<AppStrings> Loc
+
+<PageTitle>@Loc["Nav_GraphicDesign"] — Henrik Beske</PageTitle>
+
+<section class="graphic-design-section">
+    <div class="section-container">
+        <h1 class="section-title">@Loc["GraphicDesign_Title"]</h1>
+        <p class="graphic-intro">@Loc["GraphicDesign_Intro"]</p>
+
+        <div class="design-placeholder-note">
+            <span class="design-note-icon">🎨</span>
+            <span>@Loc["GraphicDesign_PlaceholderNote"]</span>
+        </div>
+
+        <div class="design-grid">
+            @foreach (var design in Designs)
+            {
+                <article class="design-card">
+                    <a href="@design.FullDesignUrl" target="_blank" rel="noopener" class="design-image-link">
+                        <img src="@design.ImageUrl" alt="@design.Title" class="design-image" />
+                    </a>
+                    <div class="design-card-content">
+                        <p class="design-tool">@design.Tool</p>
+                        <h3>@design.Title</h3>
+                        <p class="design-description">@design.Description</p>
+                        <a href="@design.FullDesignUrl" target="_blank" rel="noopener" class="design-open-link">
+                            @Loc["GraphicDesign_LinkOpen"] ↗
+                        </a>
+                    </div>
+                </article>
+            }
+        </div>
+    </div>
+</section>
+
+@code {
+    private static readonly List<GraphicDesignItem> Designs =
+    [
+        new()
+        {
+            Title = "Nordic Coffee Brand Concept",
+            Description = "A warm visual identity concept with package mockups, social cards, and a compact style guide for digital-first storytelling.",
+            ImageUrl = "assets/projects/dbrand.png",
+            FullDesignUrl = "https://example.com/design/nordic-coffee-brand",
+            Tool = "Adobe Illustrator"
+        },
+        new()
+        {
+            Title = "Festival Poster Series",
+            Description = "A poster set balancing bold typography and contrast-driven palettes for outdoor readability and energetic event branding.",
+            ImageUrl = "assets/projects/folkeuniversitetet.png",
+            FullDesignUrl = "https://example.com/design/festival-poster-series",
+            Tool = "Adobe InDesign"
+        },
+        new()
+        {
+            Title = "Gaming Landing Page Mockup",
+            Description = "A high-contrast UI concept with layered visual effects, iconography, and component states prepared for developer handoff.",
+            ImageUrl = "assets/projects/Smart.png",
+            FullDesignUrl = "https://example.com/design/gaming-landing-page",
+            Tool = "Figma + Photoshop"
+        },
+        new()
+        {
+            Title = "Travel Story Visual Pack",
+            Description = "A photo-first narrative template collection for social channels with reusable layouts and color harmonization presets.",
+            ImageUrl = "assets/VanillaSky.jpg",
+            FullDesignUrl = "https://example.com/design/travel-story-pack",
+            Tool = "Adobe Photoshop"
+        }
+    ];
+
+    private class GraphicDesignItem
+    {
+        public string Title { get; set; } = "";
+        public string Description { get; set; } = "";
+        public string ImageUrl { get; set; } = "";
+        public string FullDesignUrl { get; set; } = "";
+        public string Tool { get; set; } = "";
+    }
+}
