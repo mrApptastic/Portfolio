@@ -12,13 +12,13 @@ Personal portfolio site for Henrik Beske, built with **Blazor WebAssembly**.
 
 ```bash
 dotnet restore
-dotnet run --project Portfolio.App
+dotnet watch --project ./Portfolio.App/Portfolio.App.csproj --launch-profile https
 ```
 
-Open: `http://localhost:5000` (or the URL shown in the console).
+Open: `https://localhost:7185` (or the URL shown in the console).
 
 ## Deploy
 
-Deployment is automated through [deploy.yml](./.github/workflows/deploy.yml) and runs on pushes to `main`.
+Deployment is automated through [deploy.yml](./.github/workflows/deploy.yml) and runs on pushes to `master`.
 
 The workflow publishes the app and deploys `publish/wwwroot` to GitHub Pages.
