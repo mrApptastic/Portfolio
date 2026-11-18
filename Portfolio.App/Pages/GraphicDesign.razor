@@ -8,22 +8,22 @@
         <h1 class="section-title">@Loc["GraphicDesign_Title"]</h1>
         <p class="graphic-intro">@Loc["GraphicDesign_Intro"]</p>
 
-        <div class="design-placeholder-note">
+        @* <div class="design-placeholder-note">
             <span class="design-note-icon">🎨</span>
             <span>@Loc["GraphicDesign_PlaceholderNote"]</span>
-        </div>
+        </div> *@
 
         <div class="design-grid">
             @foreach (var design in Designs)
             {
                 <article class="design-card">
                     <a href="@design.FullDesignUrl" target="_blank" rel="noopener" class="design-image-link">
-                        <img src="@design.ImageUrl" alt="@design.Title" class="design-image" />
+                        <img src="@design.ImageUrl" alt="@Loc[design.TitleKey]" class="design-image" />
                     </a>
                     <div class="design-card-content">
                         <p class="design-tool">@design.Tool</p>
-                        <h3>@design.Title</h3>
-                        <p class="design-description">@design.Description</p>
+                        <h3>@Loc[design.TitleKey]</h3>
+                        <p class="design-description">@Loc[design.DescriptionKey]</p>
                         <a href="@design.FullDesignUrl" target="_blank" rel="noopener" class="design-open-link">
                             @Loc["GraphicDesign_LinkOpen"] ↗
                         </a>
@@ -39,42 +39,50 @@
     [
         new()
         {
-            Title = "Nordic Coffee Brand Concept",
-            Description = "A warm visual identity concept with package mockups, social cards, and a compact style guide for digital-first storytelling.",
-            ImageUrl = "assets/projects/dbrand.png",
-            FullDesignUrl = "https://example.com/design/nordic-coffee-brand",
-            Tool = "Adobe Illustrator"
-        },
-        new()
-        {
-            Title = "Festival Poster Series",
-            Description = "A poster set balancing bold typography and contrast-driven palettes for outdoor readability and energetic event branding.",
-            ImageUrl = "assets/projects/folkeuniversitetet.png",
-            FullDesignUrl = "https://example.com/design/festival-poster-series",
+            TitleKey = "GraphicDesign_AnniversaryBookTitle",
+            DescriptionKey = "GraphicDesign_AnniversaryBookDescription",
+            ImageUrl = "assets/graphics/Skrift.png",
+            FullDesignUrl = "/assets/graphics/thorjubi2016.pdf",
             Tool = "Adobe InDesign"
         },
         new()
         {
-            Title = "Gaming Landing Page Mockup",
-            Description = "A high-contrast UI concept with layered visual effects, iconography, and component states prepared for developer handoff.",
-            ImageUrl = "assets/projects/Smart.png",
-            FullDesignUrl = "https://example.com/design/gaming-landing-page",
-            Tool = "Figma + Photoshop"
+            TitleKey = "GraphicDesign_ImageCutoutTitle",
+            DescriptionKey = "GraphicDesign_ImageCutoutDescription",
+            ImageUrl = "assets/graphics/Fritlaegning-Efter.jpg",
+            FullDesignUrl = "assets/graphics/Fritlaegning.png",
+            Tool = "Adobe Photoshop"
         },
         new()
         {
-            Title = "Travel Story Visual Pack",
-            Description = "A photo-first narrative template collection for social channels with reusable layouts and color harmonization presets.",
-            ImageUrl = "assets/VanillaSky.jpg",
-            FullDesignUrl = "https://example.com/design/travel-story-pack",
+            TitleKey = "GraphicDesign_ImageRepairTitle",
+            DescriptionKey = "GraphicDesign_ImageRepairDescription",
+            ImageUrl = "assets/graphics/Reparation-Efter.jpg",
+            FullDesignUrl = "assets/graphics/Reparation.jpg",
+            Tool = "Adobe Photoshop"
+        },
+        new()
+        {
+            TitleKey = "GraphicDesign_ImageRetouchTitle",
+            DescriptionKey = "GraphicDesign_ImageRetouchDescription",
+            ImageUrl = "assets/graphics/Retouschering-Efter.jpg",
+            FullDesignUrl = "assets/graphics/Retouschering-Efter.jpg",
+            Tool = "Adobe Photoshop"
+        },
+        new()
+        {
+            TitleKey = "GraphicDesign_PhotomergeTitle",
+            DescriptionKey = "GraphicDesign_PhotomergeDescription",
+            ImageUrl = "assets/graphics/Heste-ved-Lofjellet.jpg",
+            FullDesignUrl = "assets/graphics/Heste-ved-Lofjellet.jpg",
             Tool = "Adobe Photoshop"
         }
     ];
 
     private class GraphicDesignItem
     {
-        public string Title { get; set; } = "";
-        public string Description { get; set; } = "";
+        public string TitleKey { get; set; } = "";
+        public string DescriptionKey { get; set; } = "";
         public string ImageUrl { get; set; } = "";
         public string FullDesignUrl { get; set; } = "";
         public string Tool { get; set; } = "";

@@ -267,6 +267,66 @@
   <data name="HobbyProject_VectorGraphicsDescription" xml:space="preserve">
     <value>Ett verktyg för att skapa och redigera vektorgrafik på en HTML-canvas.</value>
   </data>
+  <data name="HobbyProject_StatusActivelyEvolving" xml:space="preserve">
+    <value>Aktivt under utveckling</value>
+  </data>
+  <data name="HobbyProject_StatusWeekendProject" xml:space="preserve">
+    <value>Veckoslutprojekt</value>
+  </data>
+  <data name="HobbyProject_StatusHolidayProject" xml:space="preserve">
+    <value>Semesterprojekt</value>
+  </data>
+  <data name="HobbyProject_StatusPrototype" xml:space="preserve">
+    <value>Prototyp</value>
+  </data>
+  <data name="HobbyTag_Blazor" xml:space="preserve">
+    <value>Blazor</value>
+  </data>
+  <data name="HobbyTag_Pwa" xml:space="preserve">
+    <value>PWA</value>
+  </data>
+  <data name="HobbyTag_DotNet" xml:space="preserve">
+    <value>.NET</value>
+  </data>
+  <data name="HobbyTag_CSharp" xml:space="preserve">
+    <value>C#</value>
+  </data>
+  <data name="HobbyTag_GoogleSheetsApi" xml:space="preserve">
+    <value>Google Sheets API</value>
+  </data>
+  <data name="HobbyTag_GoogleMailApi" xml:space="preserve">
+    <value>Google Mail API</value>
+  </data>
+  <data name="HobbyTag_FormFillablePdf" xml:space="preserve">
+    <value>PDF med ifyllbara fält</value>
+  </data>
+  <data name="HobbyTag_HtmlAgilityPack" xml:space="preserve">
+    <value>Html Agility Pack</value>
+  </data>
+  <data name="HobbyTag_JavaScript" xml:space="preserve">
+    <value>JavaScript</value>
+  </data>
+  <data name="HobbyTag_Vue" xml:space="preserve">
+    <value>Vue</value>
+  </data>
+  <data name="HobbyTag_Canvas" xml:space="preserve">
+    <value>Canvas</value>
+  </data>
+  <data name="HobbyTag_DotNetCore" xml:space="preserve">
+    <value>.NET Core</value>
+  </data>
+  <data name="HobbyTag_MySql" xml:space="preserve">
+    <value>MySQL</value>
+  </data>
+  <data name="HobbyTag_DotNetFramework" xml:space="preserve">
+    <value>.NET Framework</value>
+  </data>
+  <data name="HobbyTag_SignalR" xml:space="preserve">
+    <value>SignalR</value>
+  </data>
+  <data name="HobbyTag_JQuery" xml:space="preserve">
+    <value>jQuery</value>
+  </data>
   <!-- Graphic design page -->
   <data name="GraphicDesign_Title" xml:space="preserve">
     <value>Grafisk Design</value>
@@ -279,6 +339,36 @@
   </data>
   <data name="GraphicDesign_LinkOpen" xml:space="preserve">
     <value>Öppna full design</value>
+  </data>
+  <data name="GraphicDesign_AnniversaryBookTitle" xml:space="preserve">
+    <value>Jubileumsbok</value>
+  </data>
+  <data name="GraphicDesign_AnniversaryBookDescription" xml:space="preserve">
+    <value>Redaktionellt och grafiskt arbete på en jubileumsbok för en idrottsförening.</value>
+  </data>
+  <data name="GraphicDesign_ImageCutoutTitle" xml:space="preserve">
+    <value>Bildutklipp</value>
+  </data>
+  <data name="GraphicDesign_ImageCutoutDescription" xml:space="preserve">
+    <value>Exempel på bildutklipp i Adobe Photoshop.</value>
+  </data>
+  <data name="GraphicDesign_ImageRepairTitle" xml:space="preserve">
+    <value>Bildreparation</value>
+  </data>
+  <data name="GraphicDesign_ImageRepairDescription" xml:space="preserve">
+    <value>Exempel på reparation av en skadad bild i Adobe Photoshop.</value>
+  </data>
+  <data name="GraphicDesign_ImageRetouchTitle" xml:space="preserve">
+    <value>Bildretuschering</value>
+  </data>
+  <data name="GraphicDesign_ImageRetouchDescription" xml:space="preserve">
+    <value>Exempel på retuschering av en bild i Adobe Photoshop.</value>
+  </data>
+  <data name="GraphicDesign_PhotomergeTitle" xml:space="preserve">
+    <value>Fotomontage</value>
+  </data>
+  <data name="GraphicDesign_PhotomergeDescription" xml:space="preserve">
+    <value>Exempel på sammansättning av flera bilder till en bild i Adobe Photoshop.</value>
   </data>
   <!-- Contact page -->
   <data name="Contact_Title" xml:space="preserve">

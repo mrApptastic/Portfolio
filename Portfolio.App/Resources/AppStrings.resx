@@ -267,6 +267,66 @@
   <data name="HobbyProject_VectorGraphicsDescription" xml:space="preserve">
     <value>A tool for creating and editing vector graphics on an HTML canvas.</value>
   </data>
+  <data name="HobbyProject_StatusActivelyEvolving" xml:space="preserve">
+    <value>Actively Evolving</value>
+  </data>
+  <data name="HobbyProject_StatusWeekendProject" xml:space="preserve">
+    <value>Weekend Project</value>
+  </data>
+  <data name="HobbyProject_StatusHolidayProject" xml:space="preserve">
+    <value>Holiday Project</value>
+  </data>
+  <data name="HobbyProject_StatusPrototype" xml:space="preserve">
+    <value>Prototype</value>
+  </data>
+  <data name="HobbyTag_Blazor" xml:space="preserve">
+    <value>Blazor</value>
+  </data>
+  <data name="HobbyTag_Pwa" xml:space="preserve">
+    <value>PWA</value>
+  </data>
+  <data name="HobbyTag_DotNet" xml:space="preserve">
+    <value>.NET</value>
+  </data>
+  <data name="HobbyTag_CSharp" xml:space="preserve">
+    <value>C#</value>
+  </data>
+  <data name="HobbyTag_GoogleSheetsApi" xml:space="preserve">
+    <value>Google Sheets API</value>
+  </data>
+  <data name="HobbyTag_GoogleMailApi" xml:space="preserve">
+    <value>Google Mail API</value>
+  </data>
+  <data name="HobbyTag_FormFillablePdf" xml:space="preserve">
+    <value>Form-Fillable PDF</value>
+  </data>
+  <data name="HobbyTag_HtmlAgilityPack" xml:space="preserve">
+    <value>Html Agility Pack</value>
+  </data>
+  <data name="HobbyTag_JavaScript" xml:space="preserve">
+    <value>JavaScript</value>
+  </data>
+  <data name="HobbyTag_Vue" xml:space="preserve">
+    <value>Vue</value>
+  </data>
+  <data name="HobbyTag_Canvas" xml:space="preserve">
+    <value>Canvas</value>
+  </data>
+  <data name="HobbyTag_DotNetCore" xml:space="preserve">
+    <value>.NET Core</value>
+  </data>
+  <data name="HobbyTag_MySql" xml:space="preserve">
+    <value>MySQL</value>
+  </data>
+  <data name="HobbyTag_DotNetFramework" xml:space="preserve">
+    <value>.NET Framework</value>
+  </data>
+  <data name="HobbyTag_SignalR" xml:space="preserve">
+    <value>SignalR</value>
+  </data>
+  <data name="HobbyTag_JQuery" xml:space="preserve">
+    <value>jQuery</value>
+  </data>
   <!-- Graphic design page -->
   <data name="GraphicDesign_Title" xml:space="preserve">
     <value>Graphic Design</value>
@@ -279,6 +339,36 @@
   </data>
   <data name="GraphicDesign_LinkOpen" xml:space="preserve">
     <value>Open full design</value>
+  </data>
+  <data name="GraphicDesign_AnniversaryBookTitle" xml:space="preserve">
+    <value>Anniversary Book</value>
+  </data>
+  <data name="GraphicDesign_AnniversaryBookDescription" xml:space="preserve">
+    <value>Editorial and graphic work for an anniversary book for a sports association.</value>
+  </data>
+  <data name="GraphicDesign_ImageCutoutTitle" xml:space="preserve">
+    <value>Image Cutout</value>
+  </data>
+  <data name="GraphicDesign_ImageCutoutDescription" xml:space="preserve">
+    <value>Example of image cutout in Adobe Photoshop.</value>
+  </data>
+  <data name="GraphicDesign_ImageRepairTitle" xml:space="preserve">
+    <value>Image Repair</value>
+  </data>
+  <data name="GraphicDesign_ImageRepairDescription" xml:space="preserve">
+    <value>Example of repairing a damaged image in Adobe Photoshop.</value>
+  </data>
+  <data name="GraphicDesign_ImageRetouchTitle" xml:space="preserve">
+    <value>Image Retouching</value>
+  </data>
+  <data name="GraphicDesign_ImageRetouchDescription" xml:space="preserve">
+    <value>Example of retouching an image in Adobe Photoshop.</value>
+  </data>
+  <data name="GraphicDesign_PhotomergeTitle" xml:space="preserve">
+    <value>Photomerge</value>
+  </data>
+  <data name="GraphicDesign_PhotomergeDescription" xml:space="preserve">
+    <value>Example of combining several images into one image in Adobe Photoshop.</value>
   </data>
   <!-- Contact page -->
   <data name="Contact_Title" xml:space="preserve">

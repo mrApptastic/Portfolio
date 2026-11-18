@@ -8,10 +8,10 @@
         <h1 class="section-title">@Loc["HobbyProjects_Title"]</h1>
         <p class="hobby-intro">@Loc["HobbyProjects_Intro"]</p>
 
-        <div class="hobby-placeholder-note">
+        @* <div class="hobby-placeholder-note">
             <span class="hobby-note-dot"></span>
             <span>@Loc["HobbyProjects_PlaceholderNote"]</span>
-        </div>
+        </div> *@
 
         <div class="hobby-grid">
             @foreach (var project in hobbyProjects)
@@ -26,13 +26,13 @@
                         }
                     </div>
                     <div class="hobby-card-content">
-                        <p class="hobby-status">@project.Status</p>
+                        <p class="hobby-status">@Loc[project.StatusKey]</p>
                         <h3>@Loc[project.NameKey]</h3>
                         <p class="hobby-description">@Loc[project.DescriptionKey]</p>
                         <div class="hobby-tags">
                             @foreach (var tag in project.Tags)
                             {
-                                <span>@tag</span>
+                                <span>@Loc[tag]</span>
                             }
                         </div>
                         <div class="hobby-links">
@@ -64,8 +64,8 @@
             DemoUrl = "https://mrapptastic.github.io/NewsLetterInator/",
             RepositoryUrl = "https://github.com/mrApptastic/NewsLetterInator",
             DetailsUrl =  null,
-            Status = "Actively Evolving",
-            Tags = ["Blazor",  "PWA", ".NET", "C#", "Google Sheets API", "Google Mail API" ]
+            StatusKey = "HobbyProject_StatusActivelyEvolving",
+            Tags = ["HobbyTag_Blazor", "HobbyTag_Pwa", "HobbyTag_DotNet", "HobbyTag_CSharp", "HobbyTag_GoogleSheetsApi", "HobbyTag_GoogleMailApi"]
         },
         new()
         {
@@ -75,8 +75,8 @@
             DemoUrl = "https://mrapptastic.github.io/DndInator/",
             RepositoryUrl = "https://github.com/mrApptastic/DndInator",
             DetailsUrl = null,
-            Status = "Actively Evolving",
-            Tags = ["Blazor", "PWA", ".NET", "C#", "Form-Fillable PDF", "Html Agility Pack"]
+            StatusKey = "HobbyProject_StatusActivelyEvolving",
+            Tags = ["HobbyTag_Blazor", "HobbyTag_Pwa", "HobbyTag_DotNet", "HobbyTag_CSharp", "HobbyTag_FormFillablePdf", "HobbyTag_HtmlAgilityPack"]
         },
         new()
         {
@@ -86,8 +86,8 @@
             DemoUrl = "https://mrapptastic.github.io/DndCanvas/",
             RepositoryUrl = "https://github.com/mrApptastic/DndCanvas",
             DetailsUrl = null,
-            Status = "Weekend Project",
-            Tags = ["JavaScript", "Vue", "Canvas"]
+            StatusKey = "HobbyProject_StatusWeekendProject",
+            Tags = ["HobbyTag_JavaScript", "HobbyTag_Vue", "HobbyTag_Canvas"]
         },
         new()
         {
@@ -97,8 +97,8 @@
             DemoUrl = "https://stackblitz.com/edit/vue-kkbekz",
             RepositoryUrl = "https://github.com/mrApptastic/Drizztinator",
             DetailsUrl = null,
-            Status = "Holiday Project",
-            Tags = ["JavaScript", "Vue", "Form-Fillable PDF"]
+            StatusKey = "HobbyProject_StatusHolidayProject",
+            Tags = ["HobbyTag_JavaScript", "HobbyTag_Vue", "HobbyTag_FormFillablePdf"]
         },
          new()
         {
@@ -108,8 +108,8 @@
             DemoUrl = "https://stackblitz.com/edit/vue-smundz",
             RepositoryUrl = "https://github.com/mrApptastic/TrueColoursAPI",
             DetailsUrl = null,
-            Status = "Prototype",
-            Tags = [".NET Core", "C#", "MySQL", "Vue", "Canvas", "Html Agility Pack" ]
+            StatusKey = "HobbyProject_StatusPrototype",
+            Tags = ["HobbyTag_DotNetCore", "HobbyTag_CSharp", "HobbyTag_MySql", "HobbyTag_Vue", "HobbyTag_Canvas", "HobbyTag_HtmlAgilityPack"]
         },
         new()
         {
@@ -119,8 +119,8 @@
             DemoUrl = "https://mrapptastic.github.io/rectAngular/",
             RepositoryUrl = "https://github.com/mrApptastic/rectAngular",
             DetailsUrl = null,
-            Status = "Prototype",
-            Tags = [ "JavaScript", "Canvas"]
+            StatusKey = "HobbyProject_StatusPrototype",
+            Tags = ["HobbyTag_JavaScript", "HobbyTag_Canvas"]
         },
         new()
         {
@@ -130,8 +130,8 @@
             DemoUrl = "http://tesj.dk",
             RepositoryUrl = "https://github.com/mrApptastic/CanvasChat",
             DetailsUrl = null,
-            Status = "Prototype",
-            Tags = [".NET Framework", "C#", "SignalR", "JavaScript", "jQuery", "Canvas"]
+            StatusKey = "HobbyProject_StatusPrototype",
+            Tags = ["HobbyTag_DotNetFramework", "HobbyTag_CSharp", "HobbyTag_SignalR", "HobbyTag_JavaScript", "HobbyTag_JQuery", "HobbyTag_Canvas"]
         },
         new()
         {
@@ -141,8 +141,8 @@
             DemoUrl = "https://mrapptastic.github.io/captainCanvas/",
             RepositoryUrl = "https://github.com/mrApptastic/captainCanvas",
             DetailsUrl = null,
-            Status = "Prototype",
-            Tags = ["JavaScript", "Canvas"]
+            StatusKey = "HobbyProject_StatusPrototype",
+            Tags = ["HobbyTag_JavaScript", "HobbyTag_Canvas"]
         }
     ];
 
@@ -154,7 +154,7 @@
         public string DemoUrl { get; set; } = "";
         public string RepositoryUrl { get; set; } = "";
         public string? DetailsUrl { get; set; } = null;
-        public string Status { get; set; } = "";
+        public string StatusKey { get; set; } = "";
         public string[] Tags { get; set; } = [];
     }
 }
